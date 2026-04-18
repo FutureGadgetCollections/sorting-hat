@@ -7,11 +7,13 @@
   "cards": [
     {
       "card_number": "1",
-      "quantity": 1
+      "quantity": 1,
+      "foil": true
     },
     {
       "card_number": "4",
-      "quantity": 1
+      "quantity": 1,
+      "foil": true
     },
     {
       "card_number": "8",

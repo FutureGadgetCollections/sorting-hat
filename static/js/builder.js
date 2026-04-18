@@ -94,13 +94,16 @@
   // Build merged per-card quantities for ONE unit of this product.
   // A deck entry may override its set with a `set` field (e.g. precons that
   // ship reprints from a different set); default is the deck's own set_code.
-  const perUnitQty = {};
+  // `foil:true` on the entry routes pricing to the foil SKU.
+  const perUnitData = {};  // key -> {qty, foil}
   for (const { quantity, data } of decks) {
     const deckSet = data.set_code;
     for (const c of data.cards) {
       const cardSet = c.set || deckSet;
-      const k = `${cardSet}|${c.card_number}`;
-      perUnitQty[k] = (perUnitQty[k] || 0) + (c.quantity || 1) * quantity;
+      const k = `${cardSet}|${c.card_number}|${c.foil ? 'F' : 'N'}`;
+      const cur = perUnitData[k] || { qty: 0, foil: !!c.foil };
+      cur.qty += (c.quantity || 1) * quantity;
+      perUnitData[k] = cur;
     }
   }
 
@@ -110,11 +113,18 @@
     cardsByKey[cardKey(c.game, c.set_code, c.card_number)] = c;
   }
 
-  const tcgPriceById = {};
-  for (const p of prices) tcgPriceById[String(p.tcgplayer_id)] = p.market_price;
+  // Index TCGPlayer prices by id; keep both non-foil (market_price) and
+  // foil (market_price_foil, sourced from Scryfall during the data sync).
+  const tcgPriceById     = {};
+  const tcgPriceFoilById = {};
+  for (const p of prices) {
+    const id = String(p.tcgplayer_id);
+    tcgPriceById[id] = p.market_price;
+    if (p.market_price_foil != null) tcgPriceFoilById[id] = p.market_price_foil;
+  }
 
   const rows = [];
-  for (const [k, qPerUnit] of Object.entries(perUnitQty)) {
+  for (const [k, info] of Object.entries(perUnitData)) {
     const [cardSet, num] = k.split('|');
     const card = cardsByKey[cardKey(game, cardSet, num)];
     if (!card) {
@@ -122,15 +132,22 @@
       continue;
     }
     const idStr = card.tcgplayer_id != null ? String(card.tcgplayer_id) : null;
-    const tcgMkt = idStr != null ? tcgPriceById[idStr] : null;
-    const mpMkt  = idStr != null ? manapoolPriceById[idStr] : null;
+    const tcgMktNonfoil = idStr != null ? tcgPriceById[idStr] : null;
+    const tcgMktFoil    = idStr != null ? tcgPriceFoilById[idStr] : null;
+    // For Mana Pool we only have a single from_price for now (covers both
+    // finishes); revisit when we wire up MP foil-specific pricing.
+    const mpMkt = idStr != null ? manapoolPriceById[idStr] : null;
+    const tcgMkt = info.foil
+      ? (tcgMktFoil != null ? tcgMktFoil : tcgMktNonfoil)
+      : tcgMktNonfoil;
     rows.push({
       tcgplayer_id: card.tcgplayer_id,
       set:          card.set_code,
       number:       card.card_number,
       name:         card.name,
       rarity:       (card.rarity || 'common').toLowerCase(),
-      qPerUnit,
+      foil:         !!info.foil,
+      qPerUnit:     info.qty,
       tcgMkt: tcgMkt != null ? Number(tcgMkt) : null,
       mpMkt:  mpMkt  != null ? Number(mpMkt)  : null,
     });
@@ -152,6 +169,14 @@
       const an = parseInt(a.number, 10), bn = parseInt(b.number, 10);
       if (!isNaN(an) && !isNaN(bn) && an !== bn) return sortDir * (an - bn);
       return sortDir * String(a.number).localeCompare(String(b.number));
+    }
+    if (sortKey === 'tcgMkt' || sortKey === 'mpMkt') {
+      const av = a[sortKey], bv = b[sortKey];
+      // Push nulls to the bottom regardless of direction.
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return sortDir * (av - bv);
     }
     // default: rarity then number ascending
     const r = (RARITY_ORDER[a.rarity] ?? 99) - (RARITY_ORDER[b.rarity] ?? 99);
@@ -193,13 +218,31 @@
     return id == null ? null : `https://www.tcgplayer.com/product/${id}`;
   }
 
+  function manapoolSlug(name) {
+    return name.toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function manapoolUrl(r) {
+    if (!isMtg) return null;
+    return `https://manapool.com/card/${r.set}/${r.number}/${manapoolSlug(r.name)}`;
+  }
+
   function nameCellHtml(r) {
-    const url = tcgPlayerUrl(r.tcgplayer_id);
-    const nameNode = url
-      ? `<a href="${url}" target="_blank" rel="noopener">${r.name}</a>`
+    const tcg = tcgPlayerUrl(r.tcgplayer_id);
+    const mp  = manapoolUrl(r);
+    const nameNode = tcg
+      ? `<a href="${tcg}" target="_blank" rel="noopener" title="View on TCGPlayer">${r.name}</a>`
       : r.name;
-    const badge = r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>';
-    return nameNode + badge;
+    const noTcg  = r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>';
+    const foilBadge = r.foil
+      ? ' <span class="badge text-bg-info ms-1" title="Foil printing — pricing reflects foil SKU">Foil</span>'
+      : '';
+    const mpLink = mp
+      ? ` <a href="${mp}" target="_blank" rel="noopener" class="ms-1 small text-decoration-none" title="View on Mana Pool">[MP]</a>`
+      : '';
+    return nameNode + foilBadge + noTcg + mpLink;
   }
 
   function render() {
