@@ -6,6 +6,7 @@
   const subtitle  = document.getElementById('builder-subtitle');
   const tbody     = document.getElementById('card-rows');
   const btnCsv    = document.getElementById('btn-csv');
+  const btnCsvMp  = document.getElementById('btn-csv-manapool');
   const btnRecalc = document.getElementById('btn-recalc');
   const cfgMult   = document.getElementById('cfg-multiplier');
   const cfgMultHint = document.getElementById('cfg-multiplier-hint');
@@ -162,6 +163,7 @@
     document.getElementById('sum-market').textContent = '$' + sumMkt.toFixed(2);
     document.getElementById('sum-listed').textContent = '$' + sumListed.toFixed(2);
     btnCsv.disabled = nCards === 0;
+    btnCsvMp.disabled = nCards === 0;
   }
 
   function updateSummary() {
@@ -192,7 +194,7 @@
     if (e.target.matches('.js-add-qty, .js-list-price')) updateSummary();
   });
 
-  btnCsv.addEventListener('click', () => {
+  function collectExportRows() {
     const exportRows = [];
     document.querySelectorAll('tr.card-row').forEach(tr => {
       const qInput = tr.querySelector('.js-add-qty');
@@ -208,14 +210,27 @@
         listPrice: isNaN(listPrice) ? '' : listPrice.toFixed(2),
       });
     });
+    return exportRows;
+  }
+
+  function exportAs(marketplace) {
+    const exportRows = collectExportRows();
     if (exportRows.length === 0) {
       showToast('Nothing to export — every row is qty 0 or missing a TCGplayer Id.', 'warning');
       return;
     }
     const stamp = new Date().toISOString().slice(0, 10);
-    downloadCsv(`tcgplayer_${game}_${setCode}_${product}_${stamp}.csv`, buildCsv(exportRows));
-    showToast(`Exported ${exportRows.length} row${exportRows.length === 1 ? '' : 's'}.`, 'success');
-  });
+    const qtyHeader = marketplace === 'manapool' ? 'Total Quantity' : 'Add to Quantity';
+    const filename  = `${marketplace}_${game}_${setCode}_${product}_${stamp}.csv`;
+    downloadCsv(filename, buildCsv(exportRows, qtyHeader));
+    showToast(`Exported ${exportRows.length} row${exportRows.length === 1 ? '' : 's'} for ${marketplace}.`, 'success');
+  }
+
+  btnCsv.addEventListener('click',   () => exportAs('tcgplayer'));
+  btnCsvMp.addEventListener('click', () => exportAs('manapool'));
+
+  // Manapool button is MTG-only
+  if (game === 'mtg') btnCsvMp.classList.remove('d-none');
 
   render();
   content.classList.remove('d-none');
