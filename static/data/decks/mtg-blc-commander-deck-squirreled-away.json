@@ -17,7 +17,8 @@
     },
     {
       "card_number": "99",
-      "quantity": 1
+      "quantity": 1,
+      "foil": true
     },
     {
       "card_number": "180",
