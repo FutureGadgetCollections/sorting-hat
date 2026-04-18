@@ -10,29 +10,38 @@
           "products": [
             {
               "type": "commander-deck-squirreled-away",
-              "name": "Squirreled Away \u2014 Commander Deck",
+              "name": "Squirreled Away — Commander Deck",
               "deck_file": "mtg-blc-commander-deck-squirreled-away.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-blc-commander-deck-squirreled-away.jpg",
+              "tcgplayer_id": "541249"
             },
             {
               "type": "commander-deck-family-matters",
-              "name": "Family Matters \u2014 Commander Deck",
+              "name": "Family Matters — Commander Deck",
               "deck_file": "mtg-blc-commander-deck-family-matters.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-blc-commander-deck-family-matters.jpg",
+              "tcgplayer_id": "541247"
             },
             {
               "type": "commander-deck-peace-offering",
-              "name": "Peace Offering \u2014 Commander Deck",
+              "name": "Peace Offering — Commander Deck",
               "deck_file": "mtg-blc-commander-deck-peace-offering.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-blc-commander-deck-peace-offering.jpg",
+              "tcgplayer_id": "541248"
             },
             {
               "type": "commander-deck-animated-army",
-              "name": "Animated Army \u2014 Commander Deck",
+              "name": "Animated Army — Commander Deck",
               "deck_file": "mtg-blc-commander-deck-animated-army.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-blc-commander-deck-animated-army.jpg",
+              "tcgplayer_id": "541246"
             }
-          ]
+          ],
+          "image": "/images/sets/blc.svg"
         },
         {
           "code": "eoc",
@@ -40,17 +49,22 @@
           "products": [
             {
               "type": "commander-deck-world-shaper",
-              "name": "World Shaper \u2014 Commander Deck",
+              "name": "World Shaper — Commander Deck",
               "deck_file": "mtg-eoc-commander-deck-world-shaper.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-eoc-commander-deck-world-shaper.jpg",
+              "tcgplayer_id": "619676"
             },
             {
               "type": "commander-deck-counter-intelligence",
-              "name": "Counter Intelligence \u2014 Commander Deck",
+              "name": "Counter Intelligence — Commander Deck",
               "deck_file": "mtg-eoc-commander-deck-counter-intelligence.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-eoc-commander-deck-counter-intelligence.jpg",
+              "tcgplayer_id": "619677"
             }
-          ]
+          ],
+          "image": "/images/sets/eoc.svg"
         },
         {
           "code": "fic",
@@ -59,31 +73,39 @@
           "products": [
             {
               "type": "commander-deck-counter-blitz-final-fantasy-x",
-              "name": "Counter Blitz (Final Fantasy X) \u00e2\u20ac\u201d Commander Deck",
+              "name": "Counter Blitz (Final Fantasy X) — Commander Deck",
               "deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-fic-commander-deck-counter-blitz-final-fantasy-x.jpg",
+              "tcgplayer_id": "618905"
             },
             {
               "type": "commander-deck-limit-break-final-fantasy-vii",
-              "name": "Limit Break (Final Fantasy VII) \u00e2\u20ac\u201d Commander Deck",
+              "name": "Limit Break (Final Fantasy VII) — Commander Deck",
               "deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-fic-commander-deck-limit-break-final-fantasy-vii.jpg",
+              "tcgplayer_id": "618904"
             },
             {
               "type": "commander-deck-revival-trance-final-fantasy-vi",
-              "name": "Revival Trance (Final Fantasy VI) \u00e2\u20ac\u201d Commander Deck",
+              "name": "Revival Trance (Final Fantasy VI) — Commander Deck",
               "deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-fic-commander-deck-revival-trance-final-fantasy-vi.jpg",
+              "tcgplayer_id": "618903"
             },
             {
               "type": "commander-deck-scions-and-spellcraft-final-fantasy-xiv",
-              "name": "Scions & Spellcraft (Final Fantasy XIV) \u00e2\u20ac\u201d Commander Deck",
+              "name": "Scions & Spellcraft (Final Fantasy XIV) — Commander Deck",
               "deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.jpg",
+              "tcgplayer_id": "618906"
             },
             {
               "type": "commander-case-all-four-decks",
-              "name": "Case \u00e2\u20ac\u201d One of Each Commander Deck (4)",
+              "name": "Case — One of Each Commander Deck (4)",
               "kind": "case",
               "components": [
                 {
@@ -102,9 +124,12 @@
                   "deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json",
                   "quantity": 1
                 }
-              ]
+              ],
+              "image": "/images/products/mtg-fic-commander-case-all-four-decks.jpg",
+              "tcgplayer_id": "656733"
             }
-          ]
+          ],
+          "image": "/images/sets/fic.svg"
         },
         {
           "code": "tdc",
@@ -112,35 +137,46 @@
           "products": [
             {
               "type": "commander-deck-abzan-armor",
-              "name": "Abzan Armor \u2014 Commander Deck",
+              "name": "Abzan Armor — Commander Deck",
               "deck_file": "mtg-tdc-commander-deck-abzan-armor.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-tdc-commander-deck-abzan-armor.jpg",
+              "tcgplayer_id": "619664"
             },
             {
               "type": "commander-deck-jeskai-striker",
-              "name": "Jeskai Striker \u2014 Commander Deck",
+              "name": "Jeskai Striker — Commander Deck",
               "deck_file": "mtg-tdc-commander-deck-jeskai-striker.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-tdc-commander-deck-jeskai-striker.jpg",
+              "tcgplayer_id": "619665"
             },
             {
               "type": "commander-deck-sultai-arisen",
-              "name": "Sultai Arisen \u2014 Commander Deck",
+              "name": "Sultai Arisen — Commander Deck",
               "deck_file": "mtg-tdc-commander-deck-sultai-arisen.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-tdc-commander-deck-sultai-arisen.jpg",
+              "tcgplayer_id": "619666"
             },
             {
               "type": "commander-deck-mardu-surge",
-              "name": "Mardu Surge \u2014 Commander Deck",
+              "name": "Mardu Surge — Commander Deck",
               "deck_file": "mtg-tdc-commander-deck-mardu-surge.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-tdc-commander-deck-mardu-surge.jpg",
+              "tcgplayer_id": "619667"
             },
             {
               "type": "commander-deck-temur-roar",
-              "name": "Temur Roar \u2014 Commander Deck",
+              "name": "Temur Roar — Commander Deck",
               "deck_file": "mtg-tdc-commander-deck-temur-roar.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-tdc-commander-deck-temur-roar.jpg",
+              "tcgplayer_id": "619668"
             }
-          ]
+          ],
+          "image": "/images/sets/tdc.svg"
         },
         {
           "code": "who",
@@ -148,31 +184,41 @@
           "products": [
             {
               "type": "commander-deck-blast-from-the-past",
-              "name": "Blast from the Past \u2014 Commander Deck",
+              "name": "Blast from the Past — Commander Deck",
               "deck_file": "mtg-who-commander-deck-blast-from-the-past.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-who-commander-deck-blast-from-the-past.jpg",
+              "tcgplayer_id": "496071"
             },
             {
               "type": "commander-deck-timey-wimey",
-              "name": "Timey-Wimey \u2014 Commander Deck",
+              "name": "Timey-Wimey — Commander Deck",
               "deck_file": "mtg-who-commander-deck-timey-wimey.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-who-commander-deck-timey-wimey.jpg",
+              "tcgplayer_id": "496072"
             },
             {
               "type": "commander-deck-paradox-power",
-              "name": "Paradox Power \u2014 Commander Deck",
+              "name": "Paradox Power — Commander Deck",
               "deck_file": "mtg-who-commander-deck-paradox-power.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-who-commander-deck-paradox-power.jpg",
+              "tcgplayer_id": "496073"
             },
             {
               "type": "commander-deck-masters-of-evil",
-              "name": "Masters of Evil \u2014 Commander Deck",
+              "name": "Masters of Evil — Commander Deck",
               "deck_file": "mtg-who-commander-deck-masters-of-evil.json",
-              "kind": "deck"
+              "kind": "deck",
+              "image": "/images/products/mtg-who-commander-deck-masters-of-evil.jpg",
+              "tcgplayer_id": "496070"
             }
-          ]
+          ],
+          "image": "/images/sets/who.svg"
         }
-      ]
+      ],
+      "image": "/images/games/mtg.svg"
     }
   ]
 }

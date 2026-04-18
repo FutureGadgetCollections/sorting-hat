@@ -1,42 +1,32 @@
 {{ define "main" }}
-<div class="row">
-  <div class="col-lg-8 mx-auto">
-    <h1 class="mb-3">The Sorting Hat</h1>
-    <p class="text-muted">
+<div class="picker">
+  <div class="picker-header mb-4">
+    <h1 class="h3 mb-1">The Sorting Hat</h1>
+    <p class="text-muted mb-0">
       Pick a sealed product, configure your listings, and download a TCGPlayer
       mass-upload CSV pre-populated with every card it contains.
     </p>
+  </div>
 
-    <div class="card mt-4">
-      <div class="card-body">
-        <h2 class="h5 mb-3">Pick a product</h2>
+  <section class="picker-step" data-step="game">
+    <h2 class="h6 text-muted text-uppercase mb-3">1. Game</h2>
+    <div id="picker-games" class="row g-3"></div>
+  </section>
 
-        <div class="mb-3">
-          <label for="picker-game" class="form-label">Game</label>
-          <select id="picker-game" class="form-select" disabled>
-            <option>Loading…</option>
-          </select>
-        </div>
+  <section class="picker-step mt-4 d-none" data-step="set">
+    <h2 class="h6 text-muted text-uppercase mb-3">2. Set</h2>
+    <div id="picker-sets" class="row g-3"></div>
+  </section>
 
-        <div class="mb-3">
-          <label for="picker-set" class="form-label">Set</label>
-          <select id="picker-set" class="form-select" disabled>
-            <option value="">Choose a game first</option>
-          </select>
-        </div>
+  <section class="picker-step mt-4 d-none" data-step="product">
+    <h2 class="h6 text-muted text-uppercase mb-3">3. Product</h2>
+    <div id="picker-products" class="row g-3"></div>
+  </section>
 
-        <div class="mb-3">
-          <label for="picker-product" class="form-label">Product</label>
-          <select id="picker-product" class="form-select" disabled>
-            <option value="">Choose a set first</option>
-          </select>
-        </div>
-
-        <button id="picker-go" class="btn btn-primary" disabled>
-          Open builder <i class="bi bi-arrow-right"></i>
-        </button>
-      </div>
-    </div>
+  <div class="picker-footer mt-4 d-none" id="picker-footer">
+    <button id="picker-go" class="btn btn-primary btn-lg" disabled>
+      Open builder <i class="bi bi-arrow-right"></i>
+    </button>
   </div>
 </div>
 {{ end }}
