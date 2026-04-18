@@ -3,6 +3,7 @@
   "set_code": "who",
   "product_type": "commander-deck-blast-from-the-past",
   "name": "Blast from the Past",
+  "mtgjson_id": "BlastFromThePast_WHO",
   "source": "https://magic.wizards.com/en/news/announcements/who-commander-decklists (resolved against catalog)",
   "cards": [
     {

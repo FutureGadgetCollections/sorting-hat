@@ -3,6 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-scions-and-spellcraft-final-fantasy-xiv",
   "name": "Scions & Spellcraft (Final Fantasy XIV)",
+  "mtgjson_id": "ScionsSpellcraftFinalFantasyXiv_FIC",
   "source": "scryfall promo_type=ffxiv (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist + bulk-resolved against FIC catalog",
   "cards": [
     {

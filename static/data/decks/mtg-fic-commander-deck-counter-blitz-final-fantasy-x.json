@@ -3,6 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-counter-blitz-final-fantasy-x",
   "name": "Counter Blitz (Final Fantasy X)",
+  "mtgjson_id": "CounterBlitzFinalFantasyX_FIC",
   "source": "scryfall promo_type=ffx (one printing per card name, preferring catalog matches) + bulk-resolved against FIC catalog",
   "cards": [
     {

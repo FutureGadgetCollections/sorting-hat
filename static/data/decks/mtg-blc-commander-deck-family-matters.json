@@ -3,6 +3,7 @@
   "set_code": "blc",
   "product_type": "commander-deck-family-matters",
   "name": "Family Matters",
+  "mtgjson_id": "FamilyMatters_BLC",
   "source": "https://magic.wizards.com/en/news/announcements/blc-commander-decklists (resolved against catalog)",
   "cards": [
     {

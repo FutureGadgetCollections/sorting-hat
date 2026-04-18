@@ -3,6 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-revival-trance-final-fantasy-vi",
   "name": "Revival Trance (Final Fantasy VI)",
+  "mtgjson_id": "RevivalTranceFinalFantasyVi_FIC",
   "source": "scryfall promo_type=ffvi (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist + bulk-resolved against FIC catalog",
   "cards": [
     {

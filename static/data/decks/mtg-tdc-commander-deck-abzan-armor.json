@@ -3,6 +3,7 @@
   "set_code": "tdc",
   "product_type": "commander-deck-abzan-armor",
   "name": "Abzan Armor",
+  "mtgjson_id": "AbzanArmor_TDC",
   "source": "https://magic.wizards.com/en/news/announcements/tdc-commander-decklists (resolved against catalog)",
   "cards": [
     {

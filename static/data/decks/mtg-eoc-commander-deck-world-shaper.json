@@ -3,6 +3,7 @@
   "set_code": "eoc",
   "product_type": "commander-deck-world-shaper",
   "name": "World Shaper",
+  "mtgjson_id": "WorldShaper_EOC",
   "source": "https://magic.wizards.com/en/news/announcements/eoc-commander-decklists (resolved against catalog)",
   "cards": [
     {
