@@ -326,6 +326,10 @@
       "set": "fin",
       "card_number": "143",
       "quantity": 1
+    },
+    {
+      "card_number": "375",
+      "quantity": 1
     }
   ]
 }
