@@ -36,8 +36,8 @@
   try {
     [catalog, singleCards, prices] = await Promise.all([
       loadLocalJson('/data/sets.json'),
-      loadJsonData('single-cards.json'),
-      loadJsonData('tcgplayer-latest-prices.json'),
+      loadJsonData('data/single-cards.json'),
+      loadJsonData('data/tcgplayer-latest-prices.json'),
     ]);
   } catch (e) {
     fail(`Failed to load data: ${e.message}`);
