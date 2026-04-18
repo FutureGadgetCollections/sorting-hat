@@ -5,17 +5,28 @@
   const titleEl   = document.getElementById('builder-title');
   const subtitle  = document.getElementById('builder-subtitle');
   const tbody     = document.getElementById('card-rows');
+  const thead     = document.getElementById('card-thead');
+  const colMpMkt  = document.getElementById('col-mp-mkt');
+  const colMpList = document.getElementById('col-mp-list');
   const btnCsv    = document.getElementById('btn-csv');
   const btnCsvMp  = document.getElementById('btn-csv-manapool');
+  const btnSmart  = document.getElementById('btn-csv-smart');
   const btnRecalc = document.getElementById('btn-recalc');
   const cfgMult   = document.getElementById('cfg-multiplier');
   const cfgMultHint = document.getElementById('cfg-multiplier-hint');
   const cfgStrat  = document.getElementById('cfg-price-strategy');
   const cfgPctWrap = document.getElementById('cfg-price-pct-wrap');
   const cfgPct    = document.getElementById('cfg-price-pct');
+  const cfgRoutingWrap = document.getElementById('cfg-routing-wrap');
+  const cfgDefaultMkt = document.getElementById('cfg-default-marketplace');
+  const cfgThreshold = document.getElementById('cfg-routing-threshold');
 
   const RARITY_ORDER = { mythic: 0, rare: 1, uncommon: 2, common: 3 };
   const RARITY_LABEL = { mythic: 'M', rare: 'R', uncommon: 'U', common: 'C' };
+
+  // Marketplace fees as decimals. Source: each marketplace's seller fee schedule.
+  const TCG_FEE_RATE = 0.1325;
+  const MP_FEE_RATE  = 0.079;
 
   function fail(msg) {
     errorBox.textContent = msg;
@@ -29,6 +40,7 @@
     fail('Missing game/set/product in URL.');
     return;
   }
+  const isMtg = game === 'mtg';
 
   let catalog, singleCards, prices;
   try {
@@ -41,6 +53,20 @@
     fail(`Failed to load data: ${e.message}`);
     return;
   }
+
+  // Mana Pool prices are MTG-only; failing soft if the file isn't published yet.
+  let manapoolPriceById = {};
+  if (isMtg) {
+    try {
+      const mp = await loadJsonData('data/manapool-latest-prices.json');
+      for (const p of mp) {
+        if (p.from_price != null) manapoolPriceById[String(p.tcgplayer_id)] = Number(p.from_price);
+      }
+    } catch (e) {
+      console.warn('[builder] Mana Pool prices unavailable:', e.message);
+    }
+  }
+  const hasManapool = isMtg && Object.keys(manapoolPriceById).length > 0;
 
   const gameDef = catalog.games.find(g => g.code === game);
   const setDef  = gameDef && gameDef.sets.find(s => s.code === setCode);
@@ -66,7 +92,6 @@
   }
 
   // Build merged per-card quantities for ONE unit of this product
-  // key = card_number
   const perUnitQty = {};
   for (const { quantity, data } of decks) {
     for (const c of data.cards) {
@@ -74,18 +99,15 @@
     }
   }
 
-  // Index single-cards by (game, set, number)
   const cardKey = (g, s, n) => `${g}|${s}|${n}`;
   const cardsByKey = {};
   for (const c of singleCards) {
     cardsByKey[cardKey(c.game, c.set_code, c.card_number)] = c;
   }
 
-  // Index prices by tcgplayer_id (string)
-  const priceById = {};
-  for (const p of prices) priceById[String(p.tcgplayer_id)] = p.market_price;
+  const tcgPriceById = {};
+  for (const p of prices) tcgPriceById[String(p.tcgplayer_id)] = p.market_price;
 
-  // Compose row models
   const rows = [];
   for (const [num, qPerUnit] of Object.entries(perUnitQty)) {
     const card = cardsByKey[cardKey(game, setCode, num)];
@@ -93,33 +115,63 @@
       console.warn(`No single_cards entry for ${game}/${setCode}/${num}`);
       continue;
     }
-    const market = card.tcgplayer_id != null ? priceById[String(card.tcgplayer_id)] : null;
+    const idStr = card.tcgplayer_id != null ? String(card.tcgplayer_id) : null;
+    const tcgMkt = idStr != null ? tcgPriceById[idStr] : null;
+    const mpMkt  = idStr != null ? manapoolPriceById[idStr] : null;
     rows.push({
       tcgplayer_id: card.tcgplayer_id,
       number:       card.card_number,
       name:         card.name,
       rarity:       (card.rarity || 'common').toLowerCase(),
       qPerUnit,
-      market: market != null ? Number(market) : null,
+      tcgMkt: tcgMkt != null ? Number(tcgMkt) : null,
+      mpMkt:  mpMkt  != null ? Number(mpMkt)  : null,
     });
   }
 
-  rows.sort((a, b) => {
+  // Sort state — clicking a header toggles direction and re-renders.
+  let sortKey = 'default';
+  let sortDir = 1;
+
+  function compareRows(a, b) {
+    if (sortKey === 'name') {
+      return sortDir * a.name.localeCompare(b.name);
+    }
+    if (sortKey === 'rarity') {
+      const r = (RARITY_ORDER[a.rarity] ?? 99) - (RARITY_ORDER[b.rarity] ?? 99);
+      return sortDir * r;
+    }
+    if (sortKey === 'number') {
+      const an = parseInt(a.number, 10), bn = parseInt(b.number, 10);
+      if (!isNaN(an) && !isNaN(bn) && an !== bn) return sortDir * (an - bn);
+      return sortDir * String(a.number).localeCompare(String(b.number));
+    }
+    // default: rarity then number ascending
     const r = (RARITY_ORDER[a.rarity] ?? 99) - (RARITY_ORDER[b.rarity] ?? 99);
     if (r) return r;
-    const an = parseInt(a.number, 10);
-    const bn = parseInt(b.number, 10);
+    const an = parseInt(a.number, 10), bn = parseInt(b.number, 10);
     if (!isNaN(an) && !isNaN(bn) && an !== bn) return an - bn;
     return String(a.number).localeCompare(String(b.number));
-  });
+  }
 
-  // Render UI
+  // Title row + subtitle
   titleEl.textContent = prodDef.name;
   subtitle.textContent = `${gameDef.name} · ${setDef.name}`;
   cfgMultHint.textContent = prodDef.kind === 'case'
     ? `Each unit = the full case (${deckRefs.length} decks)`
     : '1 = open one of this product';
   document.title = `${prodDef.name} | ${document.title.split('|').pop().trim()}`;
+
+  // Show/hide MTG-only UI
+  if (isMtg) {
+    btnCsvMp.classList.remove('d-none');
+    colMpMkt.classList.remove('d-none');
+    colMpList.classList.remove('d-none');
+    if (hasManapool) {
+      btnSmart.classList.remove('d-none');
+      cfgRoutingWrap.classList.remove('d-none');
+    }
+  }
 
   function listPriceFor(market) {
     if (market == null) return null;
@@ -130,23 +182,43 @@
     return Math.round(market * 100) / 100;
   }
 
+  function tcgPlayerUrl(id) {
+    return id == null ? null : `https://www.tcgplayer.com/product/${id}`;
+  }
+
+  function nameCellHtml(r) {
+    const url = tcgPlayerUrl(r.tcgplayer_id);
+    const nameNode = url
+      ? `<a href="${url}" target="_blank" rel="noopener">${r.name}</a>`
+      : r.name;
+    const badge = r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>';
+    return nameNode + badge;
+  }
+
   function render() {
     const mult = Math.max(1, parseInt(cfgMult.value, 10) || 1);
+    rows.sort(compareRows);
     tbody.innerHTML = '';
     let nCards = 0, totalQty = 0, sumMkt = 0, sumListed = 0;
     rows.forEach((r, idx) => {
       const addQty = r.qPerUnit * mult;
-      const list   = listPriceFor(r.market);
+      const tcgList = listPriceFor(r.tcgMkt);
+      const mpList  = listPriceFor(r.mpMkt);
       const tr = document.createElement('tr');
       tr.className = 'card-row';
       tr.innerHTML = `
         <td><span class="rarity-badge rarity-${r.rarity}">${RARITY_LABEL[r.rarity] || r.rarity}</span></td>
         <td class="text-muted">${r.number}</td>
-        <td>${r.name}${r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>'}</td>
-        <td class="text-end">${r.market != null ? '$' + r.market.toFixed(2) : '<span class="text-muted">—</span>'}</td>
+        <td>${nameCellHtml(r)}</td>
+        <td class="text-end">${r.tcgMkt != null ? '$' + r.tcgMkt.toFixed(2) : '<span class="text-muted">—</span>'}</td>
+        <td class="text-end col-mp-mkt ${isMtg ? '' : 'd-none'}">${r.mpMkt != null ? '$' + r.mpMkt.toFixed(2) : '<span class="text-muted">—</span>'}</td>
         <td class="text-end">
-          <input type="number" min="0" step="0.01" class="form-control form-control-sm text-end js-list-price"
-                 data-idx="${idx}" value="${list != null ? list.toFixed(2) : ''}">
+          <input type="number" min="0" step="0.01" class="form-control form-control-sm text-end js-list-price-tcg"
+                 data-idx="${idx}" value="${tcgList != null ? tcgList.toFixed(2) : ''}">
+        </td>
+        <td class="text-end col-mp-list ${isMtg ? '' : 'd-none'}">
+          <input type="number" min="0" step="0.01" class="form-control form-control-sm text-end js-list-price-mp"
+                 data-idx="${idx}" value="${mpList != null ? mpList.toFixed(2) : ''}">
         </td>
         <td class="text-end">
           <input type="number" min="0" step="1" class="form-control form-control-sm text-end qty-input ms-auto js-add-qty"
@@ -155,8 +227,8 @@
       tbody.appendChild(tr);
       if (r.tcgplayer_id) nCards += 1;
       totalQty += addQty;
-      if (r.market != null) sumMkt += r.market * addQty;
-      if (list != null) sumListed += list * addQty;
+      if (r.tcgMkt != null) sumMkt += r.tcgMkt * addQty;
+      if (tcgList != null) sumListed += tcgList * addQty;
     });
     document.getElementById('sum-cards').textContent  = nCards;
     document.getElementById('sum-qty').textContent    = totalQty;
@@ -164,24 +236,39 @@
     document.getElementById('sum-listed').textContent = '$' + sumListed.toFixed(2);
     btnCsv.disabled = nCards === 0;
     btnCsvMp.disabled = nCards === 0;
+    btnSmart.disabled = nCards === 0;
+    updateSortIndicators();
   }
 
   function updateSummary() {
     let totalQty = 0, sumMkt = 0, sumListed = 0;
     document.querySelectorAll('tr.card-row').forEach(tr => {
       const qInput = tr.querySelector('.js-add-qty');
-      const lInput = tr.querySelector('.js-list-price');
+      const lInput = tr.querySelector('.js-list-price-tcg');
       const idx = parseInt(qInput.dataset.idx, 10);
       const r = rows[idx];
       const q = parseInt(qInput.value, 10) || 0;
       const l = parseFloat(lInput.value);
       totalQty += q;
-      if (r.market != null) sumMkt += r.market * q;
+      if (r.tcgMkt != null) sumMkt += r.tcgMkt * q;
       if (!isNaN(l)) sumListed += l * q;
     });
     document.getElementById('sum-qty').textContent    = totalQty;
     document.getElementById('sum-market').textContent = '$' + sumMkt.toFixed(2);
     document.getElementById('sum-listed').textContent = '$' + sumListed.toFixed(2);
+  }
+
+  function updateSortIndicators() {
+    thead.querySelectorAll('th[data-sort-key]').forEach(th => {
+      const key = th.dataset.sortKey;
+      const indicator = th.querySelector('.sort-indicator');
+      if (!indicator) return;
+      if (sortKey === key) {
+        indicator.textContent = sortDir === 1 ? '▲' : '▼';
+      } else {
+        indicator.textContent = '';
+      }
+    });
   }
 
   cfgStrat.addEventListener('change', () => {
@@ -190,47 +277,119 @@
   btnRecalc.addEventListener('click', render);
   cfgMult.addEventListener('change', render);
 
-  tbody.addEventListener('input', e => {
-    if (e.target.matches('.js-add-qty, .js-list-price')) updateSummary();
+  thead.addEventListener('click', e => {
+    const th = e.target.closest('th[data-sort-key]');
+    if (!th) return;
+    const key = th.dataset.sortKey;
+    if (sortKey === key) {
+      sortDir = -sortDir;
+    } else {
+      sortKey = key;
+      sortDir = 1;
+    }
+    render();
   });
 
-  function collectExportRows() {
-    const exportRows = [];
-    document.querySelectorAll('tr.card-row').forEach(tr => {
+  tbody.addEventListener('input', e => {
+    if (e.target.matches('.js-add-qty, .js-list-price-tcg')) updateSummary();
+  });
+
+  function rowExportData() {
+    return Array.from(document.querySelectorAll('tr.card-row')).map(tr => {
       const qInput = tr.querySelector('.js-add-qty');
-      const lInput = tr.querySelector('.js-list-price');
+      const tcgInput = tr.querySelector('.js-list-price-tcg');
+      const mpInput  = tr.querySelector('.js-list-price-mp');
       const idx = parseInt(qInput.dataset.idx, 10);
       const r = rows[idx];
       const addQty = parseInt(qInput.value, 10) || 0;
-      if (!r.tcgplayer_id || addQty <= 0) return;
-      const listPrice = parseFloat(lInput.value);
-      exportRows.push({
-        tcgplayer_id: r.tcgplayer_id,
+      const tcgList = parseFloat(tcgInput.value);
+      const mpList  = mpInput ? parseFloat(mpInput.value) : NaN;
+      return {
+        row: r,
         addQty,
-        listPrice: isNaN(listPrice) ? '' : listPrice.toFixed(2),
-      });
+        tcgList: isNaN(tcgList) ? null : tcgList,
+        mpList:  isNaN(mpList)  ? null : mpList,
+      };
     });
-    return exportRows;
   }
 
-  function exportAs(marketplace) {
-    const exportRows = collectExportRows();
-    if (exportRows.length === 0) {
-      showToast('Nothing to export — every row is qty 0 or missing a TCGplayer Id.', 'warning');
-      return;
-    }
+  function downloadStamped(marketplace, csvRows) {
     const stamp = new Date().toISOString().slice(0, 10);
     const qtyHeader = marketplace === 'manapool' ? 'Total Quantity' : 'Add to Quantity';
     const filename  = `${marketplace}_${game}_${setCode}_${product}_${stamp}.csv`;
-    downloadCsv(filename, buildCsv(exportRows, qtyHeader));
-    showToast(`Exported ${exportRows.length} row${exportRows.length === 1 ? '' : 's'} for ${marketplace}.`, 'success');
+    downloadCsv(filename, buildCsv(csvRows, qtyHeader));
   }
 
-  btnCsv.addEventListener('click',   () => exportAs('tcgplayer'));
-  btnCsvMp.addEventListener('click', () => exportAs('manapool'));
+  function exportSingle(marketplace) {
+    const data = rowExportData();
+    const csvRows = [];
+    for (const d of data) {
+      if (!d.row.tcgplayer_id || d.addQty <= 0) continue;
+      const list = marketplace === 'manapool' ? d.mpList : d.tcgList;
+      if (list == null) continue;
+      csvRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: list.toFixed(2) });
+    }
+    if (csvRows.length === 0) {
+      showToast('Nothing to export — every row is qty 0 or missing a list price.', 'warning');
+      return;
+    }
+    downloadStamped(marketplace, csvRows);
+    showToast(`Exported ${csvRows.length} row${csvRows.length === 1 ? '' : 's'} for ${marketplace}.`, 'success');
+  }
 
-  // Manapool button is MTG-only
-  if (game === 'mtg') btnCsvMp.classList.remove('d-none');
+  function exportSmart() {
+    const data = rowExportData();
+    const defaultMkt = cfgDefaultMkt.value; // 'tcgplayer' or 'manapool'
+    const thresholdPct = parseFloat(cfgThreshold.value);
+    const threshold = (isNaN(thresholdPct) ? 5 : thresholdPct) / 100;
+
+    const tcgRows = [], mpRows = [];
+    let routedToOther = 0;
+
+    for (const d of data) {
+      if (!d.row.tcgplayer_id || d.addQty <= 0) continue;
+
+      const tcgNet = d.tcgList != null ? d.tcgList * (1 - TCG_FEE_RATE) : null;
+      const mpNet  = d.mpList  != null ? d.mpList  * (1 - MP_FEE_RATE)  : null;
+
+      let target = defaultMkt;
+      if (defaultMkt === 'tcgplayer') {
+        if (tcgNet == null && mpNet != null) target = 'manapool';
+        else if (tcgNet != null && mpNet != null && mpNet >= tcgNet * (1 + threshold)) {
+          target = 'manapool';
+          routedToOther += 1;
+        }
+      } else {
+        if (mpNet == null && tcgNet != null) target = 'tcgplayer';
+        else if (mpNet != null && tcgNet != null && tcgNet >= mpNet * (1 + threshold)) {
+          target = 'tcgplayer';
+          routedToOther += 1;
+        }
+      }
+
+      if (target === 'tcgplayer' && d.tcgList != null) {
+        tcgRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.tcgList.toFixed(2) });
+      } else if (target === 'manapool' && d.mpList != null) {
+        mpRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.mpList.toFixed(2) });
+      }
+    }
+
+    if (tcgRows.length === 0 && mpRows.length === 0) {
+      showToast('Nothing to export — every row is qty 0 or missing both list prices.', 'warning');
+      return;
+    }
+    if (tcgRows.length) downloadStamped('tcgplayer', tcgRows);
+    if (mpRows.length)  downloadStamped('manapool',  mpRows);
+    showToast(
+      `Smart route: ${tcgRows.length} TCGPlayer + ${mpRows.length} Mana Pool` +
+      (routedToOther ? ` (${routedToOther} rerouted from default)` : ''),
+      'success'
+    );
+  }
+
+  btnCsv.addEventListener('click',   () => exportSingle('tcgplayer'));
+  btnCsvMp.addEventListener('click', () => exportSingle('manapool'));
+  btnSmart.addEventListener('click', exportSmart);
 
   render();
   content.classList.remove('d-none');
