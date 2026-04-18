@@ -9,7 +9,9 @@ pre-populated with every card in the precon deck or set.
 - **Hugo** + custom theme (`themes/sorting-hat/`), Bootstrap 5
 - **Deploy:** GitHub Pages via `.github/workflows/deploy.yml`
 - **Data reads:** card metadata + market prices loaded at runtime from the
-  `collection-market-tracker-data` repo (GCS first, GitHub Raw fallback)
+  `collection-market-tracker-data` repo (GCS first, GitHub Raw fallback).
+  TCGPlayer prices via `tcgplayer-latest-prices.json`; MTG Mana Pool prices
+  via `manapool-latest-prices.json` (used for smart-routed CSV exports)
 - **Deck composition:** committed JSON files under `data/decks/` — manual edits,
   no runtime third-party API dependency
 

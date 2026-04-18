@@ -25,8 +25,8 @@
         <div class="col-sm-4">
           <label for="cfg-price-strategy" class="form-label">Listing price</label>
           <select id="cfg-price-strategy" class="form-select">
-            <option value="market" selected>= TCG Market Price</option>
-            <option value="market-pct">TCG Market × multiplier</option>
+            <option value="market" selected>= Market Price</option>
+            <option value="market-pct">Market × multiplier</option>
           </select>
         </div>
         <div class="col-sm-4" id="cfg-price-pct-wrap" hidden>
@@ -39,6 +39,24 @@
           </button>
         </div>
       </div>
+
+      <div id="cfg-routing-wrap" class="d-none mt-3 pt-3 border-top">
+        <h2 class="h6 text-muted text-uppercase mb-3">Smart marketplace routing</h2>
+        <div class="row g-3">
+          <div class="col-sm-4">
+            <label for="cfg-default-marketplace" class="form-label">Default marketplace</label>
+            <select id="cfg-default-marketplace" class="form-select">
+              <option value="tcgplayer" selected>TCGPlayer (13.25% fee)</option>
+              <option value="manapool">Mana Pool (7.9% fee)</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <label for="cfg-routing-threshold" class="form-label">Reroute threshold (%)</label>
+            <input id="cfg-routing-threshold" type="number" class="form-control" value="5" min="0" step="0.5">
+            <div class="form-text">Cards land on the other marketplace only if its net is this much better.</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -46,13 +64,15 @@
     <div class="card-body p-0">
       <div class="table-responsive">
         <table class="table table-striped mb-0 align-middle">
-          <thead class="table-dark">
+          <thead class="table-dark" id="card-thead">
             <tr>
-              <th style="width: 6rem">Rarity</th>
-              <th style="width: 4rem">No.</th>
-              <th>Name</th>
-              <th class="text-end" style="width: 7rem">Market</th>
-              <th class="text-end" style="width: 8rem">List Price</th>
+              <th class="user-select-none" role="button" data-sort-key="rarity" style="width: 6rem">Rarity <span class="sort-indicator small"></span></th>
+              <th class="user-select-none" role="button" data-sort-key="number" style="width: 4rem">No. <span class="sort-indicator small"></span></th>
+              <th class="user-select-none" role="button" data-sort-key="name">Name <span class="sort-indicator small"></span></th>
+              <th class="text-end" style="width: 7rem">TCG Mkt</th>
+              <th id="col-mp-mkt" class="text-end d-none" style="width: 7rem">MP Mkt</th>
+              <th class="text-end" style="width: 8rem">TCG List</th>
+              <th id="col-mp-list" class="text-end d-none" style="width: 8rem">MP List</th>
               <th class="text-end" style="width: 7rem">Add Qty</th>
             </tr>
           </thead>
@@ -68,16 +88,20 @@
     <div class="small">
       <span class="me-3"><strong id="sum-cards">0</strong> unique cards</span>
       <span class="me-3"><strong id="sum-qty">0</strong> total qty</span>
-      <span class="me-3">Sum market: <strong id="sum-market">$0.00</strong></span>
-      <span>Sum listed: <strong id="sum-listed">$0.00</strong></span>
+      <span class="me-3">Sum TCG market: <strong id="sum-market">$0.00</strong></span>
+      <span>Sum TCG listed: <strong id="sum-listed">$0.00</strong></span>
     </div>
-    <div class="d-flex gap-2">
+    <div class="d-flex gap-2 flex-wrap">
       <button id="btn-csv" class="btn btn-success" disabled>
-        <i class="bi bi-download"></i> Download TCGPlayer CSV
+        <i class="bi bi-download"></i> TCGPlayer CSV
       </button>
       <button id="btn-csv-manapool" class="btn btn-success d-none" disabled
               title="Manapool uses Total Quantity, which replaces existing stock — review before re-uploading.">
-        <i class="bi bi-download"></i> Download Manapool CSV
+        <i class="bi bi-download"></i> Mana Pool CSV
+      </button>
+      <button id="btn-csv-smart" class="btn btn-primary d-none" disabled
+              title="Routes each card to whichever marketplace yields a better net after fees, given the threshold.">
+        <i class="bi bi-arrow-left-right"></i> Smart Route → 2 CSVs
       </button>
     </div>
   </div>
