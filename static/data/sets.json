@@ -5,44 +5,170 @@
       "name": "Magic: The Gathering",
       "sets": [
         {
+          "code": "blc",
+          "name": "Bloomburrow Commander",
+          "products": [
+            {
+              "type": "commander-deck-squirreled-away",
+              "name": "Squirreled Away \u2014 Commander Deck",
+              "deck_file": "mtg-blc-commander-deck-squirreled-away.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-family-matters",
+              "name": "Family Matters \u2014 Commander Deck",
+              "deck_file": "mtg-blc-commander-deck-family-matters.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-peace-offering",
+              "name": "Peace Offering \u2014 Commander Deck",
+              "deck_file": "mtg-blc-commander-deck-peace-offering.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-animated-army",
+              "name": "Animated Army \u2014 Commander Deck",
+              "deck_file": "mtg-blc-commander-deck-animated-army.json",
+              "kind": "deck"
+            }
+          ]
+        },
+        {
+          "code": "eoc",
+          "name": "Edge of Eternities Commander",
+          "products": [
+            {
+              "type": "commander-deck-world-shaper",
+              "name": "World Shaper \u2014 Commander Deck",
+              "deck_file": "mtg-eoc-commander-deck-world-shaper.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-counter-intelligence",
+              "name": "Counter Intelligence \u2014 Commander Deck",
+              "deck_file": "mtg-eoc-commander-deck-counter-intelligence.json",
+              "kind": "deck"
+            }
+          ]
+        },
+        {
           "code": "fic",
           "name": "Final Fantasy Commander",
           "release_date": "2025-06-13",
           "products": [
             {
               "type": "commander-deck-counter-blitz-final-fantasy-x",
-              "name": "Counter Blitz (Final Fantasy X) — Commander Deck",
+              "name": "Counter Blitz (Final Fantasy X) \u00e2\u20ac\u201d Commander Deck",
               "deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",
               "kind": "deck"
             },
             {
               "type": "commander-deck-limit-break-final-fantasy-vii",
-              "name": "Limit Break (Final Fantasy VII) — Commander Deck",
+              "name": "Limit Break (Final Fantasy VII) \u00e2\u20ac\u201d Commander Deck",
               "deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",
               "kind": "deck"
             },
             {
               "type": "commander-deck-revival-trance-final-fantasy-vi",
-              "name": "Revival Trance (Final Fantasy VI) — Commander Deck",
+              "name": "Revival Trance (Final Fantasy VI) \u00e2\u20ac\u201d Commander Deck",
               "deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",
               "kind": "deck"
             },
             {
               "type": "commander-deck-scions-and-spellcraft-final-fantasy-xiv",
-              "name": "Scions & Spellcraft (Final Fantasy XIV) — Commander Deck",
+              "name": "Scions & Spellcraft (Final Fantasy XIV) \u00e2\u20ac\u201d Commander Deck",
               "deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json",
               "kind": "deck"
             },
             {
               "type": "commander-case-all-four-decks",
-              "name": "Case — One of Each Commander Deck (4)",
+              "name": "Case \u00e2\u20ac\u201d One of Each Commander Deck (4)",
               "kind": "case",
               "components": [
-                {"deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",         "quantity": 1},
-                {"deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",         "quantity": 1},
-                {"deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",       "quantity": 1},
-                {"deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json","quantity": 1}
+                {
+                  "deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json",
+                  "quantity": 1
+                }
               ]
+            }
+          ]
+        },
+        {
+          "code": "tdc",
+          "name": "Tarkir: Dragonstorm Commander",
+          "products": [
+            {
+              "type": "commander-deck-abzan-armor",
+              "name": "Abzan Armor \u2014 Commander Deck",
+              "deck_file": "mtg-tdc-commander-deck-abzan-armor.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-jeskai-striker",
+              "name": "Jeskai Striker \u2014 Commander Deck",
+              "deck_file": "mtg-tdc-commander-deck-jeskai-striker.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-sultai-arisen",
+              "name": "Sultai Arisen \u2014 Commander Deck",
+              "deck_file": "mtg-tdc-commander-deck-sultai-arisen.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-mardu-surge",
+              "name": "Mardu Surge \u2014 Commander Deck",
+              "deck_file": "mtg-tdc-commander-deck-mardu-surge.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-temur-roar",
+              "name": "Temur Roar \u2014 Commander Deck",
+              "deck_file": "mtg-tdc-commander-deck-temur-roar.json",
+              "kind": "deck"
+            }
+          ]
+        },
+        {
+          "code": "who",
+          "name": "Doctor Who",
+          "products": [
+            {
+              "type": "commander-deck-blast-from-the-past",
+              "name": "Blast from the Past \u2014 Commander Deck",
+              "deck_file": "mtg-who-commander-deck-blast-from-the-past.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-timey-wimey",
+              "name": "Timey-Wimey \u2014 Commander Deck",
+              "deck_file": "mtg-who-commander-deck-timey-wimey.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-paradox-power",
+              "name": "Paradox Power \u2014 Commander Deck",
+              "deck_file": "mtg-who-commander-deck-paradox-power.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-masters-of-evil",
+              "name": "Masters of Evil \u2014 Commander Deck",
+              "deck_file": "mtg-who-commander-deck-masters-of-evil.json",
+              "kind": "deck"
             }
           ]
         }

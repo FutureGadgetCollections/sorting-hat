@@ -1,0 +1,345 @@
+{
+  "game": "mtg",
+  "set_code": "eoc",
+  "product_type": "commander-deck-world-shaper",
+  "name": "World Shaper",
+  "source": "https://magic.wizards.com/en/news/announcements/eoc-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "1",
+      "quantity": 1
+    },
+    {
+      "card_number": "4",
+      "quantity": 1
+    },
+    {
+      "card_number": "8",
+      "quantity": 1
+    },
+    {
+      "card_number": "10",
+      "quantity": 1
+    },
+    {
+      "card_number": "12",
+      "quantity": 1
+    },
+    {
+      "card_number": "13",
+      "quantity": 1
+    },
+    {
+      "card_number": "14",
+      "quantity": 1
+    },
+    {
+      "card_number": "15",
+      "quantity": 1
+    },
+    {
+      "card_number": "16",
+      "quantity": 1
+    },
+    {
+      "card_number": "20",
+      "quantity": 1
+    },
+    {
+      "card_number": "21",
+      "quantity": 1
+    },
+    {
+      "card_number": "24",
+      "quantity": 1
+    },
+    {
+      "card_number": "60",
+      "quantity": 1
+    },
+    {
+      "card_number": "82",
+      "quantity": 1
+    },
+    {
+      "card_number": "83",
+      "quantity": 1
+    },
+    {
+      "card_number": "86",
+      "quantity": 1
+    },
+    {
+      "card_number": "88",
+      "quantity": 1
+    },
+    {
+      "card_number": "89",
+      "quantity": 1
+    },
+    {
+      "card_number": "92",
+      "quantity": 1
+    },
+    {
+      "card_number": "94",
+      "quantity": 1
+    },
+    {
+      "card_number": "96",
+      "quantity": 1
+    },
+    {
+      "card_number": "99",
+      "quantity": 1
+    },
+    {
+      "card_number": "100",
+      "quantity": 1
+    },
+    {
+      "card_number": "102",
+      "quantity": 1
+    },
+    {
+      "card_number": "103",
+      "quantity": 1
+    },
+    {
+      "card_number": "104",
+      "quantity": 1
+    },
+    {
+      "card_number": "108",
+      "quantity": 1
+    },
+    {
+      "card_number": "110",
+      "quantity": 1
+    },
+    {
+      "card_number": "111",
+      "quantity": 1
+    },
+    {
+      "card_number": "112",
+      "quantity": 1
+    },
+    {
+      "card_number": "115",
+      "quantity": 1
+    },
+    {
+      "card_number": "116",
+      "quantity": 1
+    },
+    {
+      "card_number": "117",
+      "quantity": 1
+    },
+    {
+      "card_number": "120",
+      "quantity": 1
+    },
+    {
+      "card_number": "122",
+      "quantity": 1
+    },
+    {
+      "card_number": "123",
+      "quantity": 1
+    },
+    {
+      "card_number": "126",
+      "quantity": 1
+    },
+    {
+      "card_number": "129",
+      "quantity": 1
+    },
+    {
+      "card_number": "130",
+      "quantity": 1
+    },
+    {
+      "card_number": "152",
+      "quantity": 1
+    },
+    {
+      "card_number": "154",
+      "quantity": 1
+    },
+    {
+      "card_number": "164",
+      "quantity": 1
+    },
+    {
+      "card_number": "165",
+      "quantity": 1
+    },
+    {
+      "card_number": "178",
+      "quantity": 1
+    },
+    {
+      "card_number": "182",
+      "quantity": 1
+    },
+    {
+      "card_number": "185",
+      "quantity": 1
+    },
+    {
+      "card_number": "189",
+      "quantity": 1
+    },
+    {
+      "card_number": "190",
+      "quantity": 1
+    },
+    {
+      "card_number": "50",
+      "quantity": 1
+    },
+    {
+      "card_number": "51",
+      "quantity": 1
+    },
+    {
+      "card_number": "52",
+      "quantity": 1
+    },
+    {
+      "card_number": "53",
+      "quantity": 1
+    },
+    {
+      "card_number": "57",
+      "quantity": 1
+    },
+    {
+      "card_number": "59",
+      "quantity": 1
+    },
+    {
+      "card_number": "61",
+      "quantity": 1
+    },
+    {
+      "card_number": "62",
+      "quantity": 1
+    },
+    {
+      "card_number": "84",
+      "quantity": 1
+    },
+    {
+      "card_number": "85",
+      "quantity": 1
+    },
+    {
+      "card_number": "90",
+      "quantity": 1
+    },
+    {
+      "card_number": "91",
+      "quantity": 1
+    },
+    {
+      "card_number": "93",
+      "quantity": 1
+    },
+    {
+      "card_number": "95",
+      "quantity": 1
+    },
+    {
+      "card_number": "97",
+      "quantity": 1
+    },
+    {
+      "card_number": "98",
+      "quantity": 1
+    },
+    {
+      "card_number": "101",
+      "quantity": 1
+    },
+    {
+      "card_number": "105",
+      "quantity": 1
+    },
+    {
+      "card_number": "106",
+      "quantity": 1
+    },
+    {
+      "card_number": "107",
+      "quantity": 1
+    },
+    {
+      "card_number": "109",
+      "quantity": 1
+    },
+    {
+      "card_number": "119",
+      "quantity": 1
+    },
+    {
+      "card_number": "121",
+      "quantity": 1
+    },
+    {
+      "card_number": "124",
+      "quantity": 1
+    },
+    {
+      "card_number": "125",
+      "quantity": 1
+    },
+    {
+      "card_number": "127",
+      "quantity": 1
+    },
+    {
+      "card_number": "149",
+      "quantity": 1
+    },
+    {
+      "card_number": "151",
+      "quantity": 1
+    },
+    {
+      "card_number": "156",
+      "quantity": 1
+    },
+    {
+      "card_number": "157",
+      "quantity": 1
+    },
+    {
+      "card_number": "158",
+      "quantity": 1
+    },
+    {
+      "card_number": "167",
+      "quantity": 1
+    },
+    {
+      "card_number": "169",
+      "quantity": 1
+    },
+    {
+      "card_number": "172",
+      "quantity": 1
+    },
+    {
+      "card_number": "173",
+      "quantity": 1
+    },
+    {
+      "card_number": "191",
+      "quantity": 1
+    }
+  ]
+}
