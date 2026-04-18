@@ -3,7 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-limit-break-final-fantasy-vii",
   "name": "Limit Break (Final Fantasy VII)",
-  "source": "scryfall promo_type=ffvii (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist",
+  "source": "scryfall promo_type=ffvii (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist + bulk-resolved against FIC catalog",
   "cards": [
     {
       "card_number": "2",
@@ -103,6 +103,10 @@
     },
     {
       "card_number": "100",
+      "quantity": 1
+    },
+    {
+      "card_number": "217",
       "quantity": 1
     },
     {
@@ -250,11 +254,19 @@
       "quantity": 1
     },
     {
+      "card_number": "374",
+      "quantity": 1
+    },
+    {
       "card_number": "375",
       "quantity": 1
     },
     {
       "card_number": "376",
+      "quantity": 1
+    },
+    {
+      "card_number": "377",
       "quantity": 1
     },
     {
@@ -267,6 +279,14 @@
     },
     {
       "card_number": "381",
+      "quantity": 1
+    },
+    {
+      "card_number": "389",
+      "quantity": 1
+    },
+    {
+      "card_number": "390",
       "quantity": 1
     },
     {
@@ -298,11 +318,23 @@
       "quantity": 1
     },
     {
+      "card_number": "414",
+      "quantity": 1
+    },
+    {
       "card_number": "416",
       "quantity": 1
     },
     {
       "card_number": "417",
+      "quantity": 1
+    },
+    {
+      "card_number": "418",
+      "quantity": 1
+    },
+    {
+      "card_number": "419",
       "quantity": 1
     },
     {
@@ -315,6 +347,14 @@
     },
     {
       "card_number": "428",
+      "quantity": 1
+    },
+    {
+      "card_number": "432",
+      "quantity": 1
+    },
+    {
+      "card_number": "433",
       "quantity": 1
     },
     {

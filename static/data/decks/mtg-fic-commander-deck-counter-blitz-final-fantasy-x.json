@@ -3,7 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-counter-blitz-final-fantasy-x",
   "name": "Counter Blitz (Final Fantasy X)",
-  "source": "scryfall promo_type=ffx (one printing per card name, preferring catalog matches)",
+  "source": "scryfall promo_type=ffx (one printing per card name, preferring catalog matches) + bulk-resolved against FIC catalog",
   "cards": [
     {
       "card_number": "5",
@@ -258,7 +258,15 @@
       "quantity": 1
     },
     {
+      "card_number": "374",
+      "quantity": 1
+    },
+    {
       "card_number": "377",
+      "quantity": 1
+    },
+    {
+      "card_number": "378",
       "quantity": 1
     },
     {
@@ -278,6 +286,14 @@
       "quantity": 1
     },
     {
+      "card_number": "396",
+      "quantity": 1
+    },
+    {
+      "card_number": "400",
+      "quantity": 1
+    },
+    {
       "card_number": "403",
       "quantity": 1
     },
@@ -294,7 +310,15 @@
       "quantity": 1
     },
     {
+      "card_number": "411",
+      "quantity": 1
+    },
+    {
       "card_number": "412",
+      "quantity": 1
+    },
+    {
+      "card_number": "413",
       "quantity": 1
     },
     {
@@ -303,6 +327,14 @@
     },
     {
       "card_number": "420",
+      "quantity": 1
+    },
+    {
+      "card_number": "423",
+      "quantity": 1
+    },
+    {
+      "card_number": "428",
       "quantity": 1
     },
     {
