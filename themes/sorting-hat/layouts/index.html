@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <h1 class="mb-3">The Sorting Hat</h1>
+    <p class="text-muted">
+      Pick a sealed product, configure your listings, and download a TCGPlayer
+      mass-upload CSV pre-populated with every card it contains.
+    </p>
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Pick a product</h2>
+
+        <div class="mb-3">
+          <label for="picker-game" class="form-label">Game</label>
+          <select id="picker-game" class="form-select" disabled>
+            <option>Loading…</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="picker-set" class="form-label">Set</label>
+          <select id="picker-set" class="form-select" disabled>
+            <option value="">Choose a game first</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="picker-product" class="form-label">Product</label>
+          <select id="picker-product" class="form-select" disabled>
+            <option value="">Choose a set first</option>
+          </select>
+        </div>
+
+        <button id="picker-go" class="btn btn-primary" disabled>
+          Open builder <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "page-scripts" }}
+<script src="{{ "js/picker.js" | relURL }}"></script>
+{{ end }}

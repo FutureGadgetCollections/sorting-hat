@@ -1,0 +1,27 @@
+.toast-container { z-index: 1200; }
+
+.rarity-badge {
+  display: inline-block;
+  min-width: 4.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.rarity-mythic   { background: #d35400; color: #fff; }
+.rarity-rare     { background: #c09a3e; color: #fff; }
+.rarity-uncommon { background: #6c7a89; color: #fff; }
+.rarity-common   { background: #2c3e50; color: #fff; }
+
+.qty-input {
+  width: 5rem;
+}
+.card-row td { vertical-align: middle; }
+
+.builder-summary {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #dee2e6;
+  z-index: 100;
+}

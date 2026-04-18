@@ -1,0 +1,52 @@
+{
+  "games": [
+    {
+      "code": "mtg",
+      "name": "Magic: The Gathering",
+      "sets": [
+        {
+          "code": "fic",
+          "name": "Final Fantasy Commander",
+          "release_date": "2025-06-13",
+          "products": [
+            {
+              "type": "commander-deck-counter-blitz-final-fantasy-x",
+              "name": "Counter Blitz (Final Fantasy X) — Commander Deck",
+              "deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-limit-break-final-fantasy-vii",
+              "name": "Limit Break (Final Fantasy VII) — Commander Deck",
+              "deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-revival-trance-final-fantasy-vi",
+              "name": "Revival Trance (Final Fantasy VI) — Commander Deck",
+              "deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-scions-and-spellcraft-final-fantasy-xiv",
+              "name": "Scions & Spellcraft (Final Fantasy XIV) — Commander Deck",
+              "deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-case-all-four-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {"deck_file": "mtg-fic-commander-deck-counter-blitz-final-fantasy-x.json",         "quantity": 1},
+                {"deck_file": "mtg-fic-commander-deck-limit-break-final-fantasy-vii.json",         "quantity": 1},
+                {"deck_file": "mtg-fic-commander-deck-revival-trance-final-fantasy-vi.json",       "quantity": 1},
+                {"deck_file": "mtg-fic-commander-deck-scions-and-spellcraft-final-fantasy-xiv.json","quantity": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

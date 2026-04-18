@@ -1,0 +1,5 @@
+name = "sorting-hat"
+license = "MIT"
+description = "Theme for The Sorting Hat — TCGPlayer mass-upload CSV builder"
+homepage = "https://github.com/FutureGadgetCollections/sorting-hat"
+min_version = "0.110.0"

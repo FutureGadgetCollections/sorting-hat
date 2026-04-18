@@ -1,0 +1,32 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "The Sorting Hat"
+theme = "sorting-hat"
+
+[params]
+  description = "Generate TCGPlayer mass-upload CSVs for sealed-product breaks"
+
+  # Firebase config (placeholder for future paywall) — nested to match HUGO_PARAMS_FIREBASE_* env vars
+  [params.firebase.api]
+    key = ""
+  [params.firebase.auth]
+    domain = ""
+  [params.firebase.project]
+    id = ""
+  [params.firebase.storage]
+    bucket = ""
+  [params.firebase.messaging.sender]
+    id = ""
+  [params.firebase.app]
+    id = ""
+
+  # Static data sources — maps to HUGO_PARAMS_GCS_DATA_BUCKET / HUGO_PARAMS_GITHUB_DATA_REPO
+  [params.gcs.data]
+    bucket = ""
+  [params.github.data]
+    repo = "FutureGadgetCollections/collection-market-tracker-data"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
