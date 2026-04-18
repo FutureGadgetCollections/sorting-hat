@@ -17,56 +17,23 @@
     <div class="card-body">
       <h2 class="h6 text-muted text-uppercase mb-3">Configure</h2>
       <div class="row g-3">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label for="cfg-multiplier" class="form-label">How many to open</label>
           <input id="cfg-multiplier" type="number" class="form-control" value="1" min="1" step="1">
           <div class="form-text" id="cfg-multiplier-hint"></div>
         </div>
-        <div class="col-sm-3">
-          <label for="cfg-condition" class="form-label">Condition</label>
-          <select id="cfg-condition" class="form-select">
-            <option value="Near Mint" selected>Near Mint</option>
-            <option value="Lightly Played">Lightly Played</option>
-            <option value="Moderately Played">Moderately Played</option>
-            <option value="Heavily Played">Heavily Played</option>
-            <option value="Damaged">Damaged</option>
-          </select>
-        </div>
-        <div class="col-sm-3">
-          <label for="cfg-printing" class="form-label">Printing</label>
-          <select id="cfg-printing" class="form-select">
-            <option value="Normal" selected>Normal</option>
-            <option value="Foil">Foil</option>
-          </select>
-        </div>
-        <div class="col-sm-3">
-          <label for="cfg-language" class="form-label">Language</label>
-          <select id="cfg-language" class="form-select">
-            <option value="English" selected>English</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Chinese (S)">Chinese (S)</option>
-            <option value="Chinese (T)">Chinese (T)</option>
-            <option value="French">French</option>
-            <option value="German">German</option>
-            <option value="Italian">Italian</option>
-            <option value="Korean">Korean</option>
-            <option value="Portuguese">Portuguese</option>
-            <option value="Russian">Russian</option>
-            <option value="Spanish">Spanish</option>
-          </select>
-        </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <label for="cfg-price-strategy" class="form-label">Listing price</label>
           <select id="cfg-price-strategy" class="form-select">
             <option value="market" selected>= TCG Market Price</option>
             <option value="market-pct">TCG Market × multiplier</option>
           </select>
         </div>
-        <div class="col-sm-3" id="cfg-price-pct-wrap" hidden>
+        <div class="col-sm-4" id="cfg-price-pct-wrap" hidden>
           <label for="cfg-price-pct" class="form-label">Multiplier (%)</label>
           <input id="cfg-price-pct" type="number" class="form-control" value="100" min="1" step="1">
         </div>
-        <div class="col-sm-3 d-flex align-items-end">
+        <div class="col-sm-4 d-flex align-items-end">
           <button id="btn-recalc" type="button" class="btn btn-outline-secondary w-100">
             Recalculate
           </button>

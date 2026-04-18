@@ -5,18 +5,6 @@
 
 const CSV_HEADERS = [
   'TCGplayer Id',
-  'Product Line',
-  'Set Name',
-  'Product Name',
-  'Title',
-  'Number',
-  'Rarity',
-  'Condition',
-  'TCG Market Price',
-  'TCG Direct Low',
-  'TCG Low Price With Shipping',
-  'TCG Low Price',
-  'Total Quantity',
   'Add to Quantity',
   'TCG Marketplace Price',
 ];
@@ -28,29 +16,12 @@ function csvEscape(v) {
   return s;
 }
 
-// rows: array of {tcgplayer_id, productLine, setName, productName, title, number, rarity, condition, marketPrice, addQty, listPrice}
+// rows: array of {tcgplayer_id, addQty, listPrice}
 function buildCsv(rows) {
   const lines = [CSV_HEADERS.join(',')];
   for (const r of rows) {
     if (!r.tcgplayer_id || r.addQty <= 0) continue;
-    const row = [
-      r.tcgplayer_id,
-      r.productLine,
-      r.setName,
-      r.productName,
-      r.title || '',
-      r.number,
-      r.rarity,
-      r.condition,
-      r.marketPrice ?? '',
-      '', // TCG Direct Low — unknown
-      '', // TCG Low Price With Shipping — unknown
-      '', // TCG Low Price — unknown
-      '', // Total Quantity — leave blank, "Add to Quantity" controls the change
-      r.addQty,
-      r.listPrice ?? '',
-    ];
-    lines.push(row.map(csvEscape).join(','));
+    lines.push([r.tcgplayer_id, r.addQty, r.listPrice ?? ''].map(csvEscape).join(','));
   }
   return lines.join('\r\n') + '\r\n';
 }

@@ -9,9 +9,6 @@
   const btnRecalc = document.getElementById('btn-recalc');
   const cfgMult   = document.getElementById('cfg-multiplier');
   const cfgMultHint = document.getElementById('cfg-multiplier-hint');
-  const cfgCond   = document.getElementById('cfg-condition');
-  const cfgPrint  = document.getElementById('cfg-printing');
-  const cfgLang   = document.getElementById('cfg-language');
   const cfgStrat  = document.getElementById('cfg-price-strategy');
   const cfgPctWrap = document.getElementById('cfg-price-pct-wrap');
   const cfgPct    = document.getElementById('cfg-price-pct');
@@ -86,9 +83,6 @@
   // Index prices by tcgplayer_id (string)
   const priceById = {};
   for (const p of prices) priceById[String(p.tcgplayer_id)] = p.market_price;
-
-  const PRODUCT_LINE = { mtg: 'Magic', pokemon: 'Pokemon', 'one-piece': 'One Piece', riftbound: 'Riftbound' };
-  const productLine = PRODUCT_LINE[game] || game;
 
   // Compose row models
   const rows = [];
@@ -210,16 +204,8 @@
       const listPrice = parseFloat(lInput.value);
       exportRows.push({
         tcgplayer_id: r.tcgplayer_id,
-        productLine,
-        setName:     setDef.name,
-        productName: r.name,
-        title:       '',
-        number:      r.number,
-        rarity:      RARITY_LABEL[r.rarity] || r.rarity,
-        condition:   `${cfgCond.value}${cfgPrint.value === 'Foil' ? ' Foil' : ''}`,
-        marketPrice: r.market != null ? r.market.toFixed(2) : '',
         addQty,
-        listPrice:   isNaN(listPrice) ? '' : listPrice.toFixed(2),
+        listPrice: isNaN(listPrice) ? '' : listPrice.toFixed(2),
       });
     });
     if (exportRows.length === 0) {
