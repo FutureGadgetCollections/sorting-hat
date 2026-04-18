@@ -3,7 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-scions-and-spellcraft-final-fantasy-xiv",
   "name": "Scions & Spellcraft (Final Fantasy XIV)",
-  "source": "scryfall promo_type=ffxiv (one printing per card name, preferring catalog matches)",
+  "source": "scryfall promo_type=ffxiv (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist",
   "cards": [
     {
       "card_number": "3",
@@ -315,6 +315,21 @@
     },
     {
       "card_number": "483",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "41",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "70",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "92",
       "quantity": 1
     }
   ]

@@ -32,10 +32,14 @@ hugo server
      "product_type": "commander-deck-counter-blitz-final-fantasy-x",
      "cards": [
        {"card_number": "1", "quantity": 1},
+       {"set": "fin", "card_number": "29", "quantity": 1},
        ...
      ]
    }
    ```
+   Entries may override their set via the optional `set` field — useful for
+   precons that ship reprints from a different set (e.g. FIC commander decks
+   that include a handful of FIN cards). The default is the deck's own `set_code`.
 3. Card metadata (TCGPlayer ID, name, rarity, market price) is joined at
    runtime from `single-cards.json` + `tcgplayer-latest-prices.json` in the
    data repo, keyed by `(game, set_code, card_number)`.

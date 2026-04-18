@@ -91,11 +91,16 @@
     return;
   }
 
-  // Build merged per-card quantities for ONE unit of this product
+  // Build merged per-card quantities for ONE unit of this product.
+  // A deck entry may override its set with a `set` field (e.g. precons that
+  // ship reprints from a different set); default is the deck's own set_code.
   const perUnitQty = {};
   for (const { quantity, data } of decks) {
+    const deckSet = data.set_code;
     for (const c of data.cards) {
-      perUnitQty[c.card_number] = (perUnitQty[c.card_number] || 0) + (c.quantity || 1) * quantity;
+      const cardSet = c.set || deckSet;
+      const k = `${cardSet}|${c.card_number}`;
+      perUnitQty[k] = (perUnitQty[k] || 0) + (c.quantity || 1) * quantity;
     }
   }
 
@@ -109,10 +114,11 @@
   for (const p of prices) tcgPriceById[String(p.tcgplayer_id)] = p.market_price;
 
   const rows = [];
-  for (const [num, qPerUnit] of Object.entries(perUnitQty)) {
-    const card = cardsByKey[cardKey(game, setCode, num)];
+  for (const [k, qPerUnit] of Object.entries(perUnitQty)) {
+    const [cardSet, num] = k.split('|');
+    const card = cardsByKey[cardKey(game, cardSet, num)];
     if (!card) {
-      console.warn(`No single_cards entry for ${game}/${setCode}/${num}`);
+      console.warn(`No single_cards entry for ${game}/${cardSet}/${num}`);
       continue;
     }
     const idStr = card.tcgplayer_id != null ? String(card.tcgplayer_id) : null;
@@ -120,6 +126,7 @@
     const mpMkt  = idStr != null ? manapoolPriceById[idStr] : null;
     rows.push({
       tcgplayer_id: card.tcgplayer_id,
+      set:          card.set_code,
       number:       card.card_number,
       name:         card.name,
       rarity:       (card.rarity || 'common').toLowerCase(),

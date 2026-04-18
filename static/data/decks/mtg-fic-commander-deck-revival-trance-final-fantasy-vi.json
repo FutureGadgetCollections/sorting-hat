@@ -3,7 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-revival-trance-final-fantasy-vi",
   "name": "Revival Trance (Final Fantasy VI)",
-  "source": "scryfall promo_type=ffvi (one printing per card name, preferring catalog matches)",
+  "source": "scryfall promo_type=ffvi (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist",
   "cards": [
     {
       "card_number": "1",
@@ -315,6 +315,16 @@
     },
     {
       "card_number": "484",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "29",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "143",
       "quantity": 1
     }
   ]

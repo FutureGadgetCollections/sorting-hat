@@ -3,7 +3,7 @@
   "set_code": "fic",
   "product_type": "commander-deck-limit-break-final-fantasy-vii",
   "name": "Limit Break (Final Fantasy VII)",
-  "source": "scryfall promo_type=ffvii (one printing per card name, preferring catalog matches)",
+  "source": "scryfall promo_type=ffvii (one printing per card name, preferring catalog matches) + fin cross-set refs per official decklist",
   "cards": [
     {
       "card_number": "2",
@@ -327,6 +327,16 @@
     },
     {
       "card_number": "485",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "45",
+      "quantity": 1
+    },
+    {
+      "set": "fin",
+      "card_number": "129",
       "quantity": 1
     }
   ]
