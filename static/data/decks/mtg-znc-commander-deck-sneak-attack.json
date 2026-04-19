@@ -1,0 +1,274 @@
+{
+  "game": "mtg",
+  "set_code": "znc",
+  "product_type": "commander-deck-sneak-attack",
+  "name": "Sneak Attack",
+  "mtgjson_id": "SneakAttack_ZNC",
+  "source": "https://magic.wizards.com/en/news/announcements/znc-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "92",
+      "quantity": 1
+    },
+    {
+      "card_number": "4",
+      "quantity": 1
+    },
+    {
+      "card_number": "35",
+      "quantity": 1
+    },
+    {
+      "card_number": "44",
+      "quantity": 1
+    },
+    {
+      "card_number": "49",
+      "quantity": 1
+    },
+    {
+      "card_number": "50",
+      "quantity": 1
+    },
+    {
+      "card_number": "54",
+      "quantity": 1
+    },
+    {
+      "card_number": "89",
+      "quantity": 1
+    },
+    {
+      "card_number": "96",
+      "quantity": 1
+    },
+    {
+      "card_number": "98",
+      "quantity": 1
+    },
+    {
+      "card_number": "103",
+      "quantity": 1
+    },
+    {
+      "card_number": "26",
+      "quantity": 1
+    },
+    {
+      "card_number": "27",
+      "quantity": 1
+    },
+    {
+      "card_number": "28",
+      "quantity": 1
+    },
+    {
+      "card_number": "29",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "32",
+      "quantity": 1
+    },
+    {
+      "card_number": "36",
+      "quantity": 1
+    },
+    {
+      "card_number": "38",
+      "quantity": 1
+    },
+    {
+      "card_number": "39",
+      "quantity": 1
+    },
+    {
+      "card_number": "40",
+      "quantity": 1
+    },
+    {
+      "card_number": "43",
+      "quantity": 1
+    },
+    {
+      "card_number": "46",
+      "quantity": 1
+    },
+    {
+      "card_number": "51",
+      "quantity": 1
+    },
+    {
+      "card_number": "55",
+      "quantity": 1
+    },
+    {
+      "card_number": "56",
+      "quantity": 1
+    },
+    {
+      "card_number": "57",
+      "quantity": 1
+    },
+    {
+      "card_number": "33",
+      "quantity": 1
+    },
+    {
+      "card_number": "37",
+      "quantity": 1
+    },
+    {
+      "card_number": "45",
+      "quantity": 1
+    },
+    {
+      "card_number": "48",
+      "quantity": 1
+    },
+    {
+      "card_number": "24",
+      "quantity": 1
+    },
+    {
+      "card_number": "34",
+      "quantity": 1
+    },
+    {
+      "card_number": "41",
+      "quantity": 1
+    },
+    {
+      "card_number": "53",
+      "quantity": 1
+    },
+    {
+      "card_number": "90",
+      "quantity": 1
+    },
+    {
+      "card_number": "42",
+      "quantity": 1
+    },
+    {
+      "card_number": "99",
+      "quantity": 1
+    },
+    {
+      "card_number": "101",
+      "quantity": 1
+    },
+    {
+      "card_number": "23",
+      "quantity": 1
+    },
+    {
+      "card_number": "25",
+      "quantity": 1
+    },
+    {
+      "card_number": "47",
+      "quantity": 1
+    },
+    {
+      "card_number": "52",
+      "quantity": 1
+    },
+    {
+      "card_number": "100",
+      "quantity": 1
+    },
+    {
+      "card_number": "5",
+      "quantity": 1
+    },
+    {
+      "card_number": "107",
+      "quantity": 1
+    },
+    {
+      "card_number": "108",
+      "quantity": 1
+    },
+    {
+      "card_number": "115",
+      "quantity": 1
+    },
+    {
+      "card_number": "118",
+      "quantity": 1
+    },
+    {
+      "card_number": "106",
+      "quantity": 1
+    },
+    {
+      "card_number": "109",
+      "quantity": 1
+    },
+    {
+      "card_number": "110",
+      "quantity": 1
+    },
+    {
+      "card_number": "111",
+      "quantity": 1
+    },
+    {
+      "card_number": "112",
+      "quantity": 1
+    },
+    {
+      "card_number": "113",
+      "quantity": 1
+    },
+    {
+      "card_number": "114",
+      "quantity": 1
+    },
+    {
+      "card_number": "120",
+      "quantity": 1
+    },
+    {
+      "card_number": "31",
+      "quantity": 1
+    },
+    {
+      "card_number": "124",
+      "quantity": 1
+    },
+    {
+      "card_number": "126",
+      "quantity": 1
+    },
+    {
+      "card_number": "127",
+      "quantity": 1
+    },
+    {
+      "card_number": "128",
+      "quantity": 1
+    },
+    {
+      "card_number": "133",
+      "quantity": 1
+    },
+    {
+      "card_number": "135",
+      "quantity": 1
+    },
+    {
+      "card_number": "138",
+      "quantity": 1
+    },
+    {
+      "card_number": "141",
+      "quantity": 1
+    }
+  ]
+}

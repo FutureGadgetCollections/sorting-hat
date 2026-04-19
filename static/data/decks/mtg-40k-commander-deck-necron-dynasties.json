@@ -1,0 +1,286 @@
+{
+  "game": "mtg",
+  "set_code": "40k",
+  "product_type": "commander-deck-necron-dynasties",
+  "name": "Necron Dynasties",
+  "mtgjson_id": "NecronDynasties_40K",
+  "source": "https://magic.wizards.com/en/news/announcements/40k-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "194",
+      "quantity": 1
+    },
+    {
+      "card_number": "202",
+      "quantity": 1
+    },
+    {
+      "card_number": "203",
+      "quantity": 1
+    },
+    {
+      "card_number": "200",
+      "quantity": 1
+    },
+    {
+      "card_number": "199",
+      "quantity": 1
+    },
+    {
+      "card_number": "197",
+      "quantity": 1
+    },
+    {
+      "card_number": "201",
+      "quantity": 1
+    },
+    {
+      "card_number": "231",
+      "quantity": 1
+    },
+    {
+      "card_number": "237",
+      "quantity": 1
+    },
+    {
+      "card_number": "239",
+      "quantity": 1
+    },
+    {
+      "card_number": "246",
+      "quantity": 1
+    },
+    {
+      "card_number": "247",
+      "quantity": 1
+    },
+    {
+      "card_number": "236",
+      "quantity": 1
+    },
+    {
+      "card_number": "240",
+      "quantity": 1
+    },
+    {
+      "card_number": "243",
+      "quantity": 1
+    },
+    {
+      "card_number": "249",
+      "quantity": 1
+    },
+    {
+      "card_number": "227",
+      "quantity": 1
+    },
+    {
+      "card_number": "233",
+      "quantity": 1
+    },
+    {
+      "card_number": "244",
+      "quantity": 1
+    },
+    {
+      "card_number": "259",
+      "quantity": 1
+    },
+    {
+      "card_number": "260",
+      "quantity": 1
+    },
+    {
+      "card_number": "261",
+      "quantity": 1
+    },
+    {
+      "card_number": "266",
+      "quantity": 1
+    },
+    {
+      "card_number": "285",
+      "quantity": 1
+    },
+    {
+      "card_number": "291",
+      "quantity": 1
+    },
+    {
+      "card_number": "275",
+      "quantity": 1
+    },
+    {
+      "card_number": "288",
+      "quantity": 1
+    },
+    {
+      "card_number": "305",
+      "quantity": 1
+    },
+    {
+      "card_number": "5",
+      "quantity": 1
+    },
+    {
+      "card_number": "28",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "32",
+      "quantity": 1
+    },
+    {
+      "card_number": "33",
+      "quantity": 1
+    },
+    {
+      "card_number": "37",
+      "quantity": 1
+    },
+    {
+      "card_number": "38",
+      "quantity": 1
+    },
+    {
+      "card_number": "39",
+      "quantity": 1
+    },
+    {
+      "card_number": "42",
+      "quantity": 1
+    },
+    {
+      "card_number": "43",
+      "quantity": 1
+    },
+    {
+      "card_number": "46",
+      "quantity": 1
+    },
+    {
+      "card_number": "52",
+      "quantity": 1
+    },
+    {
+      "card_number": "55",
+      "quantity": 1
+    },
+    {
+      "card_number": "56",
+      "quantity": 1
+    },
+    {
+      "card_number": "58",
+      "quantity": 1
+    },
+    {
+      "card_number": "61",
+      "quantity": 1
+    },
+    {
+      "card_number": "62",
+      "quantity": 1
+    },
+    {
+      "card_number": "63",
+      "quantity": 1
+    },
+    {
+      "card_number": "64",
+      "quantity": 1
+    },
+    {
+      "card_number": "65",
+      "quantity": 1
+    },
+    {
+      "card_number": "67",
+      "quantity": 1
+    },
+    {
+      "card_number": "69",
+      "quantity": 1
+    },
+    {
+      "card_number": "150",
+      "quantity": 1
+    },
+    {
+      "card_number": "151",
+      "quantity": 1
+    },
+    {
+      "card_number": "152",
+      "quantity": 1
+    },
+    {
+      "card_number": "153",
+      "quantity": 1
+    },
+    {
+      "card_number": "154",
+      "quantity": 1
+    },
+    {
+      "card_number": "155",
+      "quantity": 1
+    },
+    {
+      "card_number": "156",
+      "quantity": 1
+    },
+    {
+      "card_number": "161",
+      "quantity": 1
+    },
+    {
+      "card_number": "165",
+      "quantity": 1
+    },
+    {
+      "card_number": "166",
+      "quantity": 1
+    },
+    {
+      "card_number": "168",
+      "quantity": 1
+    },
+    {
+      "card_number": "34",
+      "quantity": 1
+    },
+    {
+      "card_number": "36",
+      "quantity": 1
+    },
+    {
+      "card_number": "48",
+      "quantity": 1
+    },
+    {
+      "card_number": "51",
+      "quantity": 1
+    },
+    {
+      "card_number": "54",
+      "quantity": 1
+    },
+    {
+      "card_number": "57",
+      "quantity": 1
+    },
+    {
+      "card_number": "66",
+      "quantity": 1
+    },
+    {
+      "card_number": "162",
+      "quantity": 1
+    }
+  ]
+}

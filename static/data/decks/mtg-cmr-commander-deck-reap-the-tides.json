@@ -1,0 +1,286 @@
+{
+  "game": "mtg",
+  "set_code": "cmr",
+  "product_type": "commander-deck-reap-the-tides",
+  "name": "Reap the Tides",
+  "mtgjson_id": "ReapTheTides_CMR",
+  "source": "https://magic.wizards.com/en/news/announcements/cmr-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "443",
+      "quantity": 1
+    },
+    {
+      "card_number": "425",
+      "quantity": 1
+    },
+    {
+      "card_number": "433",
+      "quantity": 1
+    },
+    {
+      "card_number": "248",
+      "quantity": 1
+    },
+    {
+      "card_number": "367",
+      "quantity": 1
+    },
+    {
+      "card_number": "441",
+      "quantity": 1
+    },
+    {
+      "card_number": "445",
+      "quantity": 1
+    },
+    {
+      "card_number": "450",
+      "quantity": 1
+    },
+    {
+      "card_number": "440",
+      "quantity": 1
+    },
+    {
+      "card_number": "421",
+      "quantity": 1
+    },
+    {
+      "card_number": "399",
+      "quantity": 1
+    },
+    {
+      "card_number": "400",
+      "quantity": 1
+    },
+    {
+      "card_number": "448",
+      "quantity": 1
+    },
+    {
+      "card_number": "437",
+      "quantity": 1
+    },
+    {
+      "card_number": "431",
+      "quantity": 1
+    },
+    {
+      "card_number": "404",
+      "quantity": 1
+    },
+    {
+      "card_number": "422",
+      "quantity": 1
+    },
+    {
+      "card_number": "325",
+      "quantity": 1
+    },
+    {
+      "card_number": "430",
+      "quantity": 1
+    },
+    {
+      "card_number": "401",
+      "quantity": 1
+    },
+    {
+      "card_number": "403",
+      "quantity": 1
+    },
+    {
+      "card_number": "452",
+      "quantity": 1
+    },
+    {
+      "card_number": "406",
+      "quantity": 1
+    },
+    {
+      "card_number": "366",
+      "quantity": 1
+    },
+    {
+      "card_number": "408",
+      "quantity": 1
+    },
+    {
+      "card_number": "439",
+      "quantity": 1
+    },
+    {
+      "card_number": "368",
+      "quantity": 1
+    },
+    {
+      "card_number": "405",
+      "quantity": 1
+    },
+    {
+      "card_number": "407",
+      "quantity": 1
+    },
+    {
+      "card_number": "438",
+      "quantity": 1
+    },
+    {
+      "card_number": "393",
+      "quantity": 1
+    },
+    {
+      "card_number": "395",
+      "quantity": 1
+    },
+    {
+      "card_number": "446",
+      "quantity": 1
+    },
+    {
+      "card_number": "397",
+      "quantity": 1
+    },
+    {
+      "card_number": "402",
+      "quantity": 1
+    },
+    {
+      "card_number": "451",
+      "quantity": 1
+    },
+    {
+      "card_number": "423",
+      "quantity": 1
+    },
+    {
+      "card_number": "396",
+      "quantity": 1
+    },
+    {
+      "card_number": "426",
+      "quantity": 1
+    },
+    {
+      "card_number": "432",
+      "quantity": 1
+    },
+    {
+      "card_number": "394",
+      "quantity": 1
+    },
+    {
+      "card_number": "424",
+      "quantity": 1
+    },
+    {
+      "card_number": "429",
+      "quantity": 1
+    },
+    {
+      "card_number": "436",
+      "quantity": 1
+    },
+    {
+      "card_number": "427",
+      "quantity": 1
+    },
+    {
+      "card_number": "409",
+      "quantity": 1
+    },
+    {
+      "card_number": "455",
+      "quantity": 1
+    },
+    {
+      "card_number": "453",
+      "quantity": 1
+    },
+    {
+      "card_number": "398",
+      "quantity": 1
+    },
+    {
+      "card_number": "428",
+      "quantity": 1
+    },
+    {
+      "card_number": "435",
+      "quantity": 1
+    },
+    {
+      "card_number": "472",
+      "quantity": 1
+    },
+    {
+      "card_number": "471",
+      "quantity": 1
+    },
+    {
+      "card_number": "474",
+      "quantity": 1
+    },
+    {
+      "card_number": "470",
+      "quantity": 1
+    },
+    {
+      "card_number": "476",
+      "quantity": 1
+    },
+    {
+      "card_number": "350",
+      "quantity": 1
+    },
+    {
+      "card_number": "480",
+      "quantity": 1
+    },
+    {
+      "card_number": "482",
+      "quantity": 1
+    },
+    {
+      "card_number": "484",
+      "quantity": 1
+    },
+    {
+      "card_number": "485",
+      "quantity": 1
+    },
+    {
+      "card_number": "488",
+      "quantity": 1
+    },
+    {
+      "card_number": "492",
+      "quantity": 1
+    },
+    {
+      "card_number": "493",
+      "quantity": 1
+    },
+    {
+      "card_number": "357",
+      "quantity": 1
+    },
+    {
+      "card_number": "498",
+      "quantity": 1
+    },
+    {
+      "card_number": "500",
+      "quantity": 1
+    },
+    {
+      "card_number": "501",
+      "quantity": 1
+    },
+    {
+      "card_number": "503",
+      "quantity": 1
+    }
+  ]
+}

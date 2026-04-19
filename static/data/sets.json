@@ -5,6 +5,66 @@
       "name": "Magic: The Gathering",
       "sets": [
         {
+          "code": "40k",
+          "name": "Warhammer 40,000 Commander",
+          "products": [
+            {
+              "type": "commander-deck-forces-of-the-imperium",
+              "name": "Forces of the Imperium — Commander Deck",
+              "deck_file": "mtg-40k-commander-deck-forces-of-the-imperium.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-40k-commander-deck-forces-of-the-imperium.jpg"
+            },
+            {
+              "type": "commander-deck-necron-dynasties",
+              "name": "Necron Dynasties — Commander Deck",
+              "deck_file": "mtg-40k-commander-deck-necron-dynasties.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-40k-commander-deck-necron-dynasties.jpg"
+            },
+            {
+              "type": "commander-deck-the-ruinous-powers",
+              "name": "The Ruinous Powers — Commander Deck",
+              "deck_file": "mtg-40k-commander-deck-the-ruinous-powers.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-40k-commander-deck-the-ruinous-powers.jpg"
+            },
+            {
+              "type": "commander-deck-tyranid-swarm",
+              "name": "Tyranid Swarm — Commander Deck",
+              "deck_file": "mtg-40k-commander-deck-tyranid-swarm.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-40k-commander-deck-tyranid-swarm.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-40k-commander-deck-forces-of-the-imperium.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-40k-commander-deck-necron-dynasties.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-40k-commander-deck-the-ruinous-powers.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-40k-commander-deck-tyranid-swarm.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "272321",
+              "image": "/images/products/mtg-40k-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/40k.svg"
+        },
+        {
           "code": "afc",
           "name": "Adventures in the Forgotten Realms Commander",
           "products": [
@@ -133,6 +193,82 @@
           "image": "/images/sets/blc.svg"
         },
         {
+          "code": "c21",
+          "name": "Strixhaven Commander",
+          "products": [
+            {
+              "type": "commander-deck-lorehold-legacies",
+              "name": "Lorehold Legacies — Commander Deck",
+              "deck_file": "mtg-c21-commander-deck-lorehold-legacies.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c21-commander-deck-lorehold-legacies.jpg",
+              "tcgplayer_id": "236479"
+            },
+            {
+              "type": "commander-deck-prismari-performance",
+              "name": "Prismari Performance — Commander Deck",
+              "deck_file": "mtg-c21-commander-deck-prismari-performance.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c21-commander-deck-prismari-performance.jpg",
+              "tcgplayer_id": "235089"
+            },
+            {
+              "type": "commander-deck-quantum-quandrix",
+              "name": "Quantum Quandrix — Commander Deck",
+              "deck_file": "mtg-c21-commander-deck-quantum-quandrix.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c21-commander-deck-quantum-quandrix.jpg",
+              "tcgplayer_id": "235090"
+            },
+            {
+              "type": "commander-deck-silverquill-statement",
+              "name": "Silverquill Statement — Commander Deck",
+              "deck_file": "mtg-c21-commander-deck-silverquill-statement.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c21-commander-deck-silverquill-statement.jpg",
+              "tcgplayer_id": "235091"
+            },
+            {
+              "type": "commander-deck-witherbloom-witchcraft",
+              "name": "Witherbloom Witchcraft — Commander Deck",
+              "deck_file": "mtg-c21-commander-deck-witherbloom-witchcraft.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c21-commander-deck-witherbloom-witchcraft.jpg",
+              "tcgplayer_id": "235088"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (5)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-c21-commander-deck-lorehold-legacies.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c21-commander-deck-prismari-performance.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c21-commander-deck-quantum-quandrix.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c21-commander-deck-silverquill-statement.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c21-commander-deck-witherbloom-witchcraft.json",
+                  "quantity": 1
+                }
+              ],
+              "image": "/images/products/mtg-c21-commander-case-all-decks.jpg",
+              "tcgplayer_id": "235087"
+            }
+          ],
+          "image": "/images/sets/c21.svg"
+        },
+        {
           "code": "clb",
           "name": "Commander Legends: Battle for Baldur's Gate",
           "products": [
@@ -251,6 +387,44 @@
             }
           ],
           "image": "/images/sets/cmm.svg"
+        },
+        {
+          "code": "cmr",
+          "name": "Commander Legends",
+          "products": [
+            {
+              "type": "commander-deck-arm-for-battle",
+              "name": "Arm for Battle — Commander Deck",
+              "deck_file": "mtg-cmr-commander-deck-arm-for-battle.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmr-commander-deck-arm-for-battle.jpg"
+            },
+            {
+              "type": "commander-deck-reap-the-tides",
+              "name": "Reap the Tides — Commander Deck",
+              "deck_file": "mtg-cmr-commander-deck-reap-the-tides.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmr-commander-deck-reap-the-tides.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-cmr-commander-deck-arm-for-battle.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-cmr-commander-deck-reap-the-tides.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "224546",
+              "image": "/images/products/mtg-cmr-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/cmr.svg"
         },
         {
           "code": "eoc",
@@ -414,6 +588,68 @@
           "image": "/images/sets/lcc.svg"
         },
         {
+          "code": "ltc",
+          "name": "Tales of Middle-earth Commander",
+          "products": [
+            {
+              "type": "commander-deck-riders-of-rohan",
+              "name": "Riders of Rohan — Commander Deck",
+              "deck_file": "mtg-ltc-commander-deck-riders-of-rohan.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ltc-commander-deck-riders-of-rohan.jpg"
+            },
+            {
+              "type": "commander-deck-the-hosts-of-mordor",
+              "name": "The Hosts of Mordor — Commander Deck",
+              "deck_file": "mtg-ltc-commander-deck-the-hosts-of-mordor.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ltc-commander-deck-the-hosts-of-mordor.jpg",
+              "tcgplayer_id": "488293"
+            },
+            {
+              "type": "commander-deck-elven-council",
+              "name": "Elven Council — Commander Deck",
+              "deck_file": "mtg-ltc-commander-deck-elven-council.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ltc-commander-deck-elven-council.jpg"
+            },
+            {
+              "type": "commander-deck-food-and-fellowship",
+              "name": "Food and Fellowship — Commander Deck",
+              "deck_file": "mtg-ltc-commander-deck-food-and-fellowship.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ltc-commander-deck-food-and-fellowship.jpg",
+              "tcgplayer_id": "488294"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-ltc-commander-deck-riders-of-rohan.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ltc-commander-deck-the-hosts-of-mordor.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ltc-commander-deck-elven-council.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ltc-commander-deck-food-and-fellowship.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "488297",
+              "image": "/images/products/mtg-ltc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/ltc.svg"
+        },
+        {
           "code": "m3c",
           "name": "Modern Horizons 3 Commander",
           "products": [
@@ -472,6 +708,44 @@
             }
           ],
           "image": "/images/sets/m3c.svg"
+        },
+        {
+          "code": "mic",
+          "name": "Innistrad: Midnight Hunt Commander",
+          "products": [
+            {
+              "type": "commander-deck-coven-counters",
+              "name": "Coven Counters — Commander Deck",
+              "deck_file": "mtg-mic-commander-deck-coven-counters.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mic-commander-deck-coven-counters.jpg"
+            },
+            {
+              "type": "commander-deck-undead-unleashed",
+              "name": "Undead Unleashed — Commander Deck",
+              "deck_file": "mtg-mic-commander-deck-undead-unleashed.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mic-commander-deck-undead-unleashed.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-mic-commander-deck-coven-counters.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-mic-commander-deck-undead-unleashed.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "244395",
+              "image": "/images/products/mtg-mic-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/mic.svg"
         },
         {
           "code": "mkc",
@@ -750,6 +1024,70 @@
           "image": "/images/sets/otc.svg"
         },
         {
+          "code": "pip",
+          "name": "Fallout Commander",
+          "products": [
+            {
+              "type": "commander-deck-mutant-menace",
+              "name": "Mutant Menace — Commander Deck",
+              "deck_file": "mtg-pip-commander-deck-mutant-menace.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-pip-commander-deck-mutant-menace.jpg",
+              "tcgplayer_id": "522902"
+            },
+            {
+              "type": "commander-deck-scrappy-survivors",
+              "name": "Scrappy Survivors — Commander Deck",
+              "deck_file": "mtg-pip-commander-deck-scrappy-survivors.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-pip-commander-deck-scrappy-survivors.jpg",
+              "tcgplayer_id": "522899"
+            },
+            {
+              "type": "commander-deck-hail-caesar",
+              "name": "Hail, Caesar — Commander Deck",
+              "deck_file": "mtg-pip-commander-deck-hail-caesar.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-pip-commander-deck-hail-caesar.jpg",
+              "tcgplayer_id": "522903"
+            },
+            {
+              "type": "commander-deck-science",
+              "name": "Science! — Commander Deck",
+              "deck_file": "mtg-pip-commander-deck-science.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-pip-commander-deck-science.jpg",
+              "tcgplayer_id": "522905"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-pip-commander-deck-mutant-menace.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-pip-commander-deck-scrappy-survivors.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-pip-commander-deck-hail-caesar.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-pip-commander-deck-science.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "524616",
+              "image": "/images/products/mtg-pip-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/pip.svg"
+        },
+        {
           "code": "tdc",
           "name": "Tarkir: Dragonstorm Commander",
           "products": [
@@ -824,6 +1162,44 @@
             }
           ],
           "image": "/images/sets/tdc.svg"
+        },
+        {
+          "code": "voc",
+          "name": "Innistrad: Crimson Vow Commander",
+          "products": [
+            {
+              "type": "commander-deck-spirit-squadron",
+              "name": "Spirit Squadron — Commander Deck",
+              "deck_file": "mtg-voc-commander-deck-spirit-squadron.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-voc-commander-deck-spirit-squadron.jpg"
+            },
+            {
+              "type": "commander-deck-vampiric-bloodline",
+              "name": "Vampiric Bloodline — Commander Deck",
+              "deck_file": "mtg-voc-commander-deck-vampiric-bloodline.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-voc-commander-deck-vampiric-bloodline.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-voc-commander-deck-spirit-squadron.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-voc-commander-deck-vampiric-bloodline.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "246462",
+              "image": "/images/products/mtg-voc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/voc.svg"
         },
         {
           "code": "who",
@@ -926,6 +1302,43 @@
             }
           ],
           "image": "/images/sets/woc.svg"
+        },
+        {
+          "code": "znc",
+          "name": "Zendikar Rising Commander",
+          "products": [
+            {
+              "type": "commander-deck-lands-wrath",
+              "name": "Land's Wrath — Commander Deck",
+              "deck_file": "mtg-znc-commander-deck-lands-wrath.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-znc-commander-deck-lands-wrath.jpg"
+            },
+            {
+              "type": "commander-deck-sneak-attack",
+              "name": "Sneak Attack — Commander Deck",
+              "deck_file": "mtg-znc-commander-deck-sneak-attack.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-znc-commander-deck-sneak-attack.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-znc-commander-deck-lands-wrath.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-znc-commander-deck-sneak-attack.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "452723"
+            }
+          ],
+          "image": "/images/sets/znc.svg"
         }
       ],
       "image": "/images/games/mtg.svg"

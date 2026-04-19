@@ -1,0 +1,309 @@
+{
+  "game": "mtg",
+  "set_code": "c21",
+  "product_type": "commander-deck-quantum-quandrix",
+  "name": "Quantum Quandrix",
+  "mtgjson_id": "QuantumQuandrix_C21",
+  "source": "https://magic.wizards.com/en/news/announcements/c21-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "190",
+      "quantity": 1
+    },
+    {
+      "card_number": "10",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "24",
+      "quantity": 1
+    },
+    {
+      "card_number": "26",
+      "quantity": 1
+    },
+    {
+      "card_number": "33",
+      "quantity": 1
+    },
+    {
+      "card_number": "62",
+      "quantity": 1
+    },
+    {
+      "card_number": "66",
+      "quantity": 1
+    },
+    {
+      "card_number": "82",
+      "quantity": 1
+    },
+    {
+      "card_number": "116",
+      "quantity": 1
+    },
+    {
+      "card_number": "117",
+      "quantity": 1
+    },
+    {
+      "card_number": "127",
+      "quantity": 1
+    },
+    {
+      "card_number": "185",
+      "quantity": 1
+    },
+    {
+      "card_number": "189",
+      "quantity": 1
+    },
+    {
+      "card_number": "192",
+      "quantity": 1
+    },
+    {
+      "card_number": "193",
+      "quantity": 1
+    },
+    {
+      "card_number": "194",
+      "quantity": 1
+    },
+    {
+      "card_number": "195",
+      "quantity": 1
+    },
+    {
+      "card_number": "196",
+      "quantity": 1
+    },
+    {
+      "card_number": "199",
+      "quantity": 1
+    },
+    {
+      "card_number": "203",
+      "quantity": 1
+    },
+    {
+      "card_number": "207",
+      "quantity": 1
+    },
+    {
+      "card_number": "221",
+      "quantity": 1
+    },
+    {
+      "card_number": "224",
+      "quantity": 1
+    },
+    {
+      "card_number": "212",
+      "quantity": 1
+    },
+    {
+      "card_number": "226",
+      "quantity": 1
+    },
+    {
+      "card_number": "231",
+      "quantity": 1
+    },
+    {
+      "card_number": "31",
+      "quantity": 1
+    },
+    {
+      "card_number": "72",
+      "quantity": 1
+    },
+    {
+      "card_number": "118",
+      "quantity": 1
+    },
+    {
+      "card_number": "128",
+      "quantity": 1
+    },
+    {
+      "card_number": "206",
+      "quantity": 1
+    },
+    {
+      "card_number": "229",
+      "quantity": 1
+    },
+    {
+      "card_number": "204",
+      "quantity": 1
+    },
+    {
+      "card_number": "219",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "34",
+      "quantity": 1
+    },
+    {
+      "card_number": "205",
+      "quantity": 1
+    },
+    {
+      "card_number": "209",
+      "quantity": 1
+    },
+    {
+      "set": "dsc",
+      "card_number": "216",
+      "quantity": 1
+    },
+    {
+      "card_number": "126",
+      "quantity": 1
+    },
+    {
+      "card_number": "186",
+      "quantity": 1
+    },
+    {
+      "card_number": "198",
+      "quantity": 1
+    },
+    {
+      "card_number": "61",
+      "quantity": 1
+    },
+    {
+      "card_number": "67",
+      "quantity": 1
+    },
+    {
+      "card_number": "77",
+      "quantity": 1
+    },
+    {
+      "card_number": "246",
+      "quantity": 1
+    },
+    {
+      "card_number": "234",
+      "quantity": 1
+    },
+    {
+      "card_number": "262",
+      "quantity": 1
+    },
+    {
+      "card_number": "263",
+      "quantity": 1
+    },
+    {
+      "card_number": "64",
+      "quantity": 1
+    },
+    {
+      "card_number": "227",
+      "quantity": 1
+    },
+    {
+      "card_number": "288",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "303",
+      "quantity": 1
+    },
+    {
+      "card_number": "307",
+      "quantity": 1
+    },
+    {
+      "card_number": "324",
+      "quantity": 1
+    },
+    {
+      "card_number": "409",
+      "quantity": 1
+    },
+    {
+      "set": "dsc",
+      "card_number": "294",
+      "quantity": 1
+    },
+    {
+      "card_number": "80",
+      "quantity": 1
+    },
+    {
+      "card_number": "280",
+      "quantity": 1
+    },
+    {
+      "card_number": "284",
+      "quantity": 1
+    },
+    {
+      "card_number": "296",
+      "quantity": 1
+    },
+    {
+      "card_number": "298",
+      "quantity": 1
+    },
+    {
+      "card_number": "304",
+      "quantity": 1
+    },
+    {
+      "card_number": "305",
+      "quantity": 1
+    },
+    {
+      "card_number": "306",
+      "quantity": 1
+    },
+    {
+      "card_number": "317",
+      "quantity": 1
+    },
+    {
+      "card_number": "326",
+      "quantity": 1
+    },
+    {
+      "card_number": "408",
+      "quantity": 1
+    },
+    {
+      "card_number": "23",
+      "quantity": 1
+    },
+    {
+      "card_number": "188",
+      "quantity": 1
+    },
+    {
+      "card_number": "197",
+      "quantity": 1
+    },
+    {
+      "card_number": "200",
+      "quantity": 1
+    },
+    {
+      "card_number": "312",
+      "quantity": 1
+    }
+  ]
+}

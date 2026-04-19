@@ -1,0 +1,314 @@
+{
+  "game": "mtg",
+  "set_code": "cmr",
+  "product_type": "commander-deck-arm-for-battle",
+  "name": "Arm for Battle",
+  "mtgjson_id": "ArmForBattle_CMR",
+  "source": "https://magic.wizards.com/en/news/announcements/cmr-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "381",
+      "quantity": 1
+    },
+    {
+      "card_number": "382",
+      "quantity": 1
+    },
+    {
+      "card_number": "386",
+      "quantity": 1
+    },
+    {
+      "card_number": "460",
+      "quantity": 1
+    },
+    {
+      "card_number": "370",
+      "quantity": 1
+    },
+    {
+      "card_number": "412",
+      "quantity": 1
+    },
+    {
+      "card_number": "374",
+      "quantity": 1
+    },
+    {
+      "card_number": "376",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "379",
+      "quantity": 1
+    },
+    {
+      "card_number": "454",
+      "quantity": 1
+    },
+    {
+      "card_number": "369",
+      "quantity": 1
+    },
+    {
+      "card_number": "413",
+      "quantity": 1
+    },
+    {
+      "card_number": "387",
+      "quantity": 1
+    },
+    {
+      "card_number": "410",
+      "quantity": 1
+    },
+    {
+      "card_number": "442",
+      "quantity": 1
+    },
+    {
+      "card_number": "411",
+      "quantity": 1
+    },
+    {
+      "card_number": "371",
+      "quantity": 1
+    },
+    {
+      "card_number": "444",
+      "quantity": 1
+    },
+    {
+      "card_number": "372",
+      "quantity": 1
+    },
+    {
+      "card_number": "414",
+      "quantity": 1
+    },
+    {
+      "card_number": "417",
+      "quantity": 1
+    },
+    {
+      "card_number": "390",
+      "quantity": 1
+    },
+    {
+      "card_number": "375",
+      "quantity": 1
+    },
+    {
+      "card_number": "388",
+      "quantity": 1
+    },
+    {
+      "card_number": "418",
+      "quantity": 1
+    },
+    {
+      "card_number": "456",
+      "quantity": 1
+    },
+    {
+      "card_number": "391",
+      "quantity": 1
+    },
+    {
+      "card_number": "447",
+      "quantity": 1
+    },
+    {
+      "card_number": "43",
+      "quantity": 1
+    },
+    {
+      "card_number": "419",
+      "quantity": 1
+    },
+    {
+      "card_number": "420",
+      "quantity": 1
+    },
+    {
+      "card_number": "449",
+      "quantity": 1
+    },
+    {
+      "card_number": "415",
+      "quantity": 1
+    },
+    {
+      "card_number": "378",
+      "quantity": 1
+    },
+    {
+      "card_number": "416",
+      "quantity": 1
+    },
+    {
+      "card_number": "392",
+      "quantity": 1
+    },
+    {
+      "card_number": "458",
+      "quantity": 1
+    },
+    {
+      "card_number": "461",
+      "quantity": 1
+    },
+    {
+      "card_number": "472",
+      "quantity": 1
+    },
+    {
+      "card_number": "457",
+      "quantity": 1
+    },
+    {
+      "card_number": "364",
+      "quantity": 1
+    },
+    {
+      "card_number": "459",
+      "quantity": 1
+    },
+    {
+      "card_number": "314",
+      "quantity": 1
+    },
+    {
+      "card_number": "466",
+      "quantity": 1
+    },
+    {
+      "card_number": "468",
+      "quantity": 1
+    },
+    {
+      "card_number": "469",
+      "quantity": 1
+    },
+    {
+      "card_number": "474",
+      "quantity": 1
+    },
+    {
+      "card_number": "462",
+      "quantity": 1
+    },
+    {
+      "card_number": "313",
+      "quantity": 1
+    },
+    {
+      "card_number": "465",
+      "quantity": 1
+    },
+    {
+      "card_number": "473",
+      "quantity": 1
+    },
+    {
+      "card_number": "475",
+      "quantity": 1
+    },
+    {
+      "card_number": "384",
+      "quantity": 1
+    },
+    {
+      "card_number": "385",
+      "quantity": 1
+    },
+    {
+      "card_number": "363",
+      "quantity": 1
+    },
+    {
+      "card_number": "389",
+      "quantity": 1
+    },
+    {
+      "card_number": "373",
+      "quantity": 1
+    },
+    {
+      "card_number": "380",
+      "quantity": 1
+    },
+    {
+      "card_number": "477",
+      "quantity": 1
+    },
+    {
+      "card_number": "478",
+      "quantity": 1
+    },
+    {
+      "card_number": "350",
+      "quantity": 1
+    },
+    {
+      "card_number": "481",
+      "quantity": 1
+    },
+    {
+      "card_number": "482",
+      "quantity": 1
+    },
+    {
+      "card_number": "483",
+      "quantity": 1
+    },
+    {
+      "card_number": "486",
+      "quantity": 1
+    },
+    {
+      "card_number": "487",
+      "quantity": 1
+    },
+    {
+      "card_number": "489",
+      "quantity": 1
+    },
+    {
+      "card_number": "355",
+      "quantity": 1
+    },
+    {
+      "card_number": "491",
+      "quantity": 1
+    },
+    {
+      "card_number": "494",
+      "quantity": 1
+    },
+    {
+      "card_number": "495",
+      "quantity": 1
+    },
+    {
+      "card_number": "496",
+      "quantity": 1
+    },
+    {
+      "card_number": "357",
+      "quantity": 1
+    },
+    {
+      "card_number": "499",
+      "quantity": 1
+    },
+    {
+      "card_number": "502",
+      "quantity": 1
+    }
+  ]
+}
