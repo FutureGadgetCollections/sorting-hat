@@ -305,6 +305,10 @@
     btnCsvMp.disabled = nCards === 0;
     btnSmart.disabled = nCards === 0;
     updateSortIndicators();
+    // Re-apply premium gating: dynamic UI may have re-enabled buttons that
+    // tier.js had locked, and any [data-premium] elements rendered just now
+    // need their lock styling.
+    if (window.applyTierGating) window.applyTierGating();
   }
 
   function updateSummary() {

@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div id="cfg-routing-wrap" class="d-none mt-3 pt-3 border-top">
+      <div id="cfg-routing-wrap" class="d-none mt-3 pt-3 border-top" data-premium>
         <h2 class="h6 text-muted text-uppercase mb-3">Smart marketplace routing</h2>
         <div class="row g-3">
           <div class="col-sm-4">
@@ -92,14 +92,14 @@
       <span>Sum TCG listed: <strong id="sum-listed">$0.00</strong></span>
     </div>
     <div class="d-flex gap-2 flex-wrap">
-      <button id="btn-csv" class="btn btn-success" disabled>
+      <button id="btn-csv" class="btn btn-success" disabled data-premium>
         <i class="bi bi-download"></i> TCGPlayer CSV
       </button>
-      <button id="btn-csv-manapool" class="btn btn-success d-none" disabled
+      <button id="btn-csv-manapool" class="btn btn-success d-none" disabled data-premium
               title="Manapool uses Total Quantity, which replaces existing stock — review before re-uploading.">
         <i class="bi bi-download"></i> Mana Pool CSV
       </button>
-      <button id="btn-csv-smart" class="btn btn-primary d-none" disabled
+      <button id="btn-csv-smart" class="btn btn-primary d-none" disabled data-premium
               title="Routes each card to whichever marketplace yields a better net after fees, given the threshold.">
         <i class="bi bi-arrow-left-right"></i> Smart Route → 2 CSVs
       </button>

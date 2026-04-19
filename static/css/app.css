@@ -103,3 +103,31 @@
 .tcg-link:hover { color: #000; }
 .mp-link  { background: #1f6fb0; color: #fff; }
 .mp-link:hover  { color: #fff; }
+
+/* Premium-locked elements: visible but greyed out, with a small lock badge.
+   Click bubbles up to the upgrade modal (handled in tier.js). */
+.premium-locked {
+  position: relative;
+  opacity: .55;
+  filter: grayscale(.6);
+  cursor: not-allowed;
+}
+.premium-locked::after {
+  content: "🔒 Premium";
+  position: absolute;
+  top: .25rem;
+  right: .25rem;
+  background: rgba(33, 37, 41, .85);
+  color: #ffd66b;
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: .15rem .4rem;
+  border-radius: .375rem;
+  pointer-events: none;
+  z-index: 5;
+}
+/* Hide the lock pill on small inline elements (e.g. badges) so it doesn't
+   visually overflow. The grey-out + click handler still apply. */
+.premium-locked.badge::after,
+.premium-locked.btn-sm::after { display: none; }
