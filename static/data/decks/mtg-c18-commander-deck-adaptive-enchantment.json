@@ -1,0 +1,316 @@
+{
+  "game": "mtg",
+  "set_code": "c18",
+  "product_type": "commander-deck-adaptive-enchantment",
+  "name": "Adaptive Enchantment",
+  "mtgjson_id": "AdaptiveEnchantment_C18",
+  "source": "MTGJSON decks/AdaptiveEnchantment_C18",
+  "cards": [
+    {
+      "card_number": "170",
+      "quantity": 1
+    },
+    {
+      "card_number": "140",
+      "quantity": 1
+    },
+    {
+      "card_number": "153",
+      "quantity": 1
+    },
+    {
+      "card_number": "61",
+      "quantity": 1
+    },
+    {
+      "card_number": "64",
+      "quantity": 1
+    },
+    {
+      "card_number": "75",
+      "quantity": 1
+    },
+    {
+      "card_number": "132",
+      "quantity": 1
+    },
+    {
+      "card_number": "151",
+      "quantity": 1
+    },
+    {
+      "card_number": "172",
+      "quantity": 1
+    },
+    {
+      "card_number": "173",
+      "quantity": 1
+    },
+    {
+      "card_number": "177",
+      "quantity": 1
+    },
+    {
+      "card_number": "81",
+      "quantity": 1
+    },
+    {
+      "card_number": "112",
+      "quantity": 1
+    },
+    {
+      "card_number": "128",
+      "quantity": 1
+    },
+    {
+      "card_number": "159",
+      "quantity": 1
+    },
+    {
+      "card_number": "167",
+      "quantity": 1
+    },
+    {
+      "card_number": "69",
+      "quantity": 1
+    },
+    {
+      "card_number": "70",
+      "quantity": 1
+    },
+    {
+      "card_number": "79",
+      "quantity": 1
+    },
+    {
+      "card_number": "137",
+      "quantity": 1
+    },
+    {
+      "card_number": "155",
+      "quantity": 1
+    },
+    {
+      "card_number": "66",
+      "quantity": 1
+    },
+    {
+      "card_number": "169",
+      "quantity": 1
+    },
+    {
+      "card_number": "222",
+      "quantity": 1
+    },
+    {
+      "card_number": "74",
+      "quantity": 1
+    },
+    {
+      "card_number": "86",
+      "quantity": 1
+    },
+    {
+      "card_number": "131",
+      "quantity": 1
+    },
+    {
+      "card_number": "141",
+      "quantity": 1
+    },
+    {
+      "card_number": "142",
+      "quantity": 1
+    },
+    {
+      "card_number": "149",
+      "quantity": 1
+    },
+    {
+      "card_number": "163",
+      "quantity": 1
+    },
+    {
+      "card_number": "180",
+      "quantity": 1
+    },
+    {
+      "card_number": "188",
+      "quantity": 1
+    },
+    {
+      "card_number": "72",
+      "quantity": 1
+    },
+    {
+      "card_number": "76",
+      "quantity": 1
+    },
+    {
+      "card_number": "78",
+      "quantity": 1
+    },
+    {
+      "card_number": "89",
+      "quantity": 1
+    },
+    {
+      "card_number": "110",
+      "quantity": 1
+    },
+    {
+      "card_number": "139",
+      "quantity": 1
+    },
+    {
+      "card_number": "147",
+      "quantity": 1
+    },
+    {
+      "card_number": "157",
+      "quantity": 1
+    },
+    {
+      "card_number": "162",
+      "quantity": 1
+    },
+    {
+      "card_number": "164",
+      "quantity": 1
+    },
+    {
+      "card_number": "165",
+      "quantity": 1
+    },
+    {
+      "card_number": "192",
+      "quantity": 1
+    },
+    {
+      "card_number": "233",
+      "quantity": 1
+    },
+    {
+      "card_number": "237",
+      "quantity": 1
+    },
+    {
+      "card_number": "240",
+      "quantity": 1
+    },
+    {
+      "card_number": "245",
+      "quantity": 1
+    },
+    {
+      "card_number": "263",
+      "quantity": 1
+    },
+    {
+      "card_number": "265",
+      "quantity": 1
+    },
+    {
+      "card_number": "267",
+      "quantity": 1
+    },
+    {
+      "card_number": "277",
+      "quantity": 1
+    },
+    {
+      "card_number": "281",
+      "quantity": 1
+    },
+    {
+      "card_number": "282",
+      "quantity": 1
+    },
+    {
+      "card_number": "286",
+      "quantity": 1
+    },
+    {
+      "card_number": "287",
+      "quantity": 1
+    },
+    {
+      "card_number": "288",
+      "quantity": 1
+    },
+    {
+      "card_number": "289",
+      "quantity": 1
+    },
+    {
+      "card_number": "292",
+      "quantity": 1
+    },
+    {
+      "card_number": "42",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "47",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "2",
+      "quantity": 1
+    },
+    {
+      "card_number": "3",
+      "quantity": 1
+    },
+    {
+      "card_number": "8",
+      "quantity": 1
+    },
+    {
+      "card_number": "9",
+      "quantity": 1
+    },
+    {
+      "card_number": "11",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "32",
+      "quantity": 1
+    },
+    {
+      "card_number": "33",
+      "quantity": 1
+    },
+    {
+      "card_number": "34",
+      "quantity": 1
+    },
+    {
+      "card_number": "38",
+      "quantity": 1
+    },
+    {
+      "card_number": "4",
+      "quantity": 1
+    },
+    {
+      "card_number": "10",
+      "quantity": 1
+    },
+    {
+      "card_number": "31",
+      "quantity": 1
+    },
+    {
+      "card_number": "58",
+      "quantity": 1
+    }
+  ]
+}

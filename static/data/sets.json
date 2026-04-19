@@ -252,6 +252,197 @@
           "image": "/images/sets/brc.svg"
         },
         {
+          "code": "c18",
+          "name": "Commander 2018",
+          "products": [
+            {
+              "type": "commander-deck-adaptive-enchantment",
+              "name": "Adaptive Enchantment — Commander Deck",
+              "deck_file": "mtg-c18-commander-deck-adaptive-enchantment.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c18-commander-deck-adaptive-enchantment.jpg"
+            },
+            {
+              "type": "commander-deck-exquisite-invention",
+              "name": "Exquisite Invention — Commander Deck",
+              "deck_file": "mtg-c18-commander-deck-exquisite-invention.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c18-commander-deck-exquisite-invention.jpg"
+            },
+            {
+              "type": "commander-deck-natures-vengeance",
+              "name": "Nature's Vengeance — Commander Deck",
+              "deck_file": "mtg-c18-commander-deck-natures-vengeance.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c18-commander-deck-natures-vengeance.jpg"
+            },
+            {
+              "type": "commander-deck-subjective-reality",
+              "name": "Subjective Reality — Commander Deck",
+              "deck_file": "mtg-c18-commander-deck-subjective-reality.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c18-commander-deck-subjective-reality.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-c18-commander-deck-adaptive-enchantment.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c18-commander-deck-exquisite-invention.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c18-commander-deck-natures-vengeance.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c18-commander-deck-subjective-reality.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "166596",
+              "image": "/images/products/mtg-c18-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/c18.svg"
+        },
+        {
+          "code": "c19",
+          "name": "Commander 2019",
+          "products": [
+            {
+              "type": "commander-deck-faceless-menace",
+              "name": "Faceless Menace — Commander Deck",
+              "deck_file": "mtg-c19-commander-deck-faceless-menace.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c19-commander-deck-faceless-menace.jpg"
+            },
+            {
+              "type": "commander-deck-merciless-rage",
+              "name": "Merciless Rage — Commander Deck",
+              "deck_file": "mtg-c19-commander-deck-merciless-rage.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c19-commander-deck-merciless-rage.jpg"
+            },
+            {
+              "type": "commander-deck-mystic-intellect",
+              "name": "Mystic Intellect — Commander Deck",
+              "deck_file": "mtg-c19-commander-deck-mystic-intellect.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c19-commander-deck-mystic-intellect.jpg"
+            },
+            {
+              "type": "commander-deck-primal-genesis",
+              "name": "Primal Genesis — Commander Deck",
+              "deck_file": "mtg-c19-commander-deck-primal-genesis.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c19-commander-deck-primal-genesis.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-c19-commander-deck-faceless-menace.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c19-commander-deck-merciless-rage.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c19-commander-deck-mystic-intellect.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c19-commander-deck-primal-genesis.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "193443",
+              "image": "/images/products/mtg-c19-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/c19.svg"
+        },
+        {
+          "code": "c20",
+          "name": "Commander 2020",
+          "products": [
+            {
+              "type": "commander-deck-arcane-maelstrom",
+              "name": "Arcane Maelstrom — Commander Deck",
+              "deck_file": "mtg-c20-commander-deck-arcane-maelstrom.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c20-commander-deck-arcane-maelstrom.jpg"
+            },
+            {
+              "type": "commander-deck-enhanced-evolution",
+              "name": "Enhanced Evolution — Commander Deck",
+              "deck_file": "mtg-c20-commander-deck-enhanced-evolution.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c20-commander-deck-enhanced-evolution.jpg"
+            },
+            {
+              "type": "commander-deck-ruthless-regiment",
+              "name": "Ruthless Regiment — Commander Deck",
+              "deck_file": "mtg-c20-commander-deck-ruthless-regiment.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c20-commander-deck-ruthless-regiment.jpg"
+            },
+            {
+              "type": "commander-deck-symbiotic-swarm",
+              "name": "Symbiotic Swarm — Commander Deck",
+              "deck_file": "mtg-c20-commander-deck-symbiotic-swarm.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c20-commander-deck-symbiotic-swarm.jpg"
+            },
+            {
+              "type": "commander-deck-timeless-wisdom",
+              "name": "Timeless Wisdom — Commander Deck",
+              "deck_file": "mtg-c20-commander-deck-timeless-wisdom.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-c20-commander-deck-timeless-wisdom.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (5)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-c20-commander-deck-arcane-maelstrom.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c20-commander-deck-enhanced-evolution.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c20-commander-deck-ruthless-regiment.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c20-commander-deck-symbiotic-swarm.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-c20-commander-deck-timeless-wisdom.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "210830",
+              "image": "/images/products/mtg-c20-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/c20.svg"
+        },
+        {
           "code": "c21",
           "name": "Strixhaven Commander",
           "products": [
@@ -691,6 +882,44 @@
             }
           ],
           "image": "/images/sets/fic.svg"
+        },
+        {
+          "code": "khc",
+          "name": "Kaldheim Commander",
+          "products": [
+            {
+              "type": "commander-deck-elven-empire",
+              "name": "Elven Empire — Commander Deck",
+              "deck_file": "mtg-khc-commander-deck-elven-empire.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-khc-commander-deck-elven-empire.jpg"
+            },
+            {
+              "type": "commander-deck-phantom-premonition",
+              "name": "Phantom Premonition — Commander Deck",
+              "deck_file": "mtg-khc-commander-deck-phantom-premonition.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-khc-commander-deck-phantom-premonition.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-khc-commander-deck-elven-empire.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-khc-commander-deck-phantom-premonition.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "229374",
+              "image": "/images/products/mtg-khc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/khc.svg"
         },
         {
           "code": "lcc",
