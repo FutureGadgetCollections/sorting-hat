@@ -1,0 +1,328 @@
+{
+  "game": "mtg",
+  "set_code": "clb",
+  "product_type": "commander-deck-party-time",
+  "name": "Party Time",
+  "mtgjson_id": "PartyTime_CLB",
+  "source": "https://magic.wizards.com/en/news/announcements/clb-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "686",
+      "quantity": 1
+    },
+    {
+      "card_number": "689",
+      "quantity": 1
+    },
+    {
+      "card_number": "692",
+      "quantity": 1
+    },
+    {
+      "card_number": "693",
+      "quantity": 1
+    },
+    {
+      "card_number": "694",
+      "quantity": 1
+    },
+    {
+      "card_number": "695",
+      "quantity": 1
+    },
+    {
+      "card_number": "697",
+      "quantity": 1
+    },
+    {
+      "card_number": "699",
+      "quantity": 1
+    },
+    {
+      "card_number": "700",
+      "quantity": 1
+    },
+    {
+      "card_number": "701",
+      "quantity": 1
+    },
+    {
+      "card_number": "703",
+      "quantity": 1
+    },
+    {
+      "card_number": "706",
+      "quantity": 1
+    },
+    {
+      "card_number": "708",
+      "quantity": 1
+    },
+    {
+      "card_number": "709",
+      "quantity": 1
+    },
+    {
+      "card_number": "740",
+      "quantity": 1
+    },
+    {
+      "card_number": "741",
+      "quantity": 1
+    },
+    {
+      "card_number": "742",
+      "quantity": 1
+    },
+    {
+      "card_number": "749",
+      "quantity": 1
+    },
+    {
+      "card_number": "753",
+      "quantity": 1
+    },
+    {
+      "card_number": "754",
+      "quantity": 1
+    },
+    {
+      "card_number": "755",
+      "quantity": 1
+    },
+    {
+      "card_number": "761",
+      "quantity": 1
+    },
+    {
+      "card_number": "762",
+      "quantity": 1
+    },
+    {
+      "card_number": "763",
+      "quantity": 1
+    },
+    {
+      "card_number": "768",
+      "quantity": 1
+    },
+    {
+      "card_number": "769",
+      "quantity": 1
+    },
+    {
+      "card_number": "845",
+      "quantity": 1
+    },
+    {
+      "card_number": "848",
+      "quantity": 1
+    },
+    {
+      "card_number": "688",
+      "quantity": 1
+    },
+    {
+      "card_number": "696",
+      "quantity": 1
+    },
+    {
+      "card_number": "698",
+      "quantity": 1
+    },
+    {
+      "card_number": "702",
+      "quantity": 1
+    },
+    {
+      "card_number": "704",
+      "quantity": 1
+    },
+    {
+      "card_number": "705",
+      "quantity": 1
+    },
+    {
+      "card_number": "711",
+      "quantity": 1
+    },
+    {
+      "card_number": "743",
+      "quantity": 1
+    },
+    {
+      "card_number": "744",
+      "quantity": 1
+    },
+    {
+      "card_number": "760",
+      "quantity": 1
+    },
+    {
+      "card_number": "775",
+      "quantity": 1
+    },
+    {
+      "card_number": "687",
+      "quantity": 1
+    },
+    {
+      "card_number": "691",
+      "quantity": 1
+    },
+    {
+      "card_number": "707",
+      "quantity": 1
+    },
+    {
+      "card_number": "773",
+      "quantity": 1
+    },
+    {
+      "card_number": "710",
+      "quantity": 1
+    },
+    {
+      "card_number": "841",
+      "quantity": 1
+    },
+    {
+      "card_number": "865",
+      "quantity": 1
+    },
+    {
+      "card_number": "298",
+      "quantity": 1
+    },
+    {
+      "card_number": "867",
+      "quantity": 1
+    },
+    {
+      "card_number": "870",
+      "quantity": 1
+    },
+    {
+      "card_number": "871",
+      "quantity": 1
+    },
+    {
+      "card_number": "878",
+      "quantity": 1
+    },
+    {
+      "card_number": "846",
+      "quantity": 1
+    },
+    {
+      "card_number": "884",
+      "quantity": 1
+    },
+    {
+      "card_number": "903",
+      "quantity": 1
+    },
+    {
+      "card_number": "914",
+      "quantity": 1
+    },
+    {
+      "card_number": "924",
+      "quantity": 1
+    },
+    {
+      "card_number": "927",
+      "quantity": 1
+    },
+    {
+      "card_number": "929",
+      "quantity": 1
+    },
+    {
+      "card_number": "930",
+      "quantity": 1
+    },
+    {
+      "card_number": "351",
+      "quantity": 1
+    },
+    {
+      "card_number": "880",
+      "quantity": 1
+    },
+    {
+      "card_number": "882",
+      "quantity": 1
+    },
+    {
+      "card_number": "900",
+      "quantity": 1
+    },
+    {
+      "card_number": "904",
+      "quantity": 1
+    },
+    {
+      "card_number": "906",
+      "quantity": 1
+    },
+    {
+      "card_number": "907",
+      "quantity": 1
+    },
+    {
+      "card_number": "915",
+      "quantity": 1
+    },
+    {
+      "card_number": "917",
+      "quantity": 1
+    },
+    {
+      "card_number": "919",
+      "quantity": 1
+    },
+    {
+      "card_number": "653",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "650",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "658",
+      "quantity": 1
+    },
+    {
+      "card_number": "659",
+      "quantity": 1
+    },
+    {
+      "card_number": "660",
+      "quantity": 1
+    },
+    {
+      "card_number": "661",
+      "quantity": 1
+    },
+    {
+      "card_number": "669",
+      "quantity": 1
+    },
+    {
+      "card_number": "672",
+      "quantity": 1
+    },
+    {
+      "card_number": "684",
+      "quantity": 1
+    },
+    {
+      "card_number": "690",
+      "quantity": 1
+    }
+  ]
+}

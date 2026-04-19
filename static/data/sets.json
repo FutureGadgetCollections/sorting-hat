@@ -5,6 +5,70 @@
       "name": "Magic: The Gathering",
       "sets": [
         {
+          "code": "afc",
+          "name": "Adventures in the Forgotten Realms Commander",
+          "products": [
+            {
+              "type": "commander-deck-aura-of-courage",
+              "name": "Aura of Courage — Commander Deck",
+              "deck_file": "mtg-afc-commander-deck-aura-of-courage.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-afc-commander-deck-aura-of-courage.jpg",
+              "tcgplayer_id": "238759"
+            },
+            {
+              "type": "commander-deck-draconic-rage",
+              "name": "Draconic Rage — Commander Deck",
+              "deck_file": "mtg-afc-commander-deck-draconic-rage.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-afc-commander-deck-draconic-rage.jpg",
+              "tcgplayer_id": "238754"
+            },
+            {
+              "type": "commander-deck-dungeons-of-death",
+              "name": "Dungeons of Death — Commander Deck",
+              "deck_file": "mtg-afc-commander-deck-dungeons-of-death.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-afc-commander-deck-dungeons-of-death.jpg",
+              "tcgplayer_id": "238757"
+            },
+            {
+              "type": "commander-deck-planar-portal",
+              "name": "Planar Portal — Commander Deck",
+              "deck_file": "mtg-afc-commander-deck-planar-portal.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-afc-commander-deck-planar-portal.jpg",
+              "tcgplayer_id": "238755"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-afc-commander-deck-aura-of-courage.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-afc-commander-deck-draconic-rage.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-afc-commander-deck-dungeons-of-death.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-afc-commander-deck-planar-portal.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "238784",
+              "image": "/images/products/mtg-afc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/afc.svg"
+        },
+        {
           "code": "blc",
           "name": "Bloomburrow Commander",
           "products": [
@@ -67,6 +131,126 @@
             }
           ],
           "image": "/images/sets/blc.svg"
+        },
+        {
+          "code": "clb",
+          "name": "Commander Legends: Battle for Baldur's Gate",
+          "products": [
+            {
+              "type": "commander-deck-draconic-dissent",
+              "name": "Draconic Dissent — Commander Deck",
+              "deck_file": "mtg-clb-commander-deck-draconic-dissent.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-clb-commander-deck-draconic-dissent.jpg"
+            },
+            {
+              "type": "commander-deck-exit-from-exile",
+              "name": "Exit from Exile — Commander Deck",
+              "deck_file": "mtg-clb-commander-deck-exit-from-exile.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-clb-commander-deck-exit-from-exile.jpg"
+            },
+            {
+              "type": "commander-deck-mind-flayarrrs",
+              "name": "Mind Flayarrrs — Commander Deck",
+              "deck_file": "mtg-clb-commander-deck-mind-flayarrrs.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-clb-commander-deck-mind-flayarrrs.jpg"
+            },
+            {
+              "type": "commander-deck-party-time",
+              "name": "Party Time — Commander Deck",
+              "deck_file": "mtg-clb-commander-deck-party-time.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-clb-commander-deck-party-time.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-clb-commander-deck-draconic-dissent.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-clb-commander-deck-exit-from-exile.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-clb-commander-deck-mind-flayarrrs.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-clb-commander-deck-party-time.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "271583",
+              "image": "/images/products/mtg-clb-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/clb.svg"
+        },
+        {
+          "code": "cmm",
+          "name": "Commander Masters",
+          "products": [
+            {
+              "type": "commander-deck-eldrazi-unbound",
+              "name": "Eldrazi Unbound — Commander Deck",
+              "deck_file": "mtg-cmm-commander-deck-eldrazi-unbound.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmm-commander-deck-eldrazi-unbound.jpg"
+            },
+            {
+              "type": "commander-deck-enduring-enchantments",
+              "name": "Enduring Enchantments — Commander Deck",
+              "deck_file": "mtg-cmm-commander-deck-enduring-enchantments.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmm-commander-deck-enduring-enchantments.jpg"
+            },
+            {
+              "type": "commander-deck-planeswalker-party",
+              "name": "Planeswalker Party — Commander Deck",
+              "deck_file": "mtg-cmm-commander-deck-planeswalker-party.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmm-commander-deck-planeswalker-party.jpg"
+            },
+            {
+              "type": "commander-deck-sliver-swarm",
+              "name": "Sliver Swarm — Commander Deck",
+              "deck_file": "mtg-cmm-commander-deck-sliver-swarm.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-cmm-commander-deck-sliver-swarm.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-cmm-commander-deck-eldrazi-unbound.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-cmm-commander-deck-enduring-enchantments.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-cmm-commander-deck-planeswalker-party.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-cmm-commander-deck-sliver-swarm.json",
+                  "quantity": 1
+                }
+              ],
+              "image": "/images/products/mtg-cmm-commander-case-all-decks.jpg",
+              "tcgplayer_id": "484934"
+            }
+          ],
+          "image": "/images/sets/cmm.svg"
         },
         {
           "code": "eoc",
@@ -348,6 +532,162 @@
             }
           ],
           "image": "/images/sets/mkc.svg"
+        },
+        {
+          "code": "moc",
+          "name": "March of the Machine Commander",
+          "products": [
+            {
+              "type": "commander-deck-growing-threat",
+              "name": "Growing Threat — Commander Deck",
+              "deck_file": "mtg-moc-commander-deck-growing-threat.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-moc-commander-deck-growing-threat.jpg",
+              "tcgplayer_id": "484590"
+            },
+            {
+              "type": "commander-deck-cavalry-charge",
+              "name": "Cavalry Charge — Commander Deck",
+              "deck_file": "mtg-moc-commander-deck-cavalry-charge.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-moc-commander-deck-cavalry-charge.jpg",
+              "tcgplayer_id": "484589"
+            },
+            {
+              "type": "commander-deck-divine-convocation",
+              "name": "Divine Convocation — Commander Deck",
+              "deck_file": "mtg-moc-commander-deck-divine-convocation.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-moc-commander-deck-divine-convocation.jpg",
+              "tcgplayer_id": "484588"
+            },
+            {
+              "type": "commander-deck-call-for-backup",
+              "name": "Call for Backup — Commander Deck",
+              "deck_file": "mtg-moc-commander-deck-call-for-backup.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-moc-commander-deck-call-for-backup.jpg",
+              "tcgplayer_id": "484587"
+            },
+            {
+              "type": "commander-deck-tinker-time",
+              "name": "Tinker Time — Commander Deck",
+              "deck_file": "mtg-moc-commander-deck-tinker-time.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-moc-commander-deck-tinker-time.jpg",
+              "tcgplayer_id": "484591"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (5)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-moc-commander-deck-growing-threat.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-moc-commander-deck-cavalry-charge.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-moc-commander-deck-divine-convocation.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-moc-commander-deck-call-for-backup.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-moc-commander-deck-tinker-time.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "484593",
+              "image": "/images/products/mtg-moc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/moc.svg"
+        },
+        {
+          "code": "nec",
+          "name": "Kamigawa: Neon Dynasty Commander",
+          "products": [
+            {
+              "type": "commander-deck-buckle-up",
+              "name": "Buckle Up — Commander Deck",
+              "deck_file": "mtg-nec-commander-deck-buckle-up.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-nec-commander-deck-buckle-up.jpg",
+              "tcgplayer_id": "262517"
+            },
+            {
+              "type": "commander-deck-upgrades-unleashed",
+              "name": "Upgrades Unleashed — Commander Deck",
+              "deck_file": "mtg-nec-commander-deck-upgrades-unleashed.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-nec-commander-deck-upgrades-unleashed.jpg",
+              "tcgplayer_id": "262520"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-nec-commander-deck-buckle-up.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-nec-commander-deck-upgrades-unleashed.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "257579",
+              "image": "/images/products/mtg-nec-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/nec.svg"
+        },
+        {
+          "code": "onc",
+          "name": "Phyrexia: All Will Be One Commander",
+          "products": [
+            {
+              "type": "commander-deck-corrupting-influence",
+              "name": "Corrupting Influence — Commander Deck",
+              "deck_file": "mtg-onc-commander-deck-corrupting-influence.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-onc-commander-deck-corrupting-influence.jpg",
+              "tcgplayer_id": "475566"
+            },
+            {
+              "type": "commander-deck-rebellion-rising",
+              "name": "Rebellion Rising — Commander Deck",
+              "deck_file": "mtg-onc-commander-deck-rebellion-rising.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-onc-commander-deck-rebellion-rising.jpg",
+              "tcgplayer_id": "475567"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-onc-commander-deck-corrupting-influence.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-onc-commander-deck-rebellion-rising.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "475569",
+              "image": "/images/products/mtg-onc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/onc.svg"
         },
         {
           "code": "otc",
