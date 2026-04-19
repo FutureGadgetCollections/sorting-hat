@@ -65,6 +65,27 @@
           "image": "/images/sets/40k.svg"
         },
         {
+          "code": "acr",
+          "name": "Assassin's Creed Commander",
+          "products": [
+            {
+              "type": "commander-deck-ancient-arsenal",
+              "name": "Ancient Arsenal — Commander Deck",
+              "deck_file": "mtg-acr-commander-deck-ancient-arsenal.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-acr-commander-deck-ancient-arsenal.jpg"
+            },
+            {
+              "type": "commander-deck-brotherhood-agents",
+              "name": "Brotherhood Agents — Commander Deck",
+              "deck_file": "mtg-acr-commander-deck-brotherhood-agents.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-acr-commander-deck-brotherhood-agents.jpg"
+            }
+          ],
+          "image": "/images/sets/acr.svg"
+        },
+        {
           "code": "afc",
           "name": "Adventures in the Forgotten Realms Commander",
           "products": [
@@ -191,6 +212,44 @@
             }
           ],
           "image": "/images/sets/blc.svg"
+        },
+        {
+          "code": "brc",
+          "name": "The Brothers' War Commander",
+          "products": [
+            {
+              "type": "commander-deck-mishras-burnished-banner",
+              "name": "Mishra's Burnished Banner — Commander Deck",
+              "deck_file": "mtg-brc-commander-deck-mishras-burnished-banner.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-brc-commander-deck-mishras-burnished-banner.jpg"
+            },
+            {
+              "type": "commander-deck-urzas-iron-alliance",
+              "name": "Urza's Iron Alliance — Commander Deck",
+              "deck_file": "mtg-brc-commander-deck-urzas-iron-alliance.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-brc-commander-deck-urzas-iron-alliance.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-brc-commander-deck-mishras-burnished-banner.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-brc-commander-deck-urzas-iron-alliance.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "450084",
+              "image": "/images/products/mtg-brc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/brc.svg"
         },
         {
           "code": "c21",
@@ -425,6 +484,108 @@
             }
           ],
           "image": "/images/sets/cmr.svg"
+        },
+        {
+          "code": "dmc",
+          "name": "Dominaria United Commander",
+          "products": [
+            {
+              "type": "commander-deck-legends-legacy",
+              "name": "Legends' Legacy — Commander Deck",
+              "deck_file": "mtg-dmc-commander-deck-legends-legacy.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dmc-commander-deck-legends-legacy.jpg"
+            },
+            {
+              "type": "commander-deck-painbow",
+              "name": "Painbow — Commander Deck",
+              "deck_file": "mtg-dmc-commander-deck-painbow.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dmc-commander-deck-painbow.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-dmc-commander-deck-legends-legacy.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-dmc-commander-deck-painbow.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "279541",
+              "image": "/images/products/mtg-dmc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/dmc.svg"
+        },
+        {
+          "code": "dsc",
+          "name": "Duskmourn: House of Horror Commander",
+          "products": [
+            {
+              "type": "commander-deck-death-toll",
+              "name": "Death Toll — Commander Deck",
+              "deck_file": "mtg-dsc-commander-deck-death-toll.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dsc-commander-deck-death-toll.jpg",
+              "tcgplayer_id": "557254"
+            },
+            {
+              "type": "commander-deck-endless-punishment",
+              "name": "Endless Punishment — Commander Deck",
+              "deck_file": "mtg-dsc-commander-deck-endless-punishment.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dsc-commander-deck-endless-punishment.jpg",
+              "tcgplayer_id": "557256"
+            },
+            {
+              "type": "commander-deck-jump-scare",
+              "name": "Jump Scare! — Commander Deck",
+              "deck_file": "mtg-dsc-commander-deck-jump-scare.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dsc-commander-deck-jump-scare.jpg",
+              "tcgplayer_id": "557255"
+            },
+            {
+              "type": "commander-deck-miracle-worker",
+              "name": "Miracle Worker — Commander Deck",
+              "deck_file": "mtg-dsc-commander-deck-miracle-worker.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-dsc-commander-deck-miracle-worker.jpg",
+              "tcgplayer_id": "557253"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-dsc-commander-deck-death-toll.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-dsc-commander-deck-endless-punishment.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-dsc-commander-deck-jump-scare.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-dsc-commander-deck-miracle-worker.json",
+                  "quantity": 1
+                }
+              ],
+              "image": "/images/products/mtg-dsc-commander-case-all-decks.jpg",
+              "tcgplayer_id": "557257"
+            }
+          ],
+          "image": "/images/sets/dsc.svg"
         },
         {
           "code": "eoc",
@@ -882,6 +1043,77 @@
             }
           ],
           "image": "/images/sets/moc.svg"
+        },
+        {
+          "code": "ncc",
+          "name": "Streets of New Capenna Commander",
+          "products": [
+            {
+              "type": "commander-deck-bedecked-brokers",
+              "name": "Bedecked Brokers — Commander Deck",
+              "deck_file": "mtg-ncc-commander-deck-bedecked-brokers.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ncc-commander-deck-bedecked-brokers.jpg"
+            },
+            {
+              "type": "commander-deck-cabaretti-cacophony",
+              "name": "Cabaretti Cacophony — Commander Deck",
+              "deck_file": "mtg-ncc-commander-deck-cabaretti-cacophony.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ncc-commander-deck-cabaretti-cacophony.jpg"
+            },
+            {
+              "type": "commander-deck-maestros-massacre",
+              "name": "Maestros Massacre — Commander Deck",
+              "deck_file": "mtg-ncc-commander-deck-maestros-massacre.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ncc-commander-deck-maestros-massacre.jpg"
+            },
+            {
+              "type": "commander-deck-obscura-operation",
+              "name": "Obscura Operation — Commander Deck",
+              "deck_file": "mtg-ncc-commander-deck-obscura-operation.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ncc-commander-deck-obscura-operation.jpg"
+            },
+            {
+              "type": "commander-deck-riveteers-rampage",
+              "name": "Riveteers Rampage — Commander Deck",
+              "deck_file": "mtg-ncc-commander-deck-riveteers-rampage.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-ncc-commander-deck-riveteers-rampage.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (5)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-ncc-commander-deck-bedecked-brokers.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ncc-commander-deck-cabaretti-cacophony.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ncc-commander-deck-maestros-massacre.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ncc-commander-deck-obscura-operation.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-ncc-commander-deck-riveteers-rampage.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "265391",
+              "image": "/images/products/mtg-ncc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/ncc.svg"
         },
         {
           "code": "nec",

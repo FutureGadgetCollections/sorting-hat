@@ -1,0 +1,163 @@
+{
+  "game": "mtg",
+  "set_code": "acr",
+  "product_type": "commander-deck-brotherhood-agents",
+  "name": "Brotherhood Agents",
+  "mtgjson_id": "BrotherhoodAgents_ACR",
+  "source": "MTGJSON decks/BrotherhoodAgents_ACR",
+  "cards": [
+    {
+      "card_number": "294",
+      "quantity": 1
+    },
+    {
+      "card_number": "275",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "295",
+      "quantity": 1
+    },
+    {
+      "card_number": "295",
+      "quantity": 1
+    },
+    {
+      "card_number": "298",
+      "quantity": 1
+    },
+    {
+      "card_number": "284",
+      "quantity": 1
+    },
+    {
+      "card_number": "284",
+      "quantity": 1
+    },
+    {
+      "card_number": "284",
+      "quantity": 1
+    },
+    {
+      "card_number": "283",
+      "quantity": 1
+    },
+    {
+      "card_number": "283",
+      "quantity": 1
+    },
+    {
+      "card_number": "282",
+      "quantity": 1
+    },
+    {
+      "card_number": "282",
+      "quantity": 1
+    },
+    {
+      "card_number": "282",
+      "quantity": 1
+    },
+    {
+      "card_number": "281",
+      "quantity": 1
+    },
+    {
+      "card_number": "281",
+      "quantity": 1
+    },
+    {
+      "card_number": "287",
+      "quantity": 1
+    },
+    {
+      "card_number": "287",
+      "quantity": 1
+    },
+    {
+      "card_number": "287",
+      "quantity": 1
+    },
+    {
+      "card_number": "286",
+      "quantity": 1
+    },
+    {
+      "card_number": "286",
+      "quantity": 1
+    },
+    {
+      "card_number": "288",
+      "quantity": 1
+    },
+    {
+      "card_number": "288",
+      "quantity": 1
+    },
+    {
+      "card_number": "285",
+      "quantity": 1
+    },
+    {
+      "card_number": "285",
+      "quantity": 1
+    },
+    {
+      "card_number": "285",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "301",
+      "quantity": 1
+    },
+    {
+      "card_number": "301",
+      "quantity": 1
+    },
+    {
+      "card_number": "301",
+      "quantity": 1
+    },
+    {
+      "card_number": "22",
+      "quantity": 1
+    },
+    {
+      "card_number": "30",
+      "quantity": 1
+    },
+    {
+      "card_number": "23",
+      "quantity": 1
+    },
+    {
+      "card_number": "77",
+      "quantity": 1
+    },
+    {
+      "card_number": "17",
+      "quantity": 1
+    },
+    {
+      "card_number": "92",
+      "quantity": 1
+    },
+    {
+      "card_number": "92",
+      "quantity": 1
+    }
+  ]
+}

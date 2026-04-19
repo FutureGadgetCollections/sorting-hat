@@ -1,0 +1,342 @@
+{
+  "game": "mtg",
+  "set_code": "ncc",
+  "product_type": "commander-deck-obscura-operation",
+  "name": "Obscura Operation",
+  "mtgjson_id": "ObscuraOperation_NCC",
+  "source": "MTGJSON decks/ObscuraOperation_NCC",
+  "cards": [
+    {
+      "card_number": "10",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "11",
+      "quantity": 1
+    },
+    {
+      "card_number": "23",
+      "quantity": 1
+    },
+    {
+      "card_number": "31",
+      "quantity": 1
+    },
+    {
+      "card_number": "38",
+      "quantity": 1
+    },
+    {
+      "card_number": "77",
+      "quantity": 1
+    },
+    {
+      "card_number": "352",
+      "quantity": 1
+    },
+    {
+      "card_number": "359",
+      "quantity": 1
+    },
+    {
+      "card_number": "325",
+      "quantity": 1
+    },
+    {
+      "card_number": "338",
+      "quantity": 1
+    },
+    {
+      "card_number": "248",
+      "quantity": 1
+    },
+    {
+      "card_number": "192",
+      "quantity": 1
+    },
+    {
+      "card_number": "210",
+      "quantity": 1
+    },
+    {
+      "card_number": "213",
+      "quantity": 1
+    },
+    {
+      "card_number": "214",
+      "quantity": 1
+    },
+    {
+      "card_number": "223",
+      "quantity": 1
+    },
+    {
+      "card_number": "224",
+      "quantity": 1
+    },
+    {
+      "card_number": "228",
+      "quantity": 1
+    },
+    {
+      "card_number": "244",
+      "quantity": 1
+    },
+    {
+      "card_number": "251",
+      "quantity": 1
+    },
+    {
+      "card_number": "335",
+      "quantity": 1
+    },
+    {
+      "card_number": "337",
+      "quantity": 1
+    },
+    {
+      "card_number": "351",
+      "quantity": 1
+    },
+    {
+      "card_number": "354",
+      "quantity": 1
+    },
+    {
+      "card_number": "217",
+      "quantity": 1
+    },
+    {
+      "card_number": "225",
+      "quantity": 1
+    },
+    {
+      "card_number": "238",
+      "quantity": 1
+    },
+    {
+      "card_number": "342",
+      "quantity": 1
+    },
+    {
+      "card_number": "17",
+      "quantity": 1
+    },
+    {
+      "card_number": "42",
+      "quantity": 1
+    },
+    {
+      "card_number": "193",
+      "quantity": 1
+    },
+    {
+      "card_number": "198",
+      "quantity": 1
+    },
+    {
+      "card_number": "233",
+      "quantity": 1
+    },
+    {
+      "card_number": "253",
+      "quantity": 1
+    },
+    {
+      "card_number": "256",
+      "quantity": 1
+    },
+    {
+      "card_number": "237",
+      "quantity": 1
+    },
+    {
+      "set": "snc",
+      "card_number": "51",
+      "quantity": 1
+    },
+    {
+      "card_number": "24",
+      "quantity": 1
+    },
+    {
+      "card_number": "36",
+      "quantity": 1
+    },
+    {
+      "set": "snc",
+      "card_number": "208",
+      "quantity": 1
+    },
+    {
+      "card_number": "76",
+      "quantity": 1
+    },
+    {
+      "card_number": "216",
+      "quantity": 1
+    },
+    {
+      "card_number": "356",
+      "quantity": 1
+    },
+    {
+      "card_number": "211",
+      "quantity": 1
+    },
+    {
+      "card_number": "27",
+      "quantity": 1
+    },
+    {
+      "card_number": "74",
+      "quantity": 1
+    },
+    {
+      "card_number": "21",
+      "quantity": 1
+    },
+    {
+      "card_number": "360",
+      "quantity": 1
+    },
+    {
+      "card_number": "361",
+      "quantity": 1
+    },
+    {
+      "card_number": "363",
+      "quantity": 1
+    },
+    {
+      "card_number": "81",
+      "quantity": 1
+    },
+    {
+      "card_number": "365",
+      "quantity": 1
+    },
+    {
+      "card_number": "367",
+      "quantity": 1
+    },
+    {
+      "card_number": "347",
+      "quantity": 1
+    },
+    {
+      "card_number": "28",
+      "quantity": 1
+    },
+    {
+      "card_number": "375",
+      "quantity": 1
+    },
+    {
+      "card_number": "377",
+      "quantity": 1
+    },
+    {
+      "card_number": "381",
+      "quantity": 1
+    },
+    {
+      "card_number": "379",
+      "quantity": 1
+    },
+    {
+      "card_number": "382",
+      "quantity": 1
+    },
+    {
+      "card_number": "384",
+      "quantity": 1
+    },
+    {
+      "card_number": "401",
+      "quantity": 1
+    },
+    {
+      "card_number": "396",
+      "quantity": 1
+    },
+    {
+      "card_number": "431",
+      "quantity": 1
+    },
+    {
+      "card_number": "393",
+      "quantity": 1
+    },
+    {
+      "card_number": "385",
+      "quantity": 1
+    },
+    {
+      "card_number": "398",
+      "quantity": 1
+    },
+    {
+      "card_number": "400",
+      "quantity": 1
+    },
+    {
+      "card_number": "420",
+      "quantity": 1
+    },
+    {
+      "card_number": "421",
+      "quantity": 1
+    },
+    {
+      "card_number": "427",
+      "quantity": 1
+    },
+    {
+      "card_number": "435",
+      "quantity": 1
+    },
+    {
+      "card_number": "386",
+      "quantity": 1
+    },
+    {
+      "card_number": "395",
+      "quantity": 1
+    },
+    {
+      "card_number": "399",
+      "quantity": 1
+    },
+    {
+      "card_number": "416",
+      "quantity": 1
+    },
+    {
+      "set": "snc",
+      "card_number": "252",
+      "quantity": 1
+    },
+    {
+      "card_number": "419",
+      "quantity": 1
+    },
+    {
+      "card_number": "422",
+      "quantity": 1
+    },
+    {
+      "card_number": "440",
+      "quantity": 1
+    },
+    {
+      "card_number": "441",
+      "quantity": 1
+    },
+    {
+      "card_number": "442",
+      "quantity": 1
+    }
+  ]
+}

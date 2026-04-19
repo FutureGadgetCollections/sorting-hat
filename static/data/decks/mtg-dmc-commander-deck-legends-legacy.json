@@ -1,0 +1,343 @@
+{
+  "game": "mtg",
+  "set_code": "dmc",
+  "product_type": "commander-deck-legends-legacy",
+  "name": "Legends' Legacy",
+  "mtgjson_id": "LegendsLegacy_DMC",
+  "source": "MTGJSON decks/LegendsLegacy_DMC",
+  "cards": [
+    {
+      "card_number": "139",
+      "quantity": 1
+    },
+    {
+      "card_number": "118",
+      "quantity": 1
+    },
+    {
+      "card_number": "97",
+      "quantity": 1
+    },
+    {
+      "card_number": "141",
+      "quantity": 1
+    },
+    {
+      "card_number": "119",
+      "quantity": 1
+    },
+    {
+      "card_number": "145",
+      "quantity": 1
+    },
+    {
+      "card_number": "120",
+      "quantity": 1
+    },
+    {
+      "card_number": "114",
+      "quantity": 1
+    },
+    {
+      "card_number": "111",
+      "quantity": 1
+    },
+    {
+      "card_number": "121",
+      "quantity": 1
+    },
+    {
+      "card_number": "151",
+      "quantity": 1
+    },
+    {
+      "card_number": "102",
+      "quantity": 1
+    },
+    {
+      "card_number": "113",
+      "quantity": 1
+    },
+    {
+      "card_number": "123",
+      "quantity": 1
+    },
+    {
+      "card_number": "124",
+      "quantity": 1
+    },
+    {
+      "card_number": "125",
+      "quantity": 1
+    },
+    {
+      "card_number": "103",
+      "quantity": 1
+    },
+    {
+      "card_number": "171",
+      "quantity": 1
+    },
+    {
+      "card_number": "105",
+      "quantity": 1
+    },
+    {
+      "card_number": "195",
+      "quantity": 1
+    },
+    {
+      "card_number": "108",
+      "quantity": 1
+    },
+    {
+      "card_number": "165",
+      "quantity": 1
+    },
+    {
+      "card_number": "107",
+      "quantity": 1
+    },
+    {
+      "card_number": "122",
+      "quantity": 1
+    },
+    {
+      "card_number": "155",
+      "quantity": 1
+    },
+    {
+      "card_number": "115",
+      "quantity": 1
+    },
+    {
+      "card_number": "117",
+      "quantity": 1
+    },
+    {
+      "card_number": "110",
+      "quantity": 1
+    },
+    {
+      "card_number": "144",
+      "quantity": 1
+    },
+    {
+      "card_number": "100",
+      "quantity": 1
+    },
+    {
+      "card_number": "112",
+      "quantity": 1
+    },
+    {
+      "card_number": "161",
+      "quantity": 1
+    },
+    {
+      "card_number": "127",
+      "quantity": 1
+    },
+    {
+      "card_number": "106",
+      "quantity": 1
+    },
+    {
+      "card_number": "174",
+      "quantity": 1
+    },
+    {
+      "card_number": "178",
+      "quantity": 1
+    },
+    {
+      "card_number": "179",
+      "quantity": 1
+    },
+    {
+      "card_number": "181",
+      "quantity": 1
+    },
+    {
+      "card_number": "177",
+      "quantity": 1
+    },
+    {
+      "card_number": "182",
+      "quantity": 1
+    },
+    {
+      "card_number": "183",
+      "quantity": 1
+    },
+    {
+      "card_number": "184",
+      "quantity": 1
+    },
+    {
+      "card_number": "186",
+      "quantity": 1
+    },
+    {
+      "card_number": "185",
+      "quantity": 1
+    },
+    {
+      "card_number": "187",
+      "quantity": 1
+    },
+    {
+      "card_number": "188",
+      "quantity": 1
+    },
+    {
+      "card_number": "190",
+      "quantity": 1
+    },
+    {
+      "card_number": "192",
+      "quantity": 1
+    },
+    {
+      "card_number": "193",
+      "quantity": 1
+    },
+    {
+      "card_number": "98",
+      "quantity": 1
+    },
+    {
+      "card_number": "99",
+      "quantity": 1
+    },
+    {
+      "card_number": "198",
+      "quantity": 1
+    },
+    {
+      "card_number": "199",
+      "quantity": 1
+    },
+    {
+      "card_number": "200",
+      "quantity": 1
+    },
+    {
+      "card_number": "204",
+      "quantity": 1
+    },
+    {
+      "card_number": "207",
+      "quantity": 1
+    },
+    {
+      "card_number": "208",
+      "quantity": 1
+    },
+    {
+      "card_number": "211",
+      "quantity": 1
+    },
+    {
+      "card_number": "213",
+      "quantity": 1
+    },
+    {
+      "card_number": "217",
+      "quantity": 1
+    },
+    {
+      "card_number": "218",
+      "quantity": 1
+    },
+    {
+      "card_number": "222",
+      "quantity": 1
+    },
+    {
+      "card_number": "224",
+      "quantity": 1
+    },
+    {
+      "card_number": "226",
+      "quantity": 1
+    },
+    {
+      "card_number": "227",
+      "quantity": 1
+    },
+    {
+      "card_number": "232",
+      "quantity": 1
+    },
+    {
+      "card_number": "233",
+      "quantity": 1
+    },
+    {
+      "card_number": "234",
+      "quantity": 1
+    },
+    {
+      "card_number": "236",
+      "quantity": 1
+    },
+    {
+      "card_number": "237",
+      "quantity": 1
+    },
+    {
+      "card_number": "238",
+      "quantity": 1
+    },
+    {
+      "card_number": "239",
+      "quantity": 1
+    },
+    {
+      "card_number": "240",
+      "quantity": 1
+    },
+    {
+      "set": "dmu",
+      "card_number": "244",
+      "quantity": 1
+    },
+    {
+      "card_number": "4",
+      "quantity": 1
+    },
+    {
+      "card_number": "5",
+      "quantity": 1
+    },
+    {
+      "card_number": "9",
+      "quantity": 1
+    },
+    {
+      "card_number": "10",
+      "quantity": 1
+    },
+    {
+      "card_number": "17",
+      "quantity": 1
+    },
+    {
+      "card_number": "6",
+      "quantity": 1
+    },
+    {
+      "card_number": "19",
+      "quantity": 1
+    },
+    {
+      "card_number": "16",
+      "quantity": 1
+    },
+    {
+      "card_number": "8",
+      "quantity": 1
+    }
+  ]
+}
