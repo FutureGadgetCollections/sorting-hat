@@ -1,0 +1,398 @@
+{
+  "game": "mtg",
+  "set_code": "m3c",
+  "product_type": "commander-deck-eldrazi-incursion",
+  "name": "Eldrazi Incursion",
+  "mtgjson_id": "EldraziIncursion_M3C",
+  "source": "https://magic.wizards.com/en/news/announcements/m3c-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "4",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "5",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "38",
+      "quantity": 1
+    },
+    {
+      "card_number": "46",
+      "quantity": 1
+    },
+    {
+      "card_number": "33",
+      "quantity": 1
+    },
+    {
+      "card_number": "35",
+      "quantity": 1
+    },
+    {
+      "card_number": "39",
+      "quantity": 1
+    },
+    {
+      "card_number": "51",
+      "quantity": 1
+    },
+    {
+      "card_number": "57",
+      "quantity": 1
+    },
+    {
+      "card_number": "37",
+      "quantity": 1
+    },
+    {
+      "card_number": "53",
+      "quantity": 1
+    },
+    {
+      "card_number": "32",
+      "quantity": 1
+    },
+    {
+      "card_number": "36",
+      "quantity": 1
+    },
+    {
+      "card_number": "63",
+      "quantity": 1
+    },
+    {
+      "card_number": "34",
+      "quantity": 1
+    },
+    {
+      "card_number": "160",
+      "quantity": 1
+    },
+    {
+      "card_number": "155",
+      "quantity": 1
+    },
+    {
+      "card_number": "326",
+      "quantity": 1
+    },
+    {
+      "card_number": "290",
+      "quantity": 1
+    },
+    {
+      "card_number": "272",
+      "quantity": 1
+    },
+    {
+      "card_number": "376",
+      "quantity": 1
+    },
+    {
+      "card_number": "196",
+      "quantity": 1
+    },
+    {
+      "card_number": "182",
+      "quantity": 1
+    },
+    {
+      "card_number": "242",
+      "quantity": 1
+    },
+    {
+      "card_number": "393",
+      "quantity": 1
+    },
+    {
+      "card_number": "321",
+      "quantity": 1
+    },
+    {
+      "card_number": "354",
+      "quantity": 1
+    },
+    {
+      "card_number": "324",
+      "quantity": 1
+    },
+    {
+      "card_number": "400",
+      "quantity": 1
+    },
+    {
+      "card_number": "158",
+      "quantity": 1
+    },
+    {
+      "card_number": "316",
+      "quantity": 1
+    },
+    {
+      "card_number": "351",
+      "quantity": 1
+    },
+    {
+      "card_number": "410",
+      "quantity": 1
+    },
+    {
+      "card_number": "381",
+      "quantity": 1
+    },
+    {
+      "card_number": "328",
+      "quantity": 1
+    },
+    {
+      "card_number": "375",
+      "quantity": 1
+    },
+    {
+      "card_number": "188",
+      "quantity": 1
+    },
+    {
+      "card_number": "388",
+      "quantity": 1
+    },
+    {
+      "card_number": "391",
+      "quantity": 1
+    },
+    {
+      "card_number": "157",
+      "quantity": 1
+    },
+    {
+      "card_number": "214",
+      "quantity": 1
+    },
+    {
+      "card_number": "253",
+      "quantity": 1
+    },
+    {
+      "card_number": "370",
+      "quantity": 1
+    },
+    {
+      "card_number": "203",
+      "quantity": 1
+    },
+    {
+      "card_number": "156",
+      "quantity": 1
+    },
+    {
+      "card_number": "332",
+      "quantity": 1
+    },
+    {
+      "card_number": "180",
+      "quantity": 1
+    },
+    {
+      "card_number": "251",
+      "quantity": 1
+    },
+    {
+      "card_number": "169",
+      "quantity": 1
+    },
+    {
+      "card_number": "302",
+      "quantity": 1
+    },
+    {
+      "card_number": "152",
+      "quantity": 1
+    },
+    {
+      "card_number": "411",
+      "quantity": 1
+    },
+    {
+      "card_number": "222",
+      "quantity": 1
+    },
+    {
+      "card_number": "339",
+      "quantity": 1
+    },
+    {
+      "card_number": "154",
+      "quantity": 1
+    },
+    {
+      "card_number": "323",
+      "quantity": 1
+    },
+    {
+      "card_number": "341",
+      "quantity": 1
+    },
+    {
+      "card_number": "293",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "204",
+      "quantity": 1
+    },
+    {
+      "card_number": "296",
+      "quantity": 1
+    },
+    {
+      "card_number": "291",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "7",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "17",
+      "quantity": 1
+    },
+    {
+      "card_number": "168",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "206",
+      "quantity": 1
+    },
+    {
+      "card_number": "314",
+      "quantity": 1
+    },
+    {
+      "card_number": "295",
+      "quantity": 1
+    },
+    {
+      "card_number": "380",
+      "quantity": 1
+    },
+    {
+      "card_number": "275",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "232",
+      "quantity": 1
+    },
+    {
+      "set": "mh3",
+      "card_number": "231",
+      "quantity": 1
+    },
+    {
+      "card_number": "384",
+      "quantity": 1
+    },
+    {
+      "card_number": "368",
+      "quantity": 1
+    },
+    {
+      "card_number": "305",
+      "quantity": 1
+    },
+    {
+      "card_number": "153",
+      "quantity": 1
+    },
+    {
+      "card_number": "361",
+      "quantity": 1
+    },
+    {
+      "card_number": "289",
+      "quantity": 1
+    },
+    {
+      "card_number": "283",
+      "quantity": 1
+    },
+    {
+      "card_number": "397",
+      "quantity": 1
+    },
+    {
+      "card_number": "372",
+      "quantity": 1
+    },
+    {
+      "card_number": "297",
+      "quantity": 1
+    },
+    {
+      "card_number": "408",
+      "quantity": 1
+    },
+    {
+      "card_number": "309",
+      "quantity": 1
+    },
+    {
+      "card_number": "311",
+      "quantity": 1
+    },
+    {
+      "card_number": "162",
+      "quantity": 1
+    },
+    {
+      "card_number": "310",
+      "quantity": 1
+    },
+    {
+      "card_number": "331",
+      "quantity": 1
+    },
+    {
+      "card_number": "318",
+      "quantity": 1
+    },
+    {
+      "card_number": "219",
+      "quantity": 1
+    },
+    {
+      "card_number": "161",
+      "quantity": 1
+    },
+    {
+      "card_number": "229",
+      "quantity": 1
+    },
+    {
+      "card_number": "205",
+      "quantity": 1
+    },
+    {
+      "card_number": "159",
+      "quantity": 1
+    },
+    {
+      "card_number": "363",
+      "quantity": 1
+    },
+    {
+      "card_number": "399",
+      "quantity": 1
+    }
+  ]
+}

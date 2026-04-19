@@ -1,0 +1,352 @@
+{
+  "game": "mtg",
+  "set_code": "lcc",
+  "product_type": "commander-deck-veloci-ramp-tor",
+  "name": "Veloci-Ramp-Tor",
+  "mtgjson_id": "VelociRampTor_LCC",
+  "source": "https://magic.wizards.com/en/news/announcements/lcc-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "4",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "7",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "69",
+      "quantity": 1
+    },
+    {
+      "card_number": "72",
+      "quantity": 1
+    },
+    {
+      "card_number": "88",
+      "quantity": 1
+    },
+    {
+      "card_number": "90",
+      "quantity": 1
+    },
+    {
+      "card_number": "92",
+      "quantity": 1
+    },
+    {
+      "card_number": "93",
+      "quantity": 1
+    },
+    {
+      "card_number": "94",
+      "quantity": 1
+    },
+    {
+      "card_number": "100",
+      "quantity": 1
+    },
+    {
+      "card_number": "125",
+      "quantity": 1
+    },
+    {
+      "card_number": "130",
+      "quantity": 1
+    },
+    {
+      "card_number": "138",
+      "quantity": 1
+    },
+    {
+      "card_number": "139",
+      "quantity": 1
+    },
+    {
+      "card_number": "141",
+      "quantity": 1
+    },
+    {
+      "card_number": "220",
+      "quantity": 1
+    },
+    {
+      "card_number": "224",
+      "quantity": 1
+    },
+    {
+      "card_number": "226",
+      "quantity": 1
+    },
+    {
+      "card_number": "228",
+      "quantity": 1
+    },
+    {
+      "card_number": "232",
+      "quantity": 1
+    },
+    {
+      "card_number": "236",
+      "quantity": 1
+    },
+    {
+      "card_number": "238",
+      "quantity": 1
+    },
+    {
+      "card_number": "247",
+      "quantity": 1
+    },
+    {
+      "card_number": "251",
+      "quantity": 1
+    },
+    {
+      "card_number": "252",
+      "quantity": 1
+    },
+    {
+      "card_number": "253",
+      "quantity": 1
+    },
+    {
+      "card_number": "254",
+      "quantity": 1
+    },
+    {
+      "card_number": "256",
+      "quantity": 1
+    },
+    {
+      "card_number": "258",
+      "quantity": 1
+    },
+    {
+      "card_number": "261",
+      "quantity": 1
+    },
+    {
+      "card_number": "262",
+      "quantity": 1
+    },
+    {
+      "card_number": "263",
+      "quantity": 1
+    },
+    {
+      "card_number": "281",
+      "quantity": 1
+    },
+    {
+      "card_number": "286",
+      "quantity": 1
+    },
+    {
+      "card_number": "295",
+      "quantity": 1
+    },
+    {
+      "card_number": "296",
+      "quantity": 1
+    },
+    {
+      "card_number": "307",
+      "quantity": 1
+    },
+    {
+      "card_number": "319",
+      "quantity": 1
+    },
+    {
+      "card_number": "321",
+      "quantity": 1
+    },
+    {
+      "card_number": "323",
+      "quantity": 1
+    },
+    {
+      "card_number": "324",
+      "quantity": 1
+    },
+    {
+      "card_number": "329",
+      "quantity": 1
+    },
+    {
+      "card_number": "331",
+      "quantity": 1
+    },
+    {
+      "card_number": "333",
+      "quantity": 1
+    },
+    {
+      "card_number": "334",
+      "quantity": 1
+    },
+    {
+      "card_number": "340",
+      "quantity": 1
+    },
+    {
+      "card_number": "342",
+      "quantity": 1
+    },
+    {
+      "card_number": "127",
+      "quantity": 1
+    },
+    {
+      "card_number": "128",
+      "quantity": 1
+    },
+    {
+      "card_number": "131",
+      "quantity": 1
+    },
+    {
+      "card_number": "134",
+      "quantity": 1
+    },
+    {
+      "set": "lci",
+      "card_number": "183",
+      "quantity": 1
+    },
+    {
+      "set": "lci",
+      "card_number": "194",
+      "quantity": 1
+    },
+    {
+      "set": "lci",
+      "card_number": "216",
+      "quantity": 1
+    },
+    {
+      "card_number": "229",
+      "quantity": 1
+    },
+    {
+      "set": "lci",
+      "card_number": "230",
+      "quantity": 1
+    },
+    {
+      "card_number": "235",
+      "quantity": 1
+    },
+    {
+      "card_number": "239",
+      "quantity": 1
+    },
+    {
+      "card_number": "242",
+      "quantity": 1
+    },
+    {
+      "card_number": "246",
+      "quantity": 1
+    },
+    {
+      "card_number": "248",
+      "quantity": 1
+    },
+    {
+      "card_number": "249",
+      "quantity": 1
+    },
+    {
+      "card_number": "257",
+      "quantity": 1
+    },
+    {
+      "card_number": "259",
+      "quantity": 1
+    },
+    {
+      "card_number": "260",
+      "quantity": 1
+    },
+    {
+      "card_number": "265",
+      "quantity": 1
+    },
+    {
+      "card_number": "282",
+      "quantity": 1
+    },
+    {
+      "card_number": "283",
+      "quantity": 1
+    },
+    {
+      "card_number": "287",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "313",
+      "quantity": 1
+    },
+    {
+      "card_number": "325",
+      "quantity": 1
+    },
+    {
+      "card_number": "328",
+      "quantity": 1
+    },
+    {
+      "card_number": "338",
+      "quantity": 1
+    },
+    {
+      "card_number": "343",
+      "quantity": 1
+    },
+    {
+      "card_number": "346",
+      "quantity": 1
+    },
+    {
+      "card_number": "349",
+      "quantity": 1
+    },
+    {
+      "card_number": "350",
+      "quantity": 1
+    },
+    {
+      "card_number": "359",
+      "quantity": 1
+    },
+    {
+      "card_number": "360",
+      "quantity": 1
+    },
+    {
+      "card_number": "361",
+      "quantity": 1
+    },
+    {
+      "card_number": "362",
+      "quantity": 1
+    },
+    {
+      "card_number": "363",
+      "quantity": 1
+    },
+    {
+      "card_number": "366",
+      "quantity": 1
+    }
+  ]
+}

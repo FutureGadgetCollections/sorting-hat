@@ -174,6 +174,242 @@
           "image": "/images/sets/fic.svg"
         },
         {
+          "code": "lcc",
+          "name": "Lost Caverns of Ixalan Commander",
+          "products": [
+            {
+              "type": "commander-deck-ahoy-mateys",
+              "name": "Ahoy Mateys — Commander Deck",
+              "deck_file": "mtg-lcc-commander-deck-ahoy-mateys.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-blood-rites",
+              "name": "Blood Rites — Commander Deck",
+              "deck_file": "mtg-lcc-commander-deck-blood-rites.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-explorers-of-the-deep",
+              "name": "Explorers of the Deep — Commander Deck",
+              "deck_file": "mtg-lcc-commander-deck-explorers-of-the-deep.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-deck-veloci-ramp-tor",
+              "name": "Veloci-Ramp-Tor — Commander Deck",
+              "deck_file": "mtg-lcc-commander-deck-veloci-ramp-tor.json",
+              "kind": "deck"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-lcc-commander-deck-ahoy-mateys.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-lcc-commander-deck-blood-rites.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-lcc-commander-deck-explorers-of-the-deep.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-lcc-commander-deck-veloci-ramp-tor.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "675572",
+              "image": "/images/products/mtg-lcc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/lcc.svg"
+        },
+        {
+          "code": "m3c",
+          "name": "Modern Horizons 3 Commander",
+          "products": [
+            {
+              "type": "commander-deck-graveyard-overdrive",
+              "name": "Graveyard Overdrive — Commander Deck",
+              "deck_file": "mtg-m3c-commander-deck-graveyard-overdrive.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-m3c-commander-deck-graveyard-overdrive.jpg"
+            },
+            {
+              "type": "commander-deck-tricky-terrain",
+              "name": "Tricky Terrain — Commander Deck",
+              "deck_file": "mtg-m3c-commander-deck-tricky-terrain.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-m3c-commander-deck-tricky-terrain.jpg"
+            },
+            {
+              "type": "commander-deck-eldrazi-incursion",
+              "name": "Eldrazi Incursion — Commander Deck",
+              "deck_file": "mtg-m3c-commander-deck-eldrazi-incursion.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-m3c-commander-deck-eldrazi-incursion.jpg"
+            },
+            {
+              "type": "commander-deck-creative-energy",
+              "name": "Creative Energy — Commander Deck",
+              "deck_file": "mtg-m3c-commander-deck-creative-energy.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-m3c-commander-deck-creative-energy.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-m3c-commander-deck-graveyard-overdrive.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-m3c-commander-deck-tricky-terrain.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-m3c-commander-deck-eldrazi-incursion.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-m3c-commander-deck-creative-energy.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "541196",
+              "image": "/images/products/mtg-m3c-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/m3c.svg"
+        },
+        {
+          "code": "mkc",
+          "name": "Murders at Karlov Manor Commander",
+          "products": [
+            {
+              "type": "commander-deck-blame-game",
+              "name": "Blame Game — Commander Deck",
+              "deck_file": "mtg-mkc-commander-deck-blame-game.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mkc-commander-deck-blame-game.jpg"
+            },
+            {
+              "type": "commander-deck-deep-clue-sea",
+              "name": "Deep Clue Sea — Commander Deck",
+              "deck_file": "mtg-mkc-commander-deck-deep-clue-sea.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mkc-commander-deck-deep-clue-sea.jpg"
+            },
+            {
+              "type": "commander-deck-revenant-recon",
+              "name": "Revenant Recon — Commander Deck",
+              "deck_file": "mtg-mkc-commander-deck-revenant-recon.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mkc-commander-deck-revenant-recon.jpg"
+            },
+            {
+              "type": "commander-deck-deadly-disguise",
+              "name": "Deadly Disguise — Commander Deck",
+              "deck_file": "mtg-mkc-commander-deck-deadly-disguise.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-mkc-commander-deck-deadly-disguise.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-mkc-commander-deck-blame-game.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-mkc-commander-deck-deep-clue-sea.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-mkc-commander-deck-revenant-recon.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-mkc-commander-deck-deadly-disguise.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "529981",
+              "image": "/images/products/mtg-mkc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/mkc.svg"
+        },
+        {
+          "code": "otc",
+          "name": "Outlaws of Thunder Junction Commander",
+          "products": [
+            {
+              "type": "commander-deck-desert-bloom",
+              "name": "Desert Bloom — Commander Deck",
+              "deck_file": "mtg-otc-commander-deck-desert-bloom.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-otc-commander-deck-desert-bloom.jpg"
+            },
+            {
+              "type": "commander-deck-quick-draw",
+              "name": "Quick Draw — Commander Deck",
+              "deck_file": "mtg-otc-commander-deck-quick-draw.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-otc-commander-deck-quick-draw.jpg"
+            },
+            {
+              "type": "commander-deck-grand-larceny",
+              "name": "Grand Larceny — Commander Deck",
+              "deck_file": "mtg-otc-commander-deck-grand-larceny.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-otc-commander-deck-grand-larceny.jpg"
+            },
+            {
+              "type": "commander-deck-most-wanted",
+              "name": "Most Wanted — Commander Deck",
+              "deck_file": "mtg-otc-commander-deck-most-wanted.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-otc-commander-deck-most-wanted.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-otc-commander-deck-desert-bloom.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-otc-commander-deck-quick-draw.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-otc-commander-deck-grand-larceny.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-otc-commander-deck-most-wanted.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "541105",
+              "image": "/images/products/mtg-otc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/otc.svg"
+        },
+        {
           "code": "tdc",
           "name": "Tarkir: Dragonstorm Commander",
           "products": [
@@ -312,6 +548,44 @@
             }
           ],
           "image": "/images/sets/who.svg"
+        },
+        {
+          "code": "woc",
+          "name": "Wilds of Eldraine Commander",
+          "products": [
+            {
+              "type": "commander-deck-virtue-and-valor",
+              "name": "Virtue and Valor — Commander Deck",
+              "deck_file": "mtg-woc-commander-deck-virtue-and-valor.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-woc-commander-deck-virtue-and-valor.jpg"
+            },
+            {
+              "type": "commander-deck-fae-dominion",
+              "name": "Fae Dominion — Commander Deck",
+              "deck_file": "mtg-woc-commander-deck-fae-dominion.json",
+              "kind": "deck",
+              "image": "/images/products/mtg-woc-commander-deck-fae-dominion.jpg"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (2)",
+              "kind": "case",
+              "components": [
+                {
+                  "deck_file": "mtg-woc-commander-deck-virtue-and-valor.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-woc-commander-deck-fae-dominion.json",
+                  "quantity": 1
+                }
+              ],
+              "tcgplayer_id": "509473",
+              "image": "/images/products/mtg-woc-commander-case-all-decks.jpg"
+            }
+          ],
+          "image": "/images/sets/woc.svg"
         }
       ],
       "image": "/images/games/mtg.svg"

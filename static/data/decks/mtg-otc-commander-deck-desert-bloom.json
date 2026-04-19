@@ -1,0 +1,352 @@
+{
+  "game": "mtg",
+  "set_code": "otc",
+  "product_type": "commander-deck-desert-bloom",
+  "name": "Desert Bloom",
+  "mtgjson_id": "DesertBloom_OTC",
+  "source": "https://magic.wizards.com/en/news/announcements/otc-commander-decklists (resolved against catalog)",
+  "cards": [
+    {
+      "card_number": "4",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "7",
+      "quantity": 1,
+      "foil": true
+    },
+    {
+      "card_number": "316",
+      "quantity": 1
+    },
+    {
+      "card_number": "87",
+      "quantity": 1
+    },
+    {
+      "card_number": "236",
+      "quantity": 1
+    },
+    {
+      "card_number": "80",
+      "quantity": 1
+    },
+    {
+      "card_number": "255",
+      "quantity": 1
+    },
+    {
+      "card_number": "82",
+      "quantity": 1
+    },
+    {
+      "card_number": "319",
+      "quantity": 1
+    },
+    {
+      "card_number": "205",
+      "quantity": 1
+    },
+    {
+      "card_number": "195",
+      "quantity": 1
+    },
+    {
+      "card_number": "200",
+      "quantity": 1
+    },
+    {
+      "card_number": "202",
+      "quantity": 1
+    },
+    {
+      "card_number": "315",
+      "quantity": 1
+    },
+    {
+      "card_number": "214",
+      "quantity": 1
+    },
+    {
+      "card_number": "176",
+      "quantity": 1
+    },
+    {
+      "card_number": "211",
+      "quantity": 1
+    },
+    {
+      "card_number": "86",
+      "quantity": 1
+    },
+    {
+      "card_number": "186",
+      "quantity": 1
+    },
+    {
+      "card_number": "210",
+      "quantity": 1
+    },
+    {
+      "card_number": "203",
+      "quantity": 1
+    },
+    {
+      "card_number": "262",
+      "quantity": 1
+    },
+    {
+      "card_number": "187",
+      "quantity": 1
+    },
+    {
+      "card_number": "229",
+      "quantity": 1
+    },
+    {
+      "card_number": "223",
+      "quantity": 1
+    },
+    {
+      "card_number": "230",
+      "quantity": 1
+    },
+    {
+      "card_number": "193",
+      "quantity": 1
+    },
+    {
+      "card_number": "326",
+      "quantity": 1
+    },
+    {
+      "card_number": "197",
+      "quantity": 1
+    },
+    {
+      "card_number": "220",
+      "quantity": 1
+    },
+    {
+      "card_number": "11",
+      "quantity": 1
+    },
+    {
+      "card_number": "28",
+      "quantity": 1
+    },
+    {
+      "card_number": "31",
+      "quantity": 1
+    },
+    {
+      "card_number": "24",
+      "quantity": 1
+    },
+    {
+      "card_number": "35",
+      "quantity": 1
+    },
+    {
+      "card_number": "9",
+      "quantity": 1
+    },
+    {
+      "card_number": "40",
+      "quantity": 1
+    },
+    {
+      "card_number": "32",
+      "quantity": 1
+    },
+    {
+      "card_number": "336",
+      "quantity": 1
+    },
+    {
+      "card_number": "292",
+      "quantity": 1
+    },
+    {
+      "card_number": "268",
+      "quantity": 1
+    },
+    {
+      "card_number": "192",
+      "quantity": 1
+    },
+    {
+      "card_number": "267",
+      "quantity": 1
+    },
+    {
+      "card_number": "204",
+      "quantity": 1
+    },
+    {
+      "card_number": "263",
+      "quantity": 1
+    },
+    {
+      "card_number": "189",
+      "quantity": 1
+    },
+    {
+      "card_number": "309",
+      "quantity": 1
+    },
+    {
+      "card_number": "280",
+      "quantity": 1
+    },
+    {
+      "card_number": "173",
+      "quantity": 1
+    },
+    {
+      "card_number": "304",
+      "quantity": 1
+    },
+    {
+      "card_number": "286",
+      "quantity": 1
+    },
+    {
+      "card_number": "207",
+      "quantity": 1
+    },
+    {
+      "card_number": "285",
+      "quantity": 1
+    },
+    {
+      "card_number": "303",
+      "quantity": 1
+    },
+    {
+      "card_number": "156",
+      "quantity": 1
+    },
+    {
+      "card_number": "284",
+      "quantity": 1
+    },
+    {
+      "card_number": "88",
+      "quantity": 1
+    },
+    {
+      "card_number": "291",
+      "quantity": 1
+    },
+    {
+      "card_number": "318",
+      "quantity": 1
+    },
+    {
+      "card_number": "299",
+      "quantity": 1
+    },
+    {
+      "card_number": "191",
+      "quantity": 1
+    },
+    {
+      "card_number": "213",
+      "quantity": 1
+    },
+    {
+      "card_number": "208",
+      "quantity": 1
+    },
+    {
+      "card_number": "252",
+      "quantity": 1
+    },
+    {
+      "card_number": "182",
+      "quantity": 1
+    },
+    {
+      "card_number": "245",
+      "quantity": 1
+    },
+    {
+      "card_number": "163",
+      "quantity": 1
+    },
+    {
+      "card_number": "190",
+      "quantity": 1
+    },
+    {
+      "card_number": "194",
+      "quantity": 1
+    },
+    {
+      "card_number": "311",
+      "quantity": 1
+    },
+    {
+      "card_number": "85",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "26",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "6",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "170",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "254",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "262",
+      "quantity": 1
+    },
+    {
+      "card_number": "250",
+      "quantity": 1
+    },
+    {
+      "card_number": "78",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "253",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "255",
+      "quantity": 1
+    },
+    {
+      "set": "otj",
+      "card_number": "251",
+      "quantity": 1
+    },
+    {
+      "card_number": "266",
+      "quantity": 1
+    },
+    {
+      "card_number": "198",
+      "quantity": 1
+    }
+  ]
+}
