@@ -365,9 +365,8 @@
 
   function downloadStamped(marketplace, csvRows) {
     const stamp = new Date().toISOString().slice(0, 10);
-    const qtyHeader = marketplace === 'manapool' ? 'Total Quantity' : 'Add to Quantity';
     const filename  = `${marketplace}_${game}_${setCode}_${product}_${stamp}.csv`;
-    downloadCsv(filename, buildCsv(csvRows, qtyHeader));
+    downloadCsv(filename, buildCsv(csvRows, marketplace));
   }
 
   function exportSingle(marketplace) {
@@ -377,7 +376,12 @@
       if (!d.row.tcgplayer_id || d.addQty <= 0) continue;
       const list = marketplace === 'manapool' ? d.mpList : d.tcgList;
       if (list == null) continue;
-      csvRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: list.toFixed(2) });
+      csvRows.push({
+        tcgplayer_id: d.row.tcgplayer_id,
+        addQty: d.addQty,
+        listPrice: list.toFixed(2),
+        foil: d.row.foil,
+      });
     }
     if (csvRows.length === 0) {
       showToast('Nothing to export — every row is qty 0 or missing a list price.', 'warning');
@@ -418,9 +422,9 @@
       }
 
       if (target === 'tcgplayer' && d.tcgList != null) {
-        tcgRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.tcgList.toFixed(2) });
+        tcgRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.tcgList.toFixed(2), foil: d.row.foil });
       } else if (target === 'manapool' && d.mpList != null) {
-        mpRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.mpList.toFixed(2) });
+        mpRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.mpList.toFixed(2), foil: d.row.foil });
       }
     }
 
