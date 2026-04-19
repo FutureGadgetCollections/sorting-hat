@@ -216,6 +216,35 @@
               "kind": "deck",
               "image": "/images/products/mtg-tdc-commander-deck-temur-roar.jpg",
               "tcgplayer_id": "619668"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (5)",
+              "kind": "case",
+              "tcgplayer_id": "619669",
+              "image": "/images/products/mtg-tdc-commander-case-all-decks.jpg",
+              "components": [
+                {
+                  "deck_file": "mtg-tdc-commander-deck-abzan-armor.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-tdc-commander-deck-jeskai-striker.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-tdc-commander-deck-sultai-arisen.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-tdc-commander-deck-mardu-surge.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-tdc-commander-deck-temur-roar.json",
+                  "quantity": 1
+                }
+              ]
             }
           ],
           "image": "/images/sets/tdc.svg"
@@ -255,6 +284,31 @@
               "kind": "deck",
               "image": "/images/products/mtg-who-commander-deck-masters-of-evil.jpg",
               "tcgplayer_id": "496070"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "tcgplayer_id": "496074",
+              "image": "/images/products/mtg-who-commander-case-all-decks.jpg",
+              "components": [
+                {
+                  "deck_file": "mtg-who-commander-deck-blast-from-the-past.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-who-commander-deck-timey-wimey.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-who-commander-deck-paradox-power.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-who-commander-deck-masters-of-evil.json",
+                  "quantity": 1
+                }
+              ]
             }
           ],
           "image": "/images/sets/who.svg"
