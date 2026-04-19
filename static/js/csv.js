@@ -17,24 +17,43 @@ function csvEscape(v) {
   return s;
 }
 
-// rows: array of {tcgplayer_id, addQty, listPrice, foil?}
-// marketplace: 'tcgplayer' or 'manapool'
+// TCGPlayer rows: {tcgplayer_id (=SKU id), addQty, listPrice, foil?}
+// Mana Pool rows: {mp_card_id, name, set, number, rarity, finish, addQty, listPrice}
 function buildCsv(rows, marketplace = 'tcgplayer') {
-  const isMp = marketplace === 'manapool';
+  if (marketplace === 'manapool') return buildManapoolCsv(rows);
+  return buildTcgplayerCsv(rows);
+}
+
+function buildTcgplayerCsv(rows) {
   // TCGPlayer's "Export Pricing CSV" format: Condition column carries the
-  // "Foil" suffix. There is NO separate Printing column — adding one makes
-  // the importer reject rows with "does not match product details".
-  const headers = isMp
-    ? ['TCGplayer Id', 'Total Quantity', 'My Store Price']
-    : ['TCGplayer Id', 'Condition', 'Add to Quantity', 'TCG Marketplace Price'];
+  // "Foil" suffix; no separate Printing column. The TCGplayer Id column is
+  // the SKU id (per condition+variant+language), not the product id.
+  const headers = ['TCGplayer Id', 'Condition', 'Add to Quantity', 'TCG Marketplace Price'];
   const lines = [headers.join(',')];
   for (const r of rows) {
     if (!r.tcgplayer_id || r.addQty <= 0) continue;
     const condition = r.foil ? 'Near Mint Foil' : 'Near Mint';
-    const cells = isMp
-      ? [r.tcgplayer_id, r.addQty, r.listPrice ?? '']
-      : [r.tcgplayer_id, condition, r.addQty, r.listPrice ?? ''];
-    lines.push(cells.map(csvEscape).join(','));
+    lines.push([r.tcgplayer_id, condition, r.addQty, r.listPrice ?? ''].map(csvEscape).join(','));
+  }
+  return lines.join('\r\n') + '\r\n';
+}
+
+function buildManapoolCsv(rows) {
+  // Mana Pool's seller-export native format. product_id is MP's UUID per
+  // printing; finish (NF | FO) selects the SKU. Market columns are
+  // informational and may be left blank.
+  const headers = ['product_type','product_id','name','set','number','rarity',
+                   'language','finish','condition','price','market_low',
+                   'market_price','market_price_foil','quantity','exported_at'];
+  const lines = [headers.join(',')];
+  const stamp = new Date().toISOString();
+  for (const r of rows) {
+    if (!r.mp_card_id || r.addQty <= 0) continue;
+    lines.push([
+      'mtg_single', r.mp_card_id, r.name, (r.set || '').toUpperCase(), r.number,
+      r.rarity || '', 'EN', r.finish, 'NM', r.listPrice ?? '',
+      '', '', '', r.addQty, stamp,
+    ].map(csvEscape).join(','));
   }
   return lines.join('\r\n') + '\r\n';
 }

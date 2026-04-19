@@ -42,7 +42,7 @@
   }
   const isMtg = game === 'mtg';
 
-  let catalog, singleCards, prices;
+  let catalog, singleCards, prices, skuById = {}, mpSkuById = {};
   try {
     [catalog, singleCards, prices] = await Promise.all([
       loadLocalJson('/data/sets.json'),
@@ -52,6 +52,23 @@
   } catch (e) {
     fail(`Failed to load data: ${e.message}`);
     return;
+  }
+
+  // Marketplace SKU lookups. Both index by TCGPlayer product id since that's
+  // the join key we have on every row.
+  // - TCGPlayer mass-upload CSV's "TCGplayer Id" column is the SKU id.
+  // - Mana Pool's native CSV uses their per-printing UUID + a finish column.
+  try {
+    const skus = await loadJsonData('data/tcgplayer-skus.json');
+    for (const s of skus) skuById[String(s.tcgplayer_id)] = s;
+  } catch (e) {
+    console.warn('[builder] tcgplayer-skus.json unavailable:', e.message);
+  }
+  try {
+    const mp = await loadJsonData('data/manapool-skus.json');
+    for (const s of mp) mpSkuById[String(s.tcgplayer_id)] = s;
+  } catch (e) {
+    console.warn('[builder] manapool-skus.json unavailable:', e.message);
   }
 
   // Mana Pool prices are MTG-only; failing soft if the file isn't published yet.
@@ -369,26 +386,56 @@
     downloadCsv(filename, buildCsv(csvRows, marketplace));
   }
 
+  // Build a marketplace-specific CSV row object for one card.
+  // Returns null if the marketplace can't address this card (missing SKU
+  // mapping). For TCGPlayer the keying field is the SKU id; for Mana Pool
+  // it's their per-printing UUID + finish code.
+  function buildCsvRow(marketplace, row, listPrice, addQty) {
+    if (marketplace === 'tcgplayer') {
+      const skus = skuById[String(row.tcgplayer_id)];
+      if (!skus) return null;
+      const skuId = row.foil ? skus.nm_foil_sku : skus.nm_normal_sku;
+      if (skuId == null) return null;
+      return { tcgplayer_id: skuId, foil: row.foil, addQty, listPrice: listPrice.toFixed(2) };
+    }
+    if (marketplace === 'manapool') {
+      const m = mpSkuById[String(row.tcgplayer_id)];
+      if (!m) return null;
+      // 'foil' / 'nonfoil' must exist in MP's finishes for the printing to be sellable.
+      const wantFinish = row.foil ? 'foil' : 'nonfoil';
+      if (!(m.finishes || []).includes(wantFinish)) return null;
+      return {
+        mp_card_id: m.mp_card_id,
+        name:       m.name || row.name,
+        set:        m.set  || row.set,
+        number:     m.number || row.number,
+        rarity:     m.rarity || row.rarity,
+        finish:     row.foil ? 'FO' : 'NF',
+        addQty, listPrice: listPrice.toFixed(2),
+      };
+    }
+    return null;
+  }
+
   function exportSingle(marketplace) {
     const data = rowExportData();
     const csvRows = [];
+    let skipMissingSku = 0;
     for (const d of data) {
       if (!d.row.tcgplayer_id || d.addQty <= 0) continue;
       const list = marketplace === 'manapool' ? d.mpList : d.tcgList;
       if (list == null) continue;
-      csvRows.push({
-        tcgplayer_id: d.row.tcgplayer_id,
-        addQty: d.addQty,
-        listPrice: list.toFixed(2),
-        foil: d.row.foil,
-      });
+      const csvRow = buildCsvRow(marketplace, d.row, list, d.addQty);
+      if (csvRow == null) { skipMissingSku += 1; continue; }
+      csvRows.push(csvRow);
     }
     if (csvRows.length === 0) {
       showToast('Nothing to export — every row is qty 0 or missing a list price.', 'warning');
       return;
     }
     downloadStamped(marketplace, csvRows);
-    showToast(`Exported ${csvRows.length} row${csvRows.length === 1 ? '' : 's'} for ${marketplace}.`, 'success');
+    const skuNote = skipMissingSku ? ` (${skipMissingSku} skipped — no SKU mapping)` : '';
+    showToast(`Exported ${csvRows.length} row${csvRows.length === 1 ? '' : 's'} for ${marketplace}.${skuNote}`, 'success');
   }
 
   function exportSmart() {
@@ -422,9 +469,11 @@
       }
 
       if (target === 'tcgplayer' && d.tcgList != null) {
-        tcgRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.tcgList.toFixed(2), foil: d.row.foil });
+        const csvRow = buildCsvRow('tcgplayer', d.row, d.tcgList, d.addQty);
+        if (csvRow != null) tcgRows.push(csvRow);
       } else if (target === 'manapool' && d.mpList != null) {
-        mpRows.push({ tcgplayer_id: d.row.tcgplayer_id, addQty: d.addQty, listPrice: d.mpList.toFixed(2), foil: d.row.foil });
+        const csvRow = buildCsvRow('manapool', d.row, d.mpList, d.addQty);
+        if (csvRow != null) mpRows.push(csvRow);
       }
     }
 
