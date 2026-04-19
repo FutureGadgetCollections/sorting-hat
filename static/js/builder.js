@@ -401,16 +401,17 @@
     if (marketplace === 'manapool') {
       const m = mpSkuById[String(row.tcgplayer_id)];
       if (!m) return null;
-      // 'foil' / 'nonfoil' must exist in MP's finishes for the printing to be sellable.
-      const wantFinish = row.foil ? 'foil' : 'nonfoil';
-      if (!(m.finishes || []).includes(wantFinish)) return null;
+      // MP's CSV product_id is the per-(card, finish, condition, language) UUID
+      // from products_mtg_single, NOT cardsmtg.uuid. Pick by foil flag.
+      const productId = row.foil ? m.fo_product_id : m.nf_product_id;
+      if (!productId) return null;
       return {
-        mp_card_id: m.mp_card_id,
-        name:       m.name || row.name,
-        set:        m.set  || row.set,
-        number:     m.number || row.number,
-        rarity:     m.rarity || row.rarity,
-        finish:     row.foil ? 'FO' : 'NF',
+        mp_product_id: productId,
+        name:   m.name   || row.name,
+        set:    m.set    || row.set,
+        number: m.number || row.number,
+        rarity: m.rarity || row.rarity,
+        finish: row.foil ? 'FO' : 'NF',
         addQty, listPrice: listPrice.toFixed(2),
       };
     }

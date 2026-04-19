@@ -48,9 +48,9 @@ function buildManapoolCsv(rows) {
   const lines = [headers.join(',')];
   const stamp = new Date().toISOString();
   for (const r of rows) {
-    if (!r.mp_card_id || r.addQty <= 0) continue;
+    if (!r.mp_product_id || r.addQty <= 0) continue;
     lines.push([
-      'mtg_single', r.mp_card_id, r.name, (r.set || '').toUpperCase(), r.number,
+      'mtg_single', r.mp_product_id, r.name, (r.set || '').toUpperCase(), r.number,
       r.rarity || '', 'EN', r.finish, 'NM', r.listPrice ?? '',
       '', '', '', r.addQty, stamp,
     ].map(csvEscape).join(','));
