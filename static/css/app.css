@@ -82,3 +82,24 @@
   margin-top: .25rem;
   font-size: .75rem;
 }
+
+/* Marketplace link badges in the builder card name cell */
+.marketplace-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .15rem;
+  padding: .1rem .4rem;
+  border-radius: .375rem;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
+}
+.marketplace-link i { font-size: .65rem; }
+.marketplace-link:hover { filter: brightness(0.92); text-decoration: none; }
+.tcg-link { background: #f4ad17; color: #1f2937; }
+.tcg-link:hover { color: #000; }
+.mp-link  { background: #1f6fb0; color: #fff; }
+.mp-link:hover  { color: #fff; }

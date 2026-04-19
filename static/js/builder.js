@@ -232,17 +232,17 @@
   function nameCellHtml(r) {
     const tcg = tcgPlayerUrl(r.tcgplayer_id);
     const mp  = manapoolUrl(r);
-    const nameNode = tcg
-      ? `<a href="${tcg}" target="_blank" rel="noopener" title="View on TCGPlayer">${r.name}</a>`
-      : r.name;
-    const noTcg  = r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>';
     const foilBadge = r.foil
       ? ' <span class="badge text-bg-info ms-1" title="Foil printing — pricing reflects foil SKU">Foil</span>'
       : '';
-    const mpLink = mp
-      ? ` <a href="${mp}" target="_blank" rel="noopener" class="ms-1 small text-decoration-none" title="View on Mana Pool">[MP]</a>`
+    const noTcg = r.tcgplayer_id ? '' : ' <span class="badge text-bg-warning ms-1">no TCG ID</span>';
+    const tcgLink = tcg
+      ? ` <a href="${tcg}" target="_blank" rel="noopener" class="marketplace-link tcg-link" title="View on TCGPlayer" aria-label="TCGPlayer"><i class="bi bi-box-arrow-up-right"></i> TCG</a>`
       : '';
-    return nameNode + foilBadge + noTcg + mpLink;
+    const mpLink = mp
+      ? ` <a href="${mp}" target="_blank" rel="noopener" class="marketplace-link mp-link" title="View on Mana Pool" aria-label="Mana Pool"><i class="bi bi-box-arrow-up-right"></i> MP</a>`
+      : '';
+    return r.name + foilBadge + noTcg + tcgLink + mpLink;
   }
 
   function render() {
@@ -428,11 +428,16 @@
       showToast('Nothing to export — every row is qty 0 or missing both list prices.', 'warning');
       return;
     }
-    if (tcgRows.length) downloadStamped('tcgplayer', tcgRows);
-    if (mpRows.length)  downloadStamped('manapool',  mpRows);
+    // Always emit both CSVs (header-only when empty) so it's visually obvious
+    // which marketplace the smart route picked nothing for. Brief stagger so
+    // browsers don't collapse the second download into the first.
+    downloadStamped('tcgplayer', tcgRows);
+    setTimeout(() => downloadStamped('manapool', mpRows), 300);
+    const feeNote = `(fees applied: TCG ${(TCG_FEE_RATE * 100).toFixed(2)}%, MP ${(MP_FEE_RATE * 100).toFixed(2)}%)`;
     showToast(
-      `Smart route: ${tcgRows.length} TCGPlayer + ${mpRows.length} Mana Pool` +
-      (routedToOther ? ` (${routedToOther} rerouted from default)` : ''),
+      `Smart route: ${tcgRows.length} TCGPlayer + ${mpRows.length} Mana Pool ` +
+      (routedToOther ? `(${routedToOther} rerouted from default) ` : '') +
+      feeNote,
       'success'
     );
   }
