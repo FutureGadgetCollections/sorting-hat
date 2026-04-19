@@ -39,6 +39,31 @@
               "kind": "deck",
               "image": "/images/products/mtg-blc-commander-deck-animated-army.jpg",
               "tcgplayer_id": "541246"
+            },
+            {
+              "type": "commander-case-all-four-decks",
+              "name": "Case — One of Each Commander Deck (4)",
+              "kind": "case",
+              "tcgplayer_id": "541250",
+              "image": "/images/products/mtg-blc-commander-case-all-four-decks.jpg",
+              "components": [
+                {
+                  "deck_file": "mtg-blc-commander-deck-squirreled-away.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-blc-commander-deck-family-matters.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-blc-commander-deck-peace-offering.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-blc-commander-deck-animated-army.json",
+                  "quantity": 1
+                }
+              ]
             }
           ],
           "image": "/images/sets/blc.svg"
