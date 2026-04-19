@@ -21,17 +21,19 @@ function csvEscape(v) {
 // marketplace: 'tcgplayer' or 'manapool'
 function buildCsv(rows, marketplace = 'tcgplayer') {
   const isMp = marketplace === 'manapool';
+  // TCGPlayer's "Export Pricing CSV" format: Condition column carries the
+  // "Foil" suffix. There is NO separate Printing column — adding one makes
+  // the importer reject rows with "does not match product details".
   const headers = isMp
     ? ['TCGplayer Id', 'Total Quantity', 'My Store Price']
-    : ['TCGplayer Id', 'Condition', 'Printing', 'Add to Quantity', 'TCG Marketplace Price'];
+    : ['TCGplayer Id', 'Condition', 'Add to Quantity', 'TCG Marketplace Price'];
   const lines = [headers.join(',')];
   for (const r of rows) {
     if (!r.tcgplayer_id || r.addQty <= 0) continue;
-    const printing = r.foil ? 'Foil' : 'Normal';
     const condition = r.foil ? 'Near Mint Foil' : 'Near Mint';
     const cells = isMp
       ? [r.tcgplayer_id, r.addQty, r.listPrice ?? '']
-      : [r.tcgplayer_id, condition, printing, r.addQty, r.listPrice ?? ''];
+      : [r.tcgplayer_id, condition, r.addQty, r.listPrice ?? ''];
     lines.push(cells.map(csvEscape).join(','));
   }
   return lines.join('\r\n') + '\r\n';
