@@ -87,6 +87,23 @@
               "kind": "deck",
               "image": "/images/products/mtg-eoc-commander-deck-counter-intelligence.jpg",
               "tcgplayer_id": "619677"
+            },
+            {
+              "type": "commander-case-all-decks",
+              "name": "Set of 2 — One of Each Commander Deck",
+              "kind": "case",
+              "tcgplayer_id": "636222",
+              "image": "/images/products/mtg-eoc-commander-case-all-decks.jpg",
+              "components": [
+                {
+                  "deck_file": "mtg-eoc-commander-deck-world-shaper.json",
+                  "quantity": 1
+                },
+                {
+                  "deck_file": "mtg-eoc-commander-deck-counter-intelligence.json",
+                  "quantity": 1
+                }
+              ]
             }
           ],
           "image": "/images/sets/eoc.svg"
