@@ -20,6 +20,13 @@
   const cfgRoutingWrap = document.getElementById('cfg-routing-wrap');
   const cfgDefaultMkt = document.getElementById('cfg-default-marketplace');
   const cfgThreshold = document.getElementById('cfg-routing-threshold');
+  const costUnitEl      = document.getElementById('cost-unit');
+  const costSourcesEl   = document.getElementById('cost-sources');
+  const purchaseQtyEl   = document.getElementById('purchase-qty');
+  const purchaseUnitEl  = document.getElementById('purchase-unit');
+  const purchaseTotalEl = document.getElementById('purchase-total');
+  const purchaseSrcLbl  = document.getElementById('purchase-source-label');
+  const evRowsEl        = document.getElementById('ev-rows');
 
   const RARITY_ORDER = { mythic: 0, rare: 1, uncommon: 2, common: 3 };
   const RARITY_LABEL = { mythic: 'M', rare: 'R', uncommon: 'U', common: 'C' };
@@ -262,11 +269,252 @@
     return r.name + foilBadge + noTcg + tcgLink + mpLink;
   }
 
+  function fmtMoney(v) { return v == null ? '—' : '$' + v.toFixed(2); }
+
+  // Purchase-price state. `activeSource` = which radio row is highlighted;
+  // Custom means "user is typing their own values". `purchase` holds the
+  // current qty/unit/total as numbers (nulls allowed for the fill-any-2 flow).
+  // `lastEditedField` lets us pick which of the three to recompute when two
+  // others change.
+  const SOURCES = [
+    { key: 'tcgplayer',      label: 'TCGPlayer market',           hasPrice: true  },
+    { key: 'manapool',       label: 'Mana Pool market',           hasPrice: true, mtgOnly: true },
+    { key: 'lowest_listing', label: 'Lowest listing (with shipping)',           hasPrice: false, stubNote: 'scraper capture not yet wired up' },
+    { key: 'lowest_legit',   label: 'Lowest legit seller (Gold Star / Hobby Shop / WPN)', hasPrice: false, stubNote: 'seller-reputation metadata not yet captured' },
+    { key: 'custom',         label: 'Custom (your own price)',    hasPrice: false },
+  ];
+
+  let activeSource = 'tcgplayer';
+  let lastEditedField = 'unit';  // which purchase field to keep on edits
+  const purchase = { qty: 1, unit: null, total: null };
+  let lastEvGrossTcg = 0;
+  let lastEvGrossMp  = 0;
+
+  function sealedPriceTcg() {
+    return prodDef.tcgplayer_id != null ? tcgPriceById[String(prodDef.tcgplayer_id)] : null;
+  }
+  function sealedPriceMp() {
+    if (!isMtg || prodDef.tcgplayer_id == null) return null;
+    return manapoolPriceById[String(prodDef.tcgplayer_id)] ?? null;
+  }
+
+  // Returns the per-unit cost for a given source, or null if unavailable.
+  function unitCostFor(sourceKey) {
+    if (sourceKey === 'tcgplayer') return sealedPriceTcg();
+    if (sourceKey === 'manapool')  return sealedPriceMp();
+    return null;
+  }
+
+  function roiClass(roi) {
+    if (roi == null) return '';
+    return roi >= 0 ? 'ev-roi-positive' : 'ev-roi-negative';
+  }
+
+  function renderEvRows() {
+    const cost = purchase.total;
+    function buildRow(label, gross, feeRate) {
+      const net = gross * (1 - feeRate);
+      let roiCell = '<span class="text-muted">—</span>';
+      if (cost != null && cost > 0) {
+        const roi = (net - cost) / cost;
+        roiCell = `<span class="${roiClass(roi)}">${(roi * 100).toFixed(1)}%</span>`;
+      }
+      return `
+        <tr>
+          <td>${label}</td>
+          <td class="text-end">${fmtMoney(gross)}</td>
+          <td class="text-end">${(feeRate * 100).toFixed(2)}%</td>
+          <td class="text-end"><strong>${fmtMoney(net)}</strong></td>
+          <td class="text-end">${roiCell}</td>
+        </tr>`;
+    }
+    const rowsHtml = [buildRow('TCGPlayer', lastEvGrossTcg, TCG_FEE_RATE)];
+    if (isMtg) {
+      if (lastEvGrossMp > 0) {
+        rowsHtml.push(buildRow('Mana Pool', lastEvGrossMp, MP_FEE_RATE));
+      } else {
+        rowsHtml.push(`
+          <tr class="text-muted">
+            <td>Mana Pool</td>
+            <td colspan="4" class="text-end small">No Mana Pool market prices available for this set.</td>
+          </tr>`);
+      }
+    }
+    evRowsEl.innerHTML = rowsHtml.join('');
+  }
+
+  function renderSourceList() {
+    const rows = SOURCES.filter(s => !s.mtgOnly || isMtg).map(s => {
+      const active = s.key === activeSource ? 'active' : '';
+      let right = '';
+      if (s.hasPrice) {
+        const unit = unitCostFor(s.key);
+        if (unit == null) {
+          right = '<span class="text-muted small">Not available</span>';
+        } else {
+          const total = unit * purchase.qty;
+          const tcgplayerId = s.key === 'tcgplayer' ? prodDef.tcgplayer_id : null;
+          const buy = tcgplayerId != null
+            ? ` <a href="https://www.tcgplayer.com/product/${tcgplayerId}" target="_blank" rel="noopener"
+                 class="btn btn-sm btn-outline-primary ms-2" onclick="event.stopPropagation()">
+                 Buy <i class="bi bi-box-arrow-up-right"></i></a>`
+            : '';
+          right = `<span>$${unit.toFixed(2)} × ${purchase.qty} = <strong>$${total.toFixed(2)}</strong></span>${buy}`;
+        }
+      } else if (s.key === 'custom') {
+        right = '<span class="text-muted small">Type your qty + cost above</span>';
+      } else {
+        right = `<span class="text-muted small">Coming soon — ${s.stubNote}</span>`;
+      }
+      return `
+        <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center ${active}"
+                data-source="${s.key}">
+          <span><strong>${s.label}</strong></span>
+          <span class="d-flex align-items-center">${right}</span>
+        </button>`;
+    });
+    costSourcesEl.innerHTML = rows.join('');
+    purchaseSrcLbl.textContent = SOURCES.find(s => s.key === activeSource)?.label || '—';
+  }
+
+  function syncPurchaseInputs() {
+    purchaseQtyEl.value   = purchase.qty != null ? purchase.qty : '';
+    purchaseUnitEl.value  = purchase.unit != null ? purchase.unit.toFixed(2) : '';
+    purchaseTotalEl.value = purchase.total != null ? purchase.total.toFixed(2) : '';
+  }
+
+  function applySource(sourceKey) {
+    activeSource = sourceKey;
+    if (sourceKey === 'custom') {
+      // Keep whatever the user typed last.
+      renderSourceList();
+      renderEvRows();
+      return;
+    }
+    const unit = unitCostFor(sourceKey);
+    if (unit == null) return;
+    purchase.unit = unit;
+    // Preserve the current qty so clicking a source respects the user's
+    // chosen quantity; keep total derived from it.
+    purchase.total = unit * purchase.qty;
+    lastEditedField = 'unit';
+    syncPurchaseInputs();
+    renderSourceList();
+    renderEvRows();
+  }
+
+  // Fill-any-two: on edit, recompute the field the user edited least recently.
+  function recomputeFromInputs() {
+    const qty   = parseInt(purchaseQtyEl.value, 10);
+    const unit  = parseFloat(purchaseUnitEl.value);
+    const total = parseFloat(purchaseTotalEl.value);
+    purchase.qty   = isNaN(qty)   ? null : Math.max(1, qty);
+    purchase.unit  = isNaN(unit)  ? null : unit;
+    purchase.total = isNaN(total) ? null : total;
+
+    if (lastEditedField === 'qty' || lastEditedField === 'unit') {
+      // Unit is the anchor → total follows.
+      if (purchase.qty != null && purchase.unit != null) {
+        purchase.total = purchase.qty * purchase.unit;
+      }
+    } else if (lastEditedField === 'total') {
+      // Total is the anchor → unit follows.
+      if (purchase.qty != null && purchase.total != null && purchase.qty > 0) {
+        purchase.unit = purchase.total / purchase.qty;
+      }
+    }
+    syncPurchaseInputs();
+    // Keep the Configure multiplier in sync with purchase qty — they're the
+    // same concept (boxes opened = boxes purchased for ROI purposes).
+    if (purchase.qty != null && String(purchase.qty) !== cfgMult.value) {
+      cfgMult.value = String(purchase.qty);
+    }
+  }
+
+  function onPurchaseEdit(fieldName) {
+    lastEditedField = fieldName;
+    activeSource = 'custom';
+    recomputeFromInputs();
+    renderSourceList();
+    renderEvRows();
+    // Qty drives per-card quantities too — trigger a full table re-render
+    // when qty changes so EV totals scale.
+    if (fieldName === 'qty') {
+      // Full re-render will reset purchase from the active source; since we
+      // just switched to custom, seed purchase back from the inputs.
+      const preserved = { ...purchase };
+      const preservedSource = activeSource;
+      render();
+      purchase.qty   = preserved.qty;
+      purchase.unit  = preserved.unit;
+      purchase.total = preserved.total;
+      activeSource = preservedSource;
+      syncPurchaseInputs();
+      renderSourceList();
+      renderEvRows();
+    }
+  }
+
+  purchaseQtyEl.addEventListener('input',   () => onPurchaseEdit('qty'));
+  purchaseUnitEl.addEventListener('input',  () => onPurchaseEdit('unit'));
+  purchaseTotalEl.addEventListener('input', () => onPurchaseEdit('total'));
+  costSourcesEl.addEventListener('click', e => {
+    const btn = e.target.closest('[data-source]');
+    if (!btn) return;
+    const key = btn.dataset.source;
+    const src = SOURCES.find(s => s.key === key);
+    if (!src) return;
+    if (src.hasPrice && unitCostFor(key) == null) return;  // can't select an unavailable source
+    if (!src.hasPrice && key !== 'custom') return;  // stubs aren't clickable yet
+    applySource(key);
+  });
+
+  function renderHeadline(mult, sumMktTcg, sumMktMp) {
+    lastEvGrossTcg = sumMktTcg;
+    lastEvGrossMp  = sumMktMp;
+    costUnitEl.textContent = `${prodDef.name}`;
+
+    // Seed purchase state from the currently active source (default: TCGPlayer
+    // → Mana Pool fallback → Custom). Only do this on a full render; partial
+    // updates from input events don't pass through here.
+    purchase.qty = mult;
+    const tcgUnit = sealedPriceTcg();
+    const mpUnit  = sealedPriceMp();
+    if (activeSource === 'tcgplayer' && tcgUnit != null) {
+      purchase.unit = tcgUnit;
+      purchase.total = tcgUnit * mult;
+    } else if (activeSource === 'manapool' && mpUnit != null) {
+      purchase.unit = mpUnit;
+      purchase.total = mpUnit * mult;
+    } else if (activeSource === 'custom') {
+      // keep purchase.unit / total as-is (scaled by the new qty if unit stayed put)
+      if (purchase.unit != null) purchase.total = purchase.unit * mult;
+    } else {
+      // Fallback to TCGPlayer if available, else null.
+      if (tcgUnit != null) {
+        activeSource = 'tcgplayer';
+        purchase.unit = tcgUnit;
+        purchase.total = tcgUnit * mult;
+      } else if (mpUnit != null) {
+        activeSource = 'manapool';
+        purchase.unit = mpUnit;
+        purchase.total = mpUnit * mult;
+      } else {
+        activeSource = 'custom';
+        purchase.unit = null;
+        purchase.total = null;
+      }
+    }
+    syncPurchaseInputs();
+    renderSourceList();
+    renderEvRows();
+  }
+
   function render() {
     const mult = Math.max(1, parseInt(cfgMult.value, 10) || 1);
     rows.sort(compareRows);
     tbody.innerHTML = '';
-    let nCards = 0, totalQty = 0, sumMkt = 0, sumListed = 0;
+    let nCards = 0, totalQty = 0, sumMkt = 0, sumMktMp = 0, sumListed = 0;
     rows.forEach((r, idx) => {
       const addQty = r.qPerUnit * mult;
       const tcgList = listPriceFor(r.tcgMkt);
@@ -294,13 +542,15 @@
       tbody.appendChild(tr);
       if (r.tcgplayer_id) nCards += 1;
       totalQty += addQty;
-      if (r.tcgMkt != null) sumMkt += r.tcgMkt * addQty;
+      if (r.tcgMkt != null) sumMkt   += r.tcgMkt * addQty;
+      if (r.mpMkt  != null) sumMktMp += r.mpMkt  * addQty;
       if (tcgList != null) sumListed += tcgList * addQty;
     });
     document.getElementById('sum-cards').textContent  = nCards;
     document.getElementById('sum-qty').textContent    = totalQty;
     document.getElementById('sum-market').textContent = '$' + sumMkt.toFixed(2);
     document.getElementById('sum-listed').textContent = '$' + sumListed.toFixed(2);
+    renderHeadline(mult, sumMkt, sumMktMp);
     btnCsv.disabled = nCards === 0;
     btnCsvMp.disabled = nCards === 0;
     btnSmart.disabled = nCards === 0;

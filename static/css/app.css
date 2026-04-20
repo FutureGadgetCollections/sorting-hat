@@ -26,6 +26,46 @@
   z-index: 100;
 }
 
+/* EV headline stat blocks on the builder page */
+.ev-stat {
+  padding: .75rem 1rem;
+  background: #f8f9fa;
+  border-radius: .5rem;
+  height: 100%;
+}
+.ev-stat-label {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+.ev-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: .25rem;
+}
+.ev-stat-hint { margin-top: .15rem; }
+.ev-roi-positive { color: #198754; }
+.ev-roi-negative { color: #dc3545; }
+
+.cost-table td, .cost-table th { vertical-align: middle; }
+
+.purchase-price {
+  background: #f8f9fa;
+}
+#cost-sources .list-group-item {
+  cursor: pointer;
+}
+#cost-sources .list-group-item.active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+#cost-sources .list-group-item.active .text-muted {
+  color: rgba(255, 255, 255, .75) !important;
+}
+
 /* Picker tiles */
 .picker-tile {
   display: flex;
@@ -81,6 +121,36 @@
 .picker-tile-sub {
   margin-top: .25rem;
   font-size: .75rem;
+}
+
+/* Breadcrumb shown after a game/set is picked. Each crumb locks in a choice
+   and exposes a "Change" link to re-open that step. */
+.picker-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem;
+  padding: .5rem .75rem;
+  background: #f1f3f5;
+  border-radius: .5rem;
+  font-size: .9rem;
+}
+.picker-crumb {
+  display: inline-flex;
+  align-items: center;
+  padding: .15rem .5rem;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .375rem;
+}
+.picker-crumb-label { font-weight: 600; }
+.picker-crumb-change {
+  font-size: .75rem;
+  text-decoration: none;
+}
+.picker-crumb-sep {
+  color: #adb5bd;
+  font-weight: 600;
 }
 
 /* Marketplace link badges in the builder card name cell */

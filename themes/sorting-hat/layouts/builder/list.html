@@ -13,6 +13,77 @@
 
 <div id="builder-content" class="d-none">
 
+  <div class="card mb-3 border-primary-subtle">
+    <div class="card-body">
+      <h2 class="h6 text-muted text-uppercase mb-3">Cost to buy</h2>
+      <div id="cost-unit" class="small text-muted mb-2"></div>
+
+      <div class="purchase-price p-3 mb-3 border rounded">
+        <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+          <h3 class="h6 mb-0">Purchase price</h3>
+          <div class="small text-muted">
+            Source: <strong id="purchase-source-label">—</strong>
+          </div>
+        </div>
+        <div class="row g-2 align-items-end">
+          <div class="col-sm-3">
+            <label for="purchase-qty" class="form-label small mb-1">Quantity</label>
+            <input id="purchase-qty" type="number" min="1" step="1" value="1"
+                   class="form-control form-control-sm text-end">
+          </div>
+          <div class="col-sm-4">
+            <label for="purchase-unit" class="form-label small mb-1">Unit cost</label>
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">$</span>
+              <input id="purchase-unit" type="number" min="0" step="0.01"
+                     class="form-control text-end">
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <label for="purchase-total" class="form-label small mb-1">Total cost</label>
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">$</span>
+              <input id="purchase-total" type="number" min="0" step="0.01"
+                     class="form-control text-end">
+            </div>
+          </div>
+        </div>
+        <div class="form-text mt-2">
+          Fill any two — the third computes. Editing any field switches source to <em>Custom</em>.
+        </div>
+      </div>
+
+      <h3 class="h6 text-muted text-uppercase mb-2">Sources</h3>
+      <div class="list-group mb-1" id="cost-sources"></div>
+      <div class="form-text mt-2">
+        Click a source to lock it in. Custom lets you type in what you actually paid.
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h2 class="h6 text-muted text-uppercase mb-3">Expected Value — break it down to singles</h2>
+      <div class="table-responsive">
+        <table class="table table-sm mb-0 align-middle ev-table">
+          <thead>
+            <tr>
+              <th>Marketplace</th>
+              <th class="text-end" style="width: 8rem">Gross EV</th>
+              <th class="text-end" style="width: 6rem">Fee</th>
+              <th class="text-end" style="width: 9rem">After fees</th>
+              <th class="text-end" style="width: 9rem">ROI vs cost</th>
+            </tr>
+          </thead>
+          <tbody id="ev-rows"></tbody>
+        </table>
+      </div>
+      <div class="form-text mt-2">
+        Gross = Σ that marketplace's market price × card qty. ROI = (after-fees EV − custom cost) ÷ custom cost.
+      </div>
+    </div>
+  </div>
+
   <div class="card mb-3">
     <div class="card-body">
       <h2 class="h6 text-muted text-uppercase mb-3">Configure</h2>

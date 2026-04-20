@@ -13,28 +13,32 @@
               "name": "Forces of the Imperium — Commander Deck",
               "deck_file": "mtg-40k-commander-deck-forces-of-the-imperium.json",
               "kind": "deck",
-              "image": "/images/products/mtg-40k-commander-deck-forces-of-the-imperium.jpg"
+              "image": "/images/products/mtg-40k-commander-deck-forces-of-the-imperium.jpg",
+              "tcgplayer_id": "272320"
             },
             {
               "type": "commander-deck-necron-dynasties",
               "name": "Necron Dynasties — Commander Deck",
               "deck_file": "mtg-40k-commander-deck-necron-dynasties.json",
               "kind": "deck",
-              "image": "/images/products/mtg-40k-commander-deck-necron-dynasties.jpg"
+              "image": "/images/products/mtg-40k-commander-deck-necron-dynasties.jpg",
+              "tcgplayer_id": "272308"
             },
             {
               "type": "commander-deck-the-ruinous-powers",
               "name": "The Ruinous Powers — Commander Deck",
               "deck_file": "mtg-40k-commander-deck-the-ruinous-powers.json",
               "kind": "deck",
-              "image": "/images/products/mtg-40k-commander-deck-the-ruinous-powers.jpg"
+              "image": "/images/products/mtg-40k-commander-deck-the-ruinous-powers.jpg",
+              "tcgplayer_id": "272315"
             },
             {
               "type": "commander-deck-tyranid-swarm",
               "name": "Tyranid Swarm — Commander Deck",
               "deck_file": "mtg-40k-commander-deck-tyranid-swarm.json",
               "kind": "deck",
-              "image": "/images/products/mtg-40k-commander-deck-tyranid-swarm.jpg"
+              "image": "/images/products/mtg-40k-commander-deck-tyranid-swarm.jpg",
+              "tcgplayer_id": "272314"
             },
             {
               "type": "commander-case-all-decks",
@@ -222,14 +226,16 @@
               "name": "Mishra's Burnished Banner — Commander Deck",
               "deck_file": "mtg-brc-commander-deck-mishras-burnished-banner.json",
               "kind": "deck",
-              "image": "/images/products/mtg-brc-commander-deck-mishras-burnished-banner.jpg"
+              "image": "/images/products/mtg-brc-commander-deck-mishras-burnished-banner.jpg",
+              "tcgplayer_id": "449723"
             },
             {
               "type": "commander-deck-urzas-iron-alliance",
               "name": "Urza's Iron Alliance — Commander Deck",
               "deck_file": "mtg-brc-commander-deck-urzas-iron-alliance.json",
               "kind": "deck",
-              "image": "/images/products/mtg-brc-commander-deck-urzas-iron-alliance.jpg"
+              "image": "/images/products/mtg-brc-commander-deck-urzas-iron-alliance.jpg",
+              "tcgplayer_id": "449722"
             },
             {
               "type": "commander-case-all-decks",
@@ -260,28 +266,32 @@
               "name": "Adaptive Enchantment — Commander Deck",
               "deck_file": "mtg-c18-commander-deck-adaptive-enchantment.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c18-commander-deck-adaptive-enchantment.jpg"
+              "image": "/images/products/mtg-c18-commander-deck-adaptive-enchantment.jpg",
+              "tcgplayer_id": "170285"
             },
             {
               "type": "commander-deck-exquisite-invention",
               "name": "Exquisite Invention — Commander Deck",
               "deck_file": "mtg-c18-commander-deck-exquisite-invention.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c18-commander-deck-exquisite-invention.jpg"
+              "image": "/images/products/mtg-c18-commander-deck-exquisite-invention.jpg",
+              "tcgplayer_id": "170283"
             },
             {
               "type": "commander-deck-natures-vengeance",
               "name": "Nature's Vengeance — Commander Deck",
               "deck_file": "mtg-c18-commander-deck-natures-vengeance.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c18-commander-deck-natures-vengeance.jpg"
+              "image": "/images/products/mtg-c18-commander-deck-natures-vengeance.jpg",
+              "tcgplayer_id": "170284"
             },
             {
               "type": "commander-deck-subjective-reality",
               "name": "Subjective Reality — Commander Deck",
               "deck_file": "mtg-c18-commander-deck-subjective-reality.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c18-commander-deck-subjective-reality.jpg"
+              "image": "/images/products/mtg-c18-commander-deck-subjective-reality.jpg",
+              "tcgplayer_id": "170286"
             },
             {
               "type": "commander-case-all-decks",
@@ -320,28 +330,32 @@
               "name": "Faceless Menace — Commander Deck",
               "deck_file": "mtg-c19-commander-deck-faceless-menace.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c19-commander-deck-faceless-menace.jpg"
+              "image": "/images/products/mtg-c19-commander-deck-faceless-menace.jpg",
+              "tcgplayer_id": "196279"
             },
             {
               "type": "commander-deck-merciless-rage",
               "name": "Merciless Rage — Commander Deck",
               "deck_file": "mtg-c19-commander-deck-merciless-rage.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c19-commander-deck-merciless-rage.jpg"
+              "image": "/images/products/mtg-c19-commander-deck-merciless-rage.jpg",
+              "tcgplayer_id": "196280"
             },
             {
               "type": "commander-deck-mystic-intellect",
               "name": "Mystic Intellect — Commander Deck",
               "deck_file": "mtg-c19-commander-deck-mystic-intellect.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c19-commander-deck-mystic-intellect.jpg"
+              "image": "/images/products/mtg-c19-commander-deck-mystic-intellect.jpg",
+              "tcgplayer_id": "196281"
             },
             {
               "type": "commander-deck-primal-genesis",
               "name": "Primal Genesis — Commander Deck",
               "deck_file": "mtg-c19-commander-deck-primal-genesis.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c19-commander-deck-primal-genesis.jpg"
+              "image": "/images/products/mtg-c19-commander-deck-primal-genesis.jpg",
+              "tcgplayer_id": "196282"
             },
             {
               "type": "commander-case-all-decks",
@@ -380,35 +394,40 @@
               "name": "Arcane Maelstrom — Commander Deck",
               "deck_file": "mtg-c20-commander-deck-arcane-maelstrom.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c20-commander-deck-arcane-maelstrom.jpg"
+              "image": "/images/products/mtg-c20-commander-deck-arcane-maelstrom.jpg",
+              "tcgplayer_id": "210823"
             },
             {
               "type": "commander-deck-enhanced-evolution",
               "name": "Enhanced Evolution — Commander Deck",
               "deck_file": "mtg-c20-commander-deck-enhanced-evolution.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c20-commander-deck-enhanced-evolution.jpg"
+              "image": "/images/products/mtg-c20-commander-deck-enhanced-evolution.jpg",
+              "tcgplayer_id": "210826"
             },
             {
               "type": "commander-deck-ruthless-regiment",
               "name": "Ruthless Regiment — Commander Deck",
               "deck_file": "mtg-c20-commander-deck-ruthless-regiment.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c20-commander-deck-ruthless-regiment.jpg"
+              "image": "/images/products/mtg-c20-commander-deck-ruthless-regiment.jpg",
+              "tcgplayer_id": "210821"
             },
             {
               "type": "commander-deck-symbiotic-swarm",
               "name": "Symbiotic Swarm — Commander Deck",
               "deck_file": "mtg-c20-commander-deck-symbiotic-swarm.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c20-commander-deck-symbiotic-swarm.jpg"
+              "image": "/images/products/mtg-c20-commander-deck-symbiotic-swarm.jpg",
+              "tcgplayer_id": "210824"
             },
             {
               "type": "commander-deck-timeless-wisdom",
               "name": "Timeless Wisdom — Commander Deck",
               "deck_file": "mtg-c20-commander-deck-timeless-wisdom.json",
               "kind": "deck",
-              "image": "/images/products/mtg-c20-commander-deck-timeless-wisdom.jpg"
+              "image": "/images/products/mtg-c20-commander-deck-timeless-wisdom.jpg",
+              "tcgplayer_id": "210825"
             },
             {
               "type": "commander-case-all-decks",
@@ -527,28 +546,32 @@
               "name": "Draconic Dissent — Commander Deck",
               "deck_file": "mtg-clb-commander-deck-draconic-dissent.json",
               "kind": "deck",
-              "image": "/images/products/mtg-clb-commander-deck-draconic-dissent.jpg"
+              "image": "/images/products/mtg-clb-commander-deck-draconic-dissent.jpg",
+              "tcgplayer_id": "267030"
             },
             {
               "type": "commander-deck-exit-from-exile",
               "name": "Exit from Exile — Commander Deck",
               "deck_file": "mtg-clb-commander-deck-exit-from-exile.json",
               "kind": "deck",
-              "image": "/images/products/mtg-clb-commander-deck-exit-from-exile.jpg"
+              "image": "/images/products/mtg-clb-commander-deck-exit-from-exile.jpg",
+              "tcgplayer_id": "267031"
             },
             {
               "type": "commander-deck-mind-flayarrrs",
               "name": "Mind Flayarrrs — Commander Deck",
               "deck_file": "mtg-clb-commander-deck-mind-flayarrrs.json",
               "kind": "deck",
-              "image": "/images/products/mtg-clb-commander-deck-mind-flayarrrs.jpg"
+              "image": "/images/products/mtg-clb-commander-deck-mind-flayarrrs.jpg",
+              "tcgplayer_id": "267027"
             },
             {
               "type": "commander-deck-party-time",
               "name": "Party Time — Commander Deck",
               "deck_file": "mtg-clb-commander-deck-party-time.json",
               "kind": "deck",
-              "image": "/images/products/mtg-clb-commander-deck-party-time.jpg"
+              "image": "/images/products/mtg-clb-commander-deck-party-time.jpg",
+              "tcgplayer_id": "267025"
             },
             {
               "type": "commander-case-all-decks",
@@ -587,28 +610,32 @@
               "name": "Eldrazi Unbound — Commander Deck",
               "deck_file": "mtg-cmm-commander-deck-eldrazi-unbound.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmm-commander-deck-eldrazi-unbound.jpg"
+              "image": "/images/products/mtg-cmm-commander-deck-eldrazi-unbound.jpg",
+              "tcgplayer_id": "484931"
             },
             {
               "type": "commander-deck-enduring-enchantments",
               "name": "Enduring Enchantments — Commander Deck",
               "deck_file": "mtg-cmm-commander-deck-enduring-enchantments.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmm-commander-deck-enduring-enchantments.jpg"
+              "image": "/images/products/mtg-cmm-commander-deck-enduring-enchantments.jpg",
+              "tcgplayer_id": "484932"
             },
             {
               "type": "commander-deck-planeswalker-party",
               "name": "Planeswalker Party — Commander Deck",
               "deck_file": "mtg-cmm-commander-deck-planeswalker-party.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmm-commander-deck-planeswalker-party.jpg"
+              "image": "/images/products/mtg-cmm-commander-deck-planeswalker-party.jpg",
+              "tcgplayer_id": "484930"
             },
             {
               "type": "commander-deck-sliver-swarm",
               "name": "Sliver Swarm — Commander Deck",
               "deck_file": "mtg-cmm-commander-deck-sliver-swarm.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmm-commander-deck-sliver-swarm.jpg"
+              "image": "/images/products/mtg-cmm-commander-deck-sliver-swarm.jpg",
+              "tcgplayer_id": "484933"
             },
             {
               "type": "commander-case-all-decks",
@@ -647,14 +674,16 @@
               "name": "Arm for Battle — Commander Deck",
               "deck_file": "mtg-cmr-commander-deck-arm-for-battle.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmr-commander-deck-arm-for-battle.jpg"
+              "image": "/images/products/mtg-cmr-commander-deck-arm-for-battle.jpg",
+              "tcgplayer_id": "227387"
             },
             {
               "type": "commander-deck-reap-the-tides",
               "name": "Reap the Tides — Commander Deck",
               "deck_file": "mtg-cmr-commander-deck-reap-the-tides.json",
               "kind": "deck",
-              "image": "/images/products/mtg-cmr-commander-deck-reap-the-tides.jpg"
+              "image": "/images/products/mtg-cmr-commander-deck-reap-the-tides.jpg",
+              "tcgplayer_id": "227386"
             },
             {
               "type": "commander-case-all-decks",
@@ -685,14 +714,16 @@
               "name": "Legends' Legacy — Commander Deck",
               "deck_file": "mtg-dmc-commander-deck-legends-legacy.json",
               "kind": "deck",
-              "image": "/images/products/mtg-dmc-commander-deck-legends-legacy.jpg"
+              "image": "/images/products/mtg-dmc-commander-deck-legends-legacy.jpg",
+              "tcgplayer_id": "279817"
             },
             {
               "type": "commander-deck-painbow",
               "name": "Painbow — Commander Deck",
               "deck_file": "mtg-dmc-commander-deck-painbow.json",
               "kind": "deck",
-              "image": "/images/products/mtg-dmc-commander-deck-painbow.jpg"
+              "image": "/images/products/mtg-dmc-commander-deck-painbow.jpg",
+              "tcgplayer_id": "279816"
             },
             {
               "type": "commander-case-all-decks",
@@ -892,14 +923,16 @@
               "name": "Elven Empire — Commander Deck",
               "deck_file": "mtg-khc-commander-deck-elven-empire.json",
               "kind": "deck",
-              "image": "/images/products/mtg-khc-commander-deck-elven-empire.jpg"
+              "image": "/images/products/mtg-khc-commander-deck-elven-empire.jpg",
+              "tcgplayer_id": "229377"
             },
             {
               "type": "commander-deck-phantom-premonition",
               "name": "Phantom Premonition — Commander Deck",
               "deck_file": "mtg-khc-commander-deck-phantom-premonition.json",
               "kind": "deck",
-              "image": "/images/products/mtg-khc-commander-deck-phantom-premonition.jpg"
+              "image": "/images/products/mtg-khc-commander-deck-phantom-premonition.jpg",
+              "tcgplayer_id": "229376"
             },
             {
               "type": "commander-case-all-decks",
@@ -929,25 +962,29 @@
               "type": "commander-deck-ahoy-mateys",
               "name": "Ahoy Mateys — Commander Deck",
               "deck_file": "mtg-lcc-commander-deck-ahoy-mateys.json",
-              "kind": "deck"
+              "kind": "deck",
+              "tcgplayer_id": "517513"
             },
             {
               "type": "commander-deck-blood-rites",
               "name": "Blood Rites — Commander Deck",
               "deck_file": "mtg-lcc-commander-deck-blood-rites.json",
-              "kind": "deck"
+              "kind": "deck",
+              "tcgplayer_id": "517514"
             },
             {
               "type": "commander-deck-explorers-of-the-deep",
               "name": "Explorers of the Deep — Commander Deck",
               "deck_file": "mtg-lcc-commander-deck-explorers-of-the-deep.json",
-              "kind": "deck"
+              "kind": "deck",
+              "tcgplayer_id": "517515"
             },
             {
               "type": "commander-deck-veloci-ramp-tor",
               "name": "Veloci-Ramp-Tor — Commander Deck",
               "deck_file": "mtg-lcc-commander-deck-veloci-ramp-tor.json",
-              "kind": "deck"
+              "kind": "deck",
+              "tcgplayer_id": "517516"
             },
             {
               "type": "commander-case-all-decks",
@@ -986,7 +1023,8 @@
               "name": "Riders of Rohan — Commander Deck",
               "deck_file": "mtg-ltc-commander-deck-riders-of-rohan.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ltc-commander-deck-riders-of-rohan.jpg"
+              "image": "/images/products/mtg-ltc-commander-deck-riders-of-rohan.jpg",
+              "tcgplayer_id": "488296"
             },
             {
               "type": "commander-deck-the-hosts-of-mordor",
@@ -1001,7 +1039,8 @@
               "name": "Elven Council — Commander Deck",
               "deck_file": "mtg-ltc-commander-deck-elven-council.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ltc-commander-deck-elven-council.jpg"
+              "image": "/images/products/mtg-ltc-commander-deck-elven-council.jpg",
+              "tcgplayer_id": "488295"
             },
             {
               "type": "commander-deck-food-and-fellowship",
@@ -1048,28 +1087,32 @@
               "name": "Graveyard Overdrive — Commander Deck",
               "deck_file": "mtg-m3c-commander-deck-graveyard-overdrive.json",
               "kind": "deck",
-              "image": "/images/products/mtg-m3c-commander-deck-graveyard-overdrive.jpg"
+              "image": "/images/products/mtg-m3c-commander-deck-graveyard-overdrive.jpg",
+              "tcgplayer_id": "541192"
             },
             {
               "type": "commander-deck-tricky-terrain",
               "name": "Tricky Terrain — Commander Deck",
               "deck_file": "mtg-m3c-commander-deck-tricky-terrain.json",
               "kind": "deck",
-              "image": "/images/products/mtg-m3c-commander-deck-tricky-terrain.jpg"
+              "image": "/images/products/mtg-m3c-commander-deck-tricky-terrain.jpg",
+              "tcgplayer_id": "541193"
             },
             {
               "type": "commander-deck-eldrazi-incursion",
               "name": "Eldrazi Incursion — Commander Deck",
               "deck_file": "mtg-m3c-commander-deck-eldrazi-incursion.json",
               "kind": "deck",
-              "image": "/images/products/mtg-m3c-commander-deck-eldrazi-incursion.jpg"
+              "image": "/images/products/mtg-m3c-commander-deck-eldrazi-incursion.jpg",
+              "tcgplayer_id": "541195"
             },
             {
               "type": "commander-deck-creative-energy",
               "name": "Creative Energy — Commander Deck",
               "deck_file": "mtg-m3c-commander-deck-creative-energy.json",
               "kind": "deck",
-              "image": "/images/products/mtg-m3c-commander-deck-creative-energy.jpg"
+              "image": "/images/products/mtg-m3c-commander-deck-creative-energy.jpg",
+              "tcgplayer_id": "541194"
             },
             {
               "type": "commander-case-all-decks",
@@ -1108,14 +1151,16 @@
               "name": "Coven Counters — Commander Deck",
               "deck_file": "mtg-mic-commander-deck-coven-counters.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mic-commander-deck-coven-counters.jpg"
+              "image": "/images/products/mtg-mic-commander-deck-coven-counters.jpg",
+              "tcgplayer_id": "246460"
             },
             {
               "type": "commander-deck-undead-unleashed",
               "name": "Undead Unleashed — Commander Deck",
               "deck_file": "mtg-mic-commander-deck-undead-unleashed.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mic-commander-deck-undead-unleashed.jpg"
+              "image": "/images/products/mtg-mic-commander-deck-undead-unleashed.jpg",
+              "tcgplayer_id": "246461"
             },
             {
               "type": "commander-case-all-decks",
@@ -1146,28 +1191,32 @@
               "name": "Blame Game — Commander Deck",
               "deck_file": "mtg-mkc-commander-deck-blame-game.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mkc-commander-deck-blame-game.jpg"
+              "image": "/images/products/mtg-mkc-commander-deck-blame-game.jpg",
+              "tcgplayer_id": "529980"
             },
             {
               "type": "commander-deck-deep-clue-sea",
               "name": "Deep Clue Sea — Commander Deck",
               "deck_file": "mtg-mkc-commander-deck-deep-clue-sea.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mkc-commander-deck-deep-clue-sea.jpg"
+              "image": "/images/products/mtg-mkc-commander-deck-deep-clue-sea.jpg",
+              "tcgplayer_id": "529979"
             },
             {
               "type": "commander-deck-revenant-recon",
               "name": "Revenant Recon — Commander Deck",
               "deck_file": "mtg-mkc-commander-deck-revenant-recon.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mkc-commander-deck-revenant-recon.jpg"
+              "image": "/images/products/mtg-mkc-commander-deck-revenant-recon.jpg",
+              "tcgplayer_id": "529978"
             },
             {
               "type": "commander-deck-deadly-disguise",
               "name": "Deadly Disguise — Commander Deck",
               "deck_file": "mtg-mkc-commander-deck-deadly-disguise.json",
               "kind": "deck",
-              "image": "/images/products/mtg-mkc-commander-deck-deadly-disguise.jpg"
+              "image": "/images/products/mtg-mkc-commander-deck-deadly-disguise.jpg",
+              "tcgplayer_id": "529977"
             },
             {
               "type": "commander-case-all-decks",
@@ -1282,35 +1331,40 @@
               "name": "Bedecked Brokers — Commander Deck",
               "deck_file": "mtg-ncc-commander-deck-bedecked-brokers.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ncc-commander-deck-bedecked-brokers.jpg"
+              "image": "/images/products/mtg-ncc-commander-deck-bedecked-brokers.jpg",
+              "tcgplayer_id": "265396"
             },
             {
               "type": "commander-deck-cabaretti-cacophony",
               "name": "Cabaretti Cacophony — Commander Deck",
               "deck_file": "mtg-ncc-commander-deck-cabaretti-cacophony.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ncc-commander-deck-cabaretti-cacophony.jpg"
+              "image": "/images/products/mtg-ncc-commander-deck-cabaretti-cacophony.jpg",
+              "tcgplayer_id": "265395"
             },
             {
               "type": "commander-deck-maestros-massacre",
               "name": "Maestros Massacre — Commander Deck",
               "deck_file": "mtg-ncc-commander-deck-maestros-massacre.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ncc-commander-deck-maestros-massacre.jpg"
+              "image": "/images/products/mtg-ncc-commander-deck-maestros-massacre.jpg",
+              "tcgplayer_id": "265393"
             },
             {
               "type": "commander-deck-obscura-operation",
               "name": "Obscura Operation — Commander Deck",
               "deck_file": "mtg-ncc-commander-deck-obscura-operation.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ncc-commander-deck-obscura-operation.jpg"
+              "image": "/images/products/mtg-ncc-commander-deck-obscura-operation.jpg",
+              "tcgplayer_id": "265392"
             },
             {
               "type": "commander-deck-riveteers-rampage",
               "name": "Riveteers Rampage — Commander Deck",
               "deck_file": "mtg-ncc-commander-deck-riveteers-rampage.json",
               "kind": "deck",
-              "image": "/images/products/mtg-ncc-commander-deck-riveteers-rampage.jpg"
+              "image": "/images/products/mtg-ncc-commander-deck-riveteers-rampage.jpg",
+              "tcgplayer_id": "265394"
             },
             {
               "type": "commander-case-all-decks",
@@ -1433,28 +1487,32 @@
               "name": "Desert Bloom — Commander Deck",
               "deck_file": "mtg-otc-commander-deck-desert-bloom.json",
               "kind": "deck",
-              "image": "/images/products/mtg-otc-commander-deck-desert-bloom.jpg"
+              "image": "/images/products/mtg-otc-commander-deck-desert-bloom.jpg",
+              "tcgplayer_id": "541100"
             },
             {
               "type": "commander-deck-quick-draw",
               "name": "Quick Draw — Commander Deck",
               "deck_file": "mtg-otc-commander-deck-quick-draw.json",
               "kind": "deck",
-              "image": "/images/products/mtg-otc-commander-deck-quick-draw.jpg"
+              "image": "/images/products/mtg-otc-commander-deck-quick-draw.jpg",
+              "tcgplayer_id": "541099"
             },
             {
               "type": "commander-deck-grand-larceny",
               "name": "Grand Larceny — Commander Deck",
               "deck_file": "mtg-otc-commander-deck-grand-larceny.json",
               "kind": "deck",
-              "image": "/images/products/mtg-otc-commander-deck-grand-larceny.jpg"
+              "image": "/images/products/mtg-otc-commander-deck-grand-larceny.jpg",
+              "tcgplayer_id": "541102"
             },
             {
               "type": "commander-deck-most-wanted",
               "name": "Most Wanted — Commander Deck",
               "deck_file": "mtg-otc-commander-deck-most-wanted.json",
               "kind": "deck",
-              "image": "/images/products/mtg-otc-commander-deck-most-wanted.jpg"
+              "image": "/images/products/mtg-otc-commander-deck-most-wanted.jpg",
+              "tcgplayer_id": "541103"
             },
             {
               "type": "commander-case-all-decks",
@@ -1633,14 +1691,16 @@
               "name": "Spirit Squadron — Commander Deck",
               "deck_file": "mtg-voc-commander-deck-spirit-squadron.json",
               "kind": "deck",
-              "image": "/images/products/mtg-voc-commander-deck-spirit-squadron.jpg"
+              "image": "/images/products/mtg-voc-commander-deck-spirit-squadron.jpg",
+              "tcgplayer_id": "246465"
             },
             {
               "type": "commander-deck-vampiric-bloodline",
               "name": "Vampiric Bloodline — Commander Deck",
               "deck_file": "mtg-voc-commander-deck-vampiric-bloodline.json",
               "kind": "deck",
-              "image": "/images/products/mtg-voc-commander-deck-vampiric-bloodline.jpg"
+              "image": "/images/products/mtg-voc-commander-deck-vampiric-bloodline.jpg",
+              "tcgplayer_id": "246466"
             },
             {
               "type": "commander-case-all-decks",
@@ -1735,14 +1795,16 @@
               "name": "Virtue and Valor — Commander Deck",
               "deck_file": "mtg-woc-commander-deck-virtue-and-valor.json",
               "kind": "deck",
-              "image": "/images/products/mtg-woc-commander-deck-virtue-and-valor.jpg"
+              "image": "/images/products/mtg-woc-commander-deck-virtue-and-valor.jpg",
+              "tcgplayer_id": "496044"
             },
             {
               "type": "commander-deck-fae-dominion",
               "name": "Fae Dominion — Commander Deck",
               "deck_file": "mtg-woc-commander-deck-fae-dominion.json",
               "kind": "deck",
-              "image": "/images/products/mtg-woc-commander-deck-fae-dominion.jpg"
+              "image": "/images/products/mtg-woc-commander-deck-fae-dominion.jpg",
+              "tcgplayer_id": "496043"
             },
             {
               "type": "commander-case-all-decks",
@@ -1773,14 +1835,16 @@
               "name": "Land's Wrath — Commander Deck",
               "deck_file": "mtg-znc-commander-deck-lands-wrath.json",
               "kind": "deck",
-              "image": "/images/products/mtg-znc-commander-deck-lands-wrath.jpg"
+              "image": "/images/products/mtg-znc-commander-deck-lands-wrath.jpg",
+              "tcgplayer_id": "221917"
             },
             {
               "type": "commander-deck-sneak-attack",
               "name": "Sneak Attack — Commander Deck",
               "deck_file": "mtg-znc-commander-deck-sneak-attack.json",
               "kind": "deck",
-              "image": "/images/products/mtg-znc-commander-deck-sneak-attack.jpg"
+              "image": "/images/products/mtg-znc-commander-deck-sneak-attack.jpg",
+              "tcgplayer_id": "221916"
             },
             {
               "type": "commander-case-all-decks",
